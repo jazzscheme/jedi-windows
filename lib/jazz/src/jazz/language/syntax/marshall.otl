@@ -1,0 +1,5 @@
+(module jazz.language.syntax.marshall scheme
+  (import (jazz.language.runtime.kernel))
+  (native private jazz:naturals)
+  (native private jazz:current-declaration)
+  (native private jazz:current-declaration-name))

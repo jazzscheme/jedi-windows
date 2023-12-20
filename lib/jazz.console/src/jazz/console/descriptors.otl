@@ -1,0 +1,16 @@
+(module jazz.console.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.document.descriptors))
+  (import (jazz.domain))
+  (import (jazz.figure.descriptors))
+  (import (jazz.markup))
+  (class Console-Preferences-Descriptor extends Figure-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Console-Text-Preferences-Descriptor extends Document-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

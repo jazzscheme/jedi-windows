@@ -1,0 +1,6 @@
+(module jazz.ui.view.Horizontal-Line jazz
+  (import (jazz.graphic))
+  (import (jazz.view))
+  (class Horizontal-Line extends View
+    (method override (default-size self))
+    (method override (draw self surface context))))

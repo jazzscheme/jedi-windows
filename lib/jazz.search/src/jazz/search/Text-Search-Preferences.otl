@@ -1,0 +1,11 @@
+(module jazz.search.Text-Search-Preferences jazz
+  (import (jazz.markup))
+  (import (jazz.search))
+  (class Text-Search-Preferences extends Search-View-Preferences
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (property active-domain accessors generate))
+  (hub get-active-domain)
+  (hub set-active-domain))

@@ -1,0 +1,13 @@
+;;;==============
+;;;  JazzScheme
+;;;==============
+;;;
+;;;; Skins
+;;;
+
+
+(data jazz.ide.data.skins
+
+
+(form
+  (<Skins-Preferences>)))

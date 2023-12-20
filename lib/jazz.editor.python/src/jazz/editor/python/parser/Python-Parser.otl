@@ -1,0 +1,9 @@
+(module jazz.editor.python.parser.Python-Parser jazz
+  (import (jazz.catalog))
+  (import (jazz.editor.c))
+  (import (jazz.editor.clike))
+  (import (jazz.editor.python))
+  (import (jazz.io))
+  (class Python-Parser extends File-Parser
+    (method meta override (get-constituent-test self))
+    (method override (parse self file digest dialect))))

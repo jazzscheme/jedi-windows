@@ -1,0 +1,8 @@
+(module jazz.opengl.sample.run jazz
+  (import (jazz.io))
+  (import (jazz.opengl.window))
+  (import (jazz.window))
+  (import (jazz.opengl.sample))
+  (import (jazz.opengl.sample.appl))
+  (import (jazz.opengl.sample.window))
+  (definition (run-shader descriptor)))

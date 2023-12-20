@@ -1,0 +1,12 @@
+(package jazz.settings
+  
+  (title "Settings")
+  (description "Settings")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.settings (alias settings)
+                           (update jazz.settings)
+                           (dependencies jazz
+                                         jazz.io)))
+  (project ".project"))

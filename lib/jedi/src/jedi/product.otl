@@ -1,0 +1,8 @@
+(module jedi.product jazz
+  (import (jazz.io))
+  (import (jazz.product))
+  (definition (build descriptor (unit: unit (unspecified)) (force?: force? (unspecified))))
+  (definition install-dir)
+  (definition install-name)
+  (definition (install descriptor))
+  (definition (deploy descriptor)))

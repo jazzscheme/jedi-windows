@@ -1,0 +1,17 @@
+(package jazz.sample.mandelbrot
+  
+  (title "Mandelbrot")
+  (description "Mandelbrot sample")
+  (authors "Guillaume Cartier")
+  (stage sample)
+  (root "src")
+  (products (jazz.sample.mandelbrot (alias mandelbrot)
+                                    (update jazz.sample.mandelbrot)
+                                    (dependencies jazz
+                                                  jazz.graphic
+                                                  jazz.io
+                                                  jazz.markup
+                                                  jazz.media
+                                                  jazz.platform
+                                                  jazz.ui)))
+  (project ".project"))

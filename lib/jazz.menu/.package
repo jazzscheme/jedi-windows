@@ -1,0 +1,11 @@
+(package jazz.menu
+  
+  (title "Menu")
+  (description "Menus")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.menu (alias menu)
+                       (update jazz.menu)
+                       (dependencies jazz)))
+  (project ".project"))

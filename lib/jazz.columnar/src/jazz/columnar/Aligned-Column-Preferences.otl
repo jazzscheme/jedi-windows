@@ -1,0 +1,8 @@
+(module jazz.columnar.Aligned-Column-Preferences jazz
+  (import (jazz.columnar))
+  (class Aligned-Column-Preferences extends Column-Preferences
+    (property alignment accessors generate)
+    (method override (column-class self))
+    (method override (new-column self display)))
+  (hub get-alignment)
+  (hub set-alignment))

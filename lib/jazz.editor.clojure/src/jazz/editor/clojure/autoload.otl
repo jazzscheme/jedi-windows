@@ -1,0 +1,6 @@
+(module jazz.editor.clojure.autoload jazz
+  (export (jazz.editor.clojure.parser.Clojure-Parser (autoload Clojure-Parser Clojure-Parser)))
+  (export (jazz.editor.clojure.text.Clojure-Explorer (autoload Clojure-Explorer Clojure-Explorer)))
+  (export (jazz.editor.clojure.text.Clojure-Syntax (autoload Clojure-Syntax Clojure-Syntax)))
+  (export (jazz.editor.clojure.text.Clojure-Text-Preferences (autoload Clojure-Text-Preferences Clojure-Text-Preferences)))
+  (export (jazz.editor.clojure.text.Clojure-Text-View (autoload Clojure-Text-View Clojure-Text-View))))

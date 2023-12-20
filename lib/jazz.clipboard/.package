@@ -1,0 +1,11 @@
+(package jazz.clipboard
+  
+  (title "Clipboard")
+  (description "Clipboard access")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.clipboard (alias clipboard)
+                            (update jazz.clipboard)
+                            (dependencies jazz)))
+  (project ".project"))

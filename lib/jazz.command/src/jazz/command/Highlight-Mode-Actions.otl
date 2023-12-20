@@ -1,0 +1,3 @@
+(module jazz.command.Highlight-Mode-Actions jazz
+  (import (jazz.command))
+  (class Highlight-Mode-Actions extends Search-Mode-Actions))

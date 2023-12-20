@@ -1,0 +1,10 @@
+(module ldap.ffi jazz
+  (definition public LDAP_PORT)
+  (definition public (ldap_open host port))
+  (definition public (ldap_add connection name value))
+  (definition public (ldap_delete connection name))
+  (definition public (ldap_search connection target))
+  (definition public (ldap_count_entries connection search))
+  (definition public (ldap_get_entry connection search rank))
+  (definition public (ldap_entry_name connection entry))
+  (definition public (ldap_entry_value connection entry)))

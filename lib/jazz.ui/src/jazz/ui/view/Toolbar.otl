@@ -1,0 +1,13 @@
+(module jazz.ui.view.Toolbar jazz
+  (import (jazz.graphic))
+  (import (jazz.markup))
+  (import (jazz.skin))
+  (import (jazz.ui))
+  (class Toolbar extends Layout-View
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (mouse-activate? self))
+    (method override (draw-background self surface context))
+    (method override (get-skin self))))

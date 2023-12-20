@@ -1,0 +1,62 @@
+(module jazz.application.descriptors jazz
+  (import (jazz.application))
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.exemplar.descriptors))
+  (import (jazz.markup))
+  (import (jazz.preferences.descriptors))
+  (import (jazz.process.descriptors))
+  (class Application-Preferences-Descriptor extends Process-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Toolbar-Classes-Domain extends List-Domain
+    (method override (finish self rest)))
+  (class Toolbar-Class-Domain extends Value-Domain
+    (method override (present-value self model)))
+  (class Aliases-Preferences-Descriptor extends Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (component-get-categorized-addable-classes self component))
+    (method override (component-get-addable-details self component)))
+  (class Alias-Configuration-Descriptor extends Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (component-presentation-property? self component property))
+    (method override (component-get-presentation self component))
+    (method override (component-set-presentation self component designer presentation)))
+  (class Favorites-Preferences-Descriptor extends Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (component-get-categorized-addable-classes self component))
+    (method override (component-get-addable-details self component)))
+  (class Favorite-Configuration-Descriptor extends Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (component-presentation-property? self component property))
+    (method override (component-get-presentation self component))
+    (method override (component-set-presentation self component designer shortcut)))
+  (class Interface-Preferences-Descriptor extends Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Fonts-Preferences-Descriptor extends Exemplars-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Print-Preferences-Descriptor extends Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

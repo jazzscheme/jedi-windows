@@ -1,0 +1,10 @@
+(module jazz.window.External-Frame jazz
+  (import (jazz.opengl.frame))
+  (import (jazz.ui))
+  (import (jazz.window))
+  (class External-Frame extends OpenGL-Frame
+    (method override (default-parent self))
+    (method override (new-root self))
+    (method package (get-host self))
+    (method override (close-window self)))
+  (hub get-host))

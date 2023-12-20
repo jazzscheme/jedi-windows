@@ -1,0 +1,10 @@
+(module jazz.resource.Resource jazz
+  (class Resource extends Object
+    (method meta override (marshall-object self obj))
+    (method meta override (unmarshall-object self content))
+    (method meta public virtual (resource-type self))
+    (slot name getter generate)
+    (method override (initialize self name))
+    (method override (compare-object self target))
+    (method override (print self output readably)))
+  (hub get-name))

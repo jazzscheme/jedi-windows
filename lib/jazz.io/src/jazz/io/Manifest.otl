@@ -1,0 +1,15 @@
+(module jazz.io.Manifest jazz
+  (import (jazz.io))
+  (class Manifest-Class extends Directory-Class
+    (method override (get-protocol self)))
+  (class Manifest metaclass Manifest-Class extends Directory
+    (method override (validate-components self lst))
+    (method override (print self output readably))
+    (method override (present self))
+    (method override (get-name self))
+    (method override (get-directory self))
+    (method override (get-content self . rest))
+    (method override (get-last-modification-time self))
+    (method override (create self))
+    (method override (delete self (overwrite-read-only?: overwrite-read-only? (unspecified)) (feedback: feedback (unspecified))))
+    (method override (iterate-directory self proc (full?: full? (unspecified)) (files?: files? (unspecified)) (directories?: directories? (unspecified)) (recursive?: recursive? (unspecified)) (ignored-toplevel-dirnames: ignored-toplevel-dirnames (unspecified)) (ignored-dirnames: ignored-dirnames (unspecified))))))

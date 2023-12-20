@@ -1,0 +1,18 @@
+(package jazz.editor
+  
+  (title "Editor")
+  (description "Code editor")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.editor (alias editor)
+                         (update jazz.editor)
+                         (dependencies jazz))
+            (jazz.editor.desc (alias editor.desc)
+                              (description "Editor descriptors")
+                              (update jazz.editor.descriptors)
+                              (dependencies jazz
+                                            jazz.descriptor
+                                            jazz.domain
+                                            jazz.markup)))
+  (project ".project"))

@@ -1,0 +1,6 @@
+(module jazz.sample.c4.autoload jazz
+  (export (jazz.sample.c4.C4-AI (autoload C4-AI C4-AI)))
+  (export (jazz.sample.c4.C4-Human (autoload C4-Human C4-Human)))
+  (export (jazz.sample.c4.C4-Application (autoload C4-Application C4-Application)))
+  (export (jazz.sample.c4.C4-Board (autoload C4-Board C4-Board)))
+  (export (jazz.sample.c4.C4-Game (autoload C4-Game C4-Game))))

@@ -1,0 +1,23 @@
+(module world.debuggee.stub jazz
+  (import (jazz.presence.syntax (phase syntax)))
+  (import (jazz.presence))
+  (hub position-world)
+  (hub restore-world)
+  (hub set-property)
+  (class World-Debuggee-Stub-Interface extends Stub-Interface
+    (method override (local-class self))
+    (method override (remote-class self)))
+  (interface World-Debuggee-Stub metaclass World-Debuggee-Stub-Interface extends Remotable-Stub
+    (method public virtual abstract (position-world self __rect))
+    (method public virtual abstract (restore-world self))
+    (method public virtual abstract (set-property self __property __value)))
+  (class World-Debuggee-Local-Proxy extends Local-Proxy implements World-Debuggee-Stub
+    (method override (stub-reference self))
+    (method override (position-world self __rect))
+    (method override (restore-world self))
+    (method override (set-property self __property __value)))
+  (class World-Debuggee-Remote-Proxy extends Remote-Proxy implements World-Debuggee-Stub
+    (method override (stub-reference self))
+    (method override (position-world self __rect))
+    (method override (restore-world self))
+    (method override (set-property self __property __value))))

@@ -1,0 +1,9 @@
+(module jazz.favorite.Favorite-Handler jazz
+  (import (jazz.favorite))
+  (import (jazz.handler))
+  (class Favorite-Handler extends Favorite
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property handler accessors generate)
+    (method override (launch self)))
+  (hub get-handler)
+  (hub set-handler))

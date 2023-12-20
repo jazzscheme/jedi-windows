@@ -1,0 +1,15 @@
+(module jazz.designer.ui.card.Group-Card jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (import (jazz.markup))
+  (import (jazz.resource))
+  (import (jazz.text))
+  (import (jazz.ui))
+  (class Group-Card extends Custom-Card
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (definition Properties-Mapping)
+    (method override (get-properties-mapping self))
+    (method override (resize self dh dv))))

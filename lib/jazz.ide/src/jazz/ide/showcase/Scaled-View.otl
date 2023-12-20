@@ -1,0 +1,3 @@
+(module jazz.ide.showcase.Scaled-View jazz
+  (import (jazz.view))
+  (class Scaled-View extends View))

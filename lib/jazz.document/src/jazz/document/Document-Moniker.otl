@@ -1,0 +1,18 @@
+(module jazz.document.Document-Moniker jazz
+  (import (jazz.application))
+  (import (jazz.designer))
+  (import (jazz.io))
+  (import (jazz.io.protocol))
+  (import (jazz.view))
+  (class Document-Moniker-Class extends Moniker-Class
+    (method override (get-protocol self)))
+  (class Document-Moniker metaclass Document-Moniker-Class extends Moniker
+    (slot pathname)
+    (method override (print self output readably))
+    (method override (present self))
+    (method override (initialize self path))
+    (method override (get-name self))
+    (method public (get-document self))
+    (method override (load-lines self . rest))
+    (method override (load-form self)))
+  (hub get-document))

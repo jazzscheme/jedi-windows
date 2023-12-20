@@ -1,0 +1,3 @@
+(module jazz.editor.lisp.text.Lisp-Console-Manager jazz
+  (import (jazz.console))
+  (class Lisp-Console-Manager extends Console-Manager))

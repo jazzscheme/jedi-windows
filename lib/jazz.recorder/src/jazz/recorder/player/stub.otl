@@ -1,0 +1,19 @@
+(module jazz.recorder.player.stub jazz
+  (import (jazz.presence.syntax (phase syntax)))
+  (import (jazz.presence))
+  (class Recorder-Player-Stub-Interface extends Stub-Interface
+    (method override (local-class self))
+    (method override (remote-class self)))
+  (interface Recorder-Player-Stub metaclass Recorder-Player-Stub-Interface extends Remotable-Stub
+    (method public virtual abstract (playee-feedback self __playee __step))
+    (method public virtual abstract (play-recording-feedback self __playee)))
+  (hub playee-feedback)
+  (hub play-recording-feedback)
+  (class Recorder-Player-Local-Proxy extends Local-Proxy implements Recorder-Player-Stub
+    (method override (stub-reference self))
+    (method override (playee-feedback self __playee __step))
+    (method override (play-recording-feedback self __playee)))
+  (class Recorder-Player-Remote-Proxy extends Remote-Proxy implements Recorder-Player-Stub
+    (method override (stub-reference self))
+    (method override (playee-feedback self __playee __step))
+    (method override (play-recording-feedback self __playee))))

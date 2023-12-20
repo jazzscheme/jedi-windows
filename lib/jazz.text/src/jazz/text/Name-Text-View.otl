@@ -1,0 +1,5 @@
+(module jazz.text.Name-Text-View jazz
+  (import (jazz.text))
+  (class Name-Text-View extends Plain-Text-View
+    (method override (new-model self))
+    (method override (get-context-menu self))))

@@ -1,0 +1,15 @@
+(module jazz.descriptor.Child-Descriptor jazz
+  (import (jazz.component))
+  (class Child-Descriptor extends Component
+    (property title accessors generate)
+    (property target accessors generate)
+    (property classes accessors generate)
+    (property mandatory? accessors generate))
+  (hub get-title)
+  (hub set-title)
+  (hub get-target)
+  (hub set-target)
+  (hub get-classes)
+  (hub set-classes)
+  (hub get-mandatory?)
+  (hub set-mandatory?))

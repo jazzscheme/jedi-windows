@@ -1,0 +1,20 @@
+(module jazz.designer.ui.toolbox.Toolbox-Group jazz
+  (import (jazz.component))
+  (import (jazz.descriptor))
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (import (jazz.domain))
+  (import (jazz.markup))
+  (import (jazz.resource))
+  (class Toolbox-Group extends Component
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property title accessors generate)
+    (method override (copy-object self deep?)))
+  (hub get-title)
+  (hub set-title)
+  (class Toolbox-Group-Descriptor extends Component-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (component-get-categorized-addable-classes self component))))

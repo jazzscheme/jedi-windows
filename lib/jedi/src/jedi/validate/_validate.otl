@@ -1,0 +1,8 @@
+(module jedi.validate jazz
+  (export (jedi.validate.autoload))
+  (import (jedi.validate.autoload))
+  (import (jazz.io))
+  (import (jazz.log))
+  (import (jazz.validation))
+  (definition public Jedi-Suite)
+  (definition public (validate-jedi)))

@@ -1,0 +1,8 @@
+(module jazz.editor.c.catalog.C-Category-Entry jazz
+  (import (jazz.editor.c))
+  (import (jazz.resource))
+  (class C-Category-Entry extends C-Entry
+    (method override (initialize self name))
+    (method override (print-catalog self level output))
+    (method override (get-image self))
+    (method override (update-indexes self definitions-index references-index))))

@@ -1,0 +1,2 @@
+(module gambit.dialect scheme
+  (export (gambit.language.runtime)))

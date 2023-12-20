@@ -1,0 +1,18 @@
+(package jazz.editor.diff
+  
+  (title "Diff")
+  (description "Diff file editor")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.editor.diff (update jazz.editor.diff)
+                              (dependencies jazz
+                                            jazz.editor))
+            (jazz.editor.diff.desc (alias editor.diff.desc)
+                                   (description "Diff file editor descriptors")
+                                   (update jazz.editor.diff.descriptors)
+                                   (dependencies jazz
+                                                 jazz.descriptor
+                                                 jazz.domain
+                                                 jazz.markup)))
+  (project ".project"))

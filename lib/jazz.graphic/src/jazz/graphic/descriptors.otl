@@ -1,0 +1,6 @@
+(module jazz.graphic.descriptors jazz
+  (import (jazz.domain))
+  (import (jazz.graphic))
+  (class Portfolio-Domain extends Text-Domain
+    (method override (present-value self value))
+    (method override (parse-presentation self text))))

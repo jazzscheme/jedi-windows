@@ -1,0 +1,6 @@
+(module jazz.resource.literals jazz
+  (import (jazz.resource))
+  (definition package (construct-image-resource name))
+  (definition package (construct-icon-resource name))
+  (definition package (construct-cursor-resource name))
+  (definition package (construct-sound-resource name)))

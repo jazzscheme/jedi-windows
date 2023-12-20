@@ -1,0 +1,6 @@
+(module jazz.graphic.Viewable jazz
+  (interface Viewable
+    (method public virtual abstract (get-title self))
+    (method public virtual abstract (get-viewer-class self)))
+  (hub get-title)
+  (hub get-viewer-class))

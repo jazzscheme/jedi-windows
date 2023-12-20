@@ -1,0 +1,9 @@
+(module jazz.tree.Tree-Image-Column jazz
+  (import (jazz.application))
+  (import (jazz.tree))
+  (class Tree-Image-Column extends Tree-Label-Column
+    (property offset accessors generate)
+    (method override (draw-data self surface context row data width height))
+    (method override (sort-value self row data)))
+  (hub get-offset)
+  (hub set-offset))

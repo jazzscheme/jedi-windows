@@ -1,0 +1,8 @@
+(module jazz.text.Text-Highlight jazz
+  (import (jazz.text))
+  (class Text-Highlight extends Text-Mark
+    (slot style getter generate)
+    (slot show-unfocused? getter generate)
+    (method override (initialize self text range style (show-unfocused?: show-unfocused? (unspecified)))))
+  (hub get-style)
+  (hub get-show-unfocused?))

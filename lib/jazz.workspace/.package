@@ -1,0 +1,18 @@
+(package jazz.workspace
+  
+  (title "Workspace")
+  (description "Workspaces")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.workspace (alias workspace)
+                            (update jazz.workspace)
+                            (dependencies jazz))
+            (jazz.workspace.desc (alias workspace.desc)
+                                 (description "Workspace descriptors")
+                                 (update jazz.workspace.descriptors)
+                                 (dependencies jazz
+                                               jazz.descriptor
+                                               jazz.domain
+                                               jazz.markup)))
+  (project ".project"))

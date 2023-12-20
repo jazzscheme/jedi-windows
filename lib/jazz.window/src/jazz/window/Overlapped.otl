@@ -1,0 +1,10 @@
+(module jazz.window.Overlapped jazz
+  (import (jazz.window))
+  (class Overlapped extends View-Player
+    (property owner accessors generate)
+    (method override (conclude self rest))
+    (method override (destroy self))
+    (method public (get-owners self)))
+  (hub get-owner)
+  (hub set-owner)
+  (hub get-owners))

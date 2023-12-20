@@ -1,0 +1,8 @@
+(module ldap.ldap1 jazz
+  (import (ldap.ffi))
+  (definition public (ldap-open host (port: port (unspecified))))
+  (definition public (ldap-add connection name value))
+  (definition public (ldap-delete connection name))
+  (definition public (ldap-search connection target))
+  (definition public (ldap-entry-name connection entry))
+  (definition public (ldap-entry-value connection entry)))

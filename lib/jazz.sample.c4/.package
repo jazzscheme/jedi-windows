@@ -1,0 +1,27 @@
+(package jazz.sample.c4
+  
+  (title "C4")
+  (description "C4 Connect 4 sample")
+  (authors "Guillaume Cartier")
+  (stage sample)
+  (root "src")
+  (products (jazz.sample.c4 (alias c4)
+                            (title "C4")
+                            (run jazz.sample.c4.run)
+                            (update jazz.sample.c4
+                                    jazz.sample.c4.graphics
+                                    jazz.sample.c4.run)
+                            (build (c4 bundle: "c4"))
+                            (dependencies jazz
+                                          jazz.graphic
+                                          jazz.io
+                                          jazz.markup
+                                          jazz.media
+                                          jazz.platform
+                                          jazz.ui
+                                          jazz.sample.game
+                                          
+                                          ;; for development
+                                          jazz.presence
+                                          jazz.recorder)))
+  (project ".project"))

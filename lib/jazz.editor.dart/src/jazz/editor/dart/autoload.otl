@@ -1,0 +1,6 @@
+(module jazz.editor.dart.autoload jazz
+  (export (jazz.editor.dart.parser.Dart-Parser (autoload Dart-Parser Dart-Parser)))
+  (export (jazz.editor.dart.syntax.Dart-Syntax (autoload Dart-Syntax Dart-Syntax)))
+  (export (jazz.editor.dart.text.Dart-Explorer (autoload Dart-Explorer Dart-Explorer)))
+  (export (jazz.editor.dart.text.Dart-Text-Preferences (autoload Dart-Text-Preferences Dart-Text-Preferences)))
+  (export (jazz.editor.dart.text.Dart-Text-View (autoload Dart-Text-View Dart-Text-View))))

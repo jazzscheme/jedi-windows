@@ -1,0 +1,12 @@
+(module jazz.editor.tex.text.Tex-Text-View jazz
+  (import (jazz.editor))
+  (import (jazz.editor.tex))
+  (import (jazz.preferences))
+  (import (jazz.text))
+  (class Tex-Text-View extends Code-Text-View
+    (method meta override (external-name self . rest))
+    (method override (new-model self))
+    (method override (install self rest))
+    (method override (preferences self))
+    (method override (host-workspaces self))
+    (method override (new-syntax self))))

@@ -1,0 +1,13 @@
+(module jazz.print.Printer-Job jazz
+  (import (jazz.cairo))
+  (import (jazz.graphic))
+  (import (jazz.platform))
+  (import (jazz.print))
+  (import (jazz.ui))
+  (import (jazz.window))
+  (class Printer-Job extends Print-Job
+    (method override (offset-page self surface))
+    (method override (start-document self))
+    (method override (end-document self))
+    (method override (start-page self no))
+    (method override (end-page self no))))

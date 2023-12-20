@@ -1,0 +1,16 @@
+(package jazz.designer
+  
+  (title "Designer")
+  (description "Component designer")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (install jazz.designer.install)
+  (products (jazz.designer (alias designer)
+                           (update jazz.designer
+                                   jazz.designer.install
+                                   jazz.designer.validate)
+                           (dependencies jazz
+                                         jazz.platform
+                                         jazz.undoer)))
+  (project ".project"))

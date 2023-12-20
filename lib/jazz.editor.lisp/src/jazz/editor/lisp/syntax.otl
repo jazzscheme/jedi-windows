@@ -1,0 +1,2 @@
+(module jazz.editor.lisp.syntax jazz
+  (macro public (define-expression name . rest)))

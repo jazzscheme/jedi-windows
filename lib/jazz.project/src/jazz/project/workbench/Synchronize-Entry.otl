@@ -1,0 +1,8 @@
+(module jazz.project.workbench.Synchronize-Entry jazz
+  (class Synchronize-Entry extends Object
+    (slot protected kind)
+    (slot protected left)
+    (slot protected right)
+    (slot protected action)
+    (method override (initialize self kind left left-value right right-value))
+    (method override (print self output readably))))

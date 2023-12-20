@@ -1,0 +1,12 @@
+(module jazz.ui.dialog.platform.windows jazz
+  (import (jazz.application))
+  (import (jazz.io))
+  (import (jazz.platform))
+  (import (jazz.ui))
+  (import (jazz.view))
+  (import (jazz.window))
+  (definition public (print-dialog . rest))
+  (definition public (page-setup-dialog (margins: margins (unspecified)) (orientation: orientation (unspecified)) (paper-size: paper-size (unspecified)) (paper-source: paper-source (unspecified))))
+  (definition public (font-dialog (initial-font: initial-font (unspecified)) (initial-color: initial-color (unspecified))))
+  (definition (parse-choose-file-string buffer))
+  (definition public (extensions-filter extensions)))

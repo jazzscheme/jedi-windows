@@ -1,0 +1,7 @@
+(module jazz.resource jazz
+  (export (jazz.resource.autoload))
+  (import (jazz.resource.autoload))
+  (hub get-name)
+  (definition public (resource? object))
+  (definition public (disabled-image-resource resource))
+  (definition public (default-disabled-resource resource)))

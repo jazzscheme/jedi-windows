@@ -1,0 +1,16 @@
+(module jazz.ui.view.Toggle-Tool jazz
+  (import (jazz.graphic))
+  (import (jazz.ui))
+  (class Toggle-Tool extends Image-Tool
+    (property selected? accessors explicit)
+    (method override (default-size self))
+    (method override (draw-frame self surface))
+    (method override (draw-tool self surface context))
+    (method override (draw-background self surface context))
+    (method override (up self))
+    (method public (get-selected? self))
+    (method public (set-selected? self flag))
+    (method public (toggle-selected? self)))
+  (hub get-selected?)
+  (hub set-selected?)
+  (hub toggle-selected?))

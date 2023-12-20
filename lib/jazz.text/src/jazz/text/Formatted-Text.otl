@@ -1,0 +1,11 @@
+(module jazz.text.Formatted-Text jazz
+  (import (jazz.text))
+  (class Formatted-Text extends Text
+    (slot protected formats accessors generate)
+    (slot protected styles accessors generate)
+    (method override (initialize self . rest))
+    (method override (print self output readably)))
+  (hub get-formats)
+  (hub set-formats)
+  (hub get-styles)
+  (hub set-styles))

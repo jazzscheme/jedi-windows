@@ -1,0 +1,11 @@
+(module scheme.syntax scheme
+  (import (scheme.core.kernel))
+  (import (scheme.syntax-rules (phase syntax)))
+  (native private jazz:error)
+  (native private jazz:unspecified)
+  (syntax public declaration-unit)
+  (syntax public declaration-path)
+  (syntax public declaration-locator)
+  (syntax public optional)
+  (syntax private really-let-optionals*)
+  (syntax public let-optionals*))

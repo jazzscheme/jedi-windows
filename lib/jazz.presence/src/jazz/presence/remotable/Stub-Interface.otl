@@ -1,0 +1,6 @@
+(module jazz.presence.remotable.Stub-Interface jazz
+  (class Stub-Interface extends Interface
+    (method public virtual abstract (local-class self))
+    (method public virtual abstract (remote-class self)))
+  (hub local-class)
+  (hub remote-class))

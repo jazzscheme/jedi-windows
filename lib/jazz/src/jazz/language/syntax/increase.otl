@@ -1,0 +1,7 @@
+(module jazz.language.syntax.increase gambit
+  (import (scheme.syntax-rules (phase syntax)))
+  (syntax public increase!)
+  (syntax public decrease!)
+  (syntax public multiply!)
+  (syntax public divide!)
+  (syntax public bitwise-ior!))

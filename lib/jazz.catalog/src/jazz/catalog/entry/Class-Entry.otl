@@ -1,0 +1,11 @@
+(module jazz.catalog.entry.Class-Entry jazz
+  (import (jazz.catalog))
+  (import (jazz.resource))
+  (class Class-Entry extends Category-Entry
+    (slot implements accessors generate)
+    (method override (initialize self modifiers qualified name extends implements line column end-line end-column definitions))
+    (method override (print-catalog self level output))
+    (method override (get-image self))
+    (method override (update-indexes self definitions-index references-index)))
+  (hub get-implements)
+  (hub set-implements))

@@ -1,0 +1,5 @@
+(module jazz.ui.hosting.External-Frame-Host jazz
+  (import (jazz.ui))
+  (class External-Frame-Host extends Frame-Host
+    (method override (close-host self (confirm?: confirm? (unspecified))))
+    (method override (set-title self value))))

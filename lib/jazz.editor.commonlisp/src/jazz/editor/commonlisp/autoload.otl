@@ -1,0 +1,6 @@
+(module jazz.editor.commonlisp.autoload jazz
+  (export (jazz.editor.commonlisp.parser.CommonLisp-Parser (autoload CommonLisp-Parser CommonLisp-Parser)))
+  (export (jazz.editor.commonlisp.text.CommonLisp-Explorer (autoload CommonLisp-Explorer CommonLisp-Explorer)))
+  (export (jazz.editor.commonlisp.text.CommonLisp-Syntax (autoload CommonLisp-Syntax CommonLisp-Syntax)))
+  (export (jazz.editor.commonlisp.text.CommonLisp-Text-Preferences (autoload CommonLisp-Text-Preferences CommonLisp-Text-Preferences)))
+  (export (jazz.editor.commonlisp.text.CommonLisp-Text-View (autoload CommonLisp-Text-View CommonLisp-Text-View))))

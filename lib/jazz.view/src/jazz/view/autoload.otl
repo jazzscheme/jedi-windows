@@ -1,0 +1,4 @@
+(module jazz.view.autoload jazz
+  (export (jazz.view.Drawing (autoload Drawing Drawing)))
+  (export (jazz.view.View (autoload View View)))
+  (export (jazz.view.View-Actions (autoload View-Actions View-Actions))))

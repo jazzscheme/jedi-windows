@@ -1,0 +1,18 @@
+(module jazz.reporter.Multiplexer-Reporter jazz
+  (import (jazz.reporter))
+  (class Multiplexer-Reporter extends Object implements Reporter
+    (slot reporters)
+    (method override (initialize self reporters))
+    (method (main-reporter self))
+    (method override (section-title self title))
+    (method override (set-message self msg))
+    (method override (report-message self fmt . rest))
+    (method override (set-range self range))
+    (method override (set-pos self pos))
+    (method override (delta-pos self increment))
+    (method override (set-step self increment))
+    (method override (step-it self))
+    (method override (set-done self))
+    (method override (disable-cancel self))
+    (method override (cancel-requested? self))
+    (method override (test-cancelled self))))

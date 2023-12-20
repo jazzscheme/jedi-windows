@@ -1,0 +1,3 @@
+(module jazz.doc.doc.Export-Doc jazz
+  (import (jazz.doc))
+  (class Export-Doc extends Element-Doc))

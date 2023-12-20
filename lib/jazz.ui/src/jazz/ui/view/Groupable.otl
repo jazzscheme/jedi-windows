@@ -1,0 +1,6 @@
+(module jazz.ui.view.Groupable jazz
+  (interface Groupable
+    (method public virtual abstract (get-group self))
+    (method public virtual abstract (set-group self value)))
+  (hub get-group)
+  (hub set-group))

@@ -1,0 +1,10 @@
+(module jazz.groupware.preference.Compare-Trees-Preferences jazz
+  (import (jazz.ui.preferences))
+  (class Compare-Trees-Preferences extends Frame-Preferences
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property active-configuration accessors generate)
+    (property base-dates accessors generate))
+  (hub get-active-configuration)
+  (hub set-active-configuration)
+  (hub get-base-dates)
+  (hub set-base-dates))

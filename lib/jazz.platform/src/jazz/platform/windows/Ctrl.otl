@@ -1,0 +1,9 @@
+(module jazz.platform.windows.Ctrl jazz
+  (import (jazz.foreign))
+  (definition public TME_HOVER)
+  (definition public TME_LEAVE)
+  (definition public TME_QUERY)
+  (definition public TME_CANCEL)
+  (definition public HOVER_DEFAULT)
+  (definition public CLR_NONE)
+  (definition public CLR_DEFAULT))

@@ -1,0 +1,4 @@
+(module jazz.designer.ui.row.Combo-Row jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (class Combo-Row extends Value-Row))

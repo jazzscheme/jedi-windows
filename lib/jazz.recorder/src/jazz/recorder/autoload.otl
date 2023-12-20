@@ -1,0 +1,6 @@
+(module jazz.recorder.autoload jazz
+  (export (jazz.recorder.Macro-Recorder (autoload Macro-Recorder Macro-Recorder)))
+  (export (jazz.recorder.Recordable (autoload Recordable Recordable)))
+  (export (jazz.recorder.Recording-Manager (autoload Recording-Manager Recording-Manager)))
+  (export (jazz.recorder.playee.Recorder-Playee (autoload Recorder-Playee Recorder-Playee)))
+  (export (jazz.recorder.player.Recorder-Player (autoload Recorder-Player Recorder-Player))))

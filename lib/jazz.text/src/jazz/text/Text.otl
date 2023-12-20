@@ -1,0 +1,6 @@
+(module jazz.text.Text jazz
+  (class Text extends Object
+    (slot protected paragraphs getter generate)
+    (method override (initialize self (paragraphs: paragraphs (unspecified))))
+    (method override (print self output readably)))
+  (hub get-paragraphs))

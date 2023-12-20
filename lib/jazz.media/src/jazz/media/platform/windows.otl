@@ -1,0 +1,7 @@
+(module jazz.media.platform.windows jazz
+  (import (jazz.io))
+  (import (jazz.platform))
+  (definition Symbolic-Sounds)
+  (definition (symbolic-sound sound))
+  (definition public (play-sound sound (volume: volume (unspecified)) (asynchronous?: asynchronous? (unspecified))))
+  (definition public (error-sound)))

@@ -1,0 +1,11 @@
+(package jazz.skin
+  
+  (title "Skin")
+  (description "Skinnable views")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.skin (alias skin)
+                       (update jazz.skin)
+                       (dependencies jazz)))
+  (project ".project"))

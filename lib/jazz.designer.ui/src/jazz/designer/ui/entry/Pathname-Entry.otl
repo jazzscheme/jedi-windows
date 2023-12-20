@@ -1,0 +1,18 @@
+(module jazz.designer.ui.entry.Pathname-Entry jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (import (jazz.handler))
+  (import (jazz.markup))
+  (import (jazz.ui))
+  (class Pathname-Entry extends Property-Entry
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (tab-view self))
+    (method (on-moniker-update self evt))
+    (method override (get-value self))
+    (method override (set-value self pathname))
+    (method override (get-modified? self))
+    (method override (set-modified? self value))
+    (method override (set-editable? self value))))

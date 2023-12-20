@@ -1,0 +1,6 @@
+(module jazz.designer.autoload jazz
+  (export (jazz.designer.Designer (autoload Designer Designer)))
+  (export (jazz.designer.Dispatch-Designer (autoload Dispatch-Designer Dispatch-Designer)))
+  (export (jazz.designer.clipboard.Component-Parcel (autoload Component-Parcel Component-Parcel)))
+  (export (jazz.designer.moniker.Property-Moniker (autoload Property-Moniker Property-Moniker)))
+  (export (jazz.designer.preference.Designer-Preferences (autoload Designer-Preferences Designer-Preferences))))

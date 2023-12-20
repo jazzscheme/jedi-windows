@@ -1,0 +1,7 @@
+(module jazz.application.autoload jazz
+  (export (jazz.application.Application (autoload Application Application)))
+  (export (jazz.application.Application-Actions (autoload Application-Actions Application-Actions)))
+  (export (jazz.application.Application-Bindings (autoload Application-Bindings Application-Bindings)))
+  (export (jazz.application.Application-Event (autoload Application-Event Application-Event)))
+  (export (jazz.application.Exception-Presenter (autoload Exception-Presenter Exception-Presenter)))
+  (export (jazz.application.preferences (autoload Application-Preferences Aliases-Preferences Alias-Configuration Favorites-Preferences Favorite-Configuration sort-case-sensitive? sort-predicates sort-predicate Application-Preferences Aliases-Preferences Alias-Configuration Favorites-Preferences Favorite-Configuration sort-case-sensitive? sort-predicates sort-predicate))))

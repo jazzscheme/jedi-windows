@@ -1,0 +1,32 @@
+(module jazz.ui.preferences jazz
+  (import (jazz.component))
+  (import (jazz.figure.preferences))
+  (import (jazz.markup))
+  (import (jazz.resource))
+  (import (jazz.view))
+  (class Frame-Preferences extends Figure-Preferences
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Guest-Preferences extends Frame-Preferences
+    (property initargs accessors generate))
+  (hub get-initargs)
+  (hub set-initargs)
+  (class Palette-Preferences extends Figure-Preferences
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (apply-preferences self (client (unspecified)))))
+  (class Skins-Preferences extends Component
+    (property active accessors generate))
+  (hub get-active)
+  (hub set-active)
+  (class Skin-Preferences extends Component
+    (property title accessors generate)
+    (property inherit accessors generate))
+  (hub get-title)
+  (hub set-title)
+  (hub get-inherit)
+  (hub set-inherit))

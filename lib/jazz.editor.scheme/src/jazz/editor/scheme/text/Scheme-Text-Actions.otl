@@ -1,0 +1,3 @@
+(module jazz.editor.scheme.text.Scheme-Text-Actions jazz
+  (import (jazz.action))
+  (class Scheme-Text-Actions extends Actions))

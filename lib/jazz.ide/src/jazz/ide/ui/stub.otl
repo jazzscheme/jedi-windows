@@ -1,0 +1,15 @@
+(module jazz.ide.ui.stub jazz
+  (import (jazz.presence.syntax (phase syntax)))
+  (import (jazz.presence))
+  (class UI-Debugger-Stub-Interface extends Stub-Interface
+    (method override (local-class self))
+    (method override (remote-class self)))
+  (interface UI-Debugger-Stub metaclass UI-Debugger-Stub-Interface extends Remotable-Stub
+    (method public virtual abstract (spy-hook self __layer __action __arguments)))
+  (hub spy-hook)
+  (class UI-Debugger-Local-Proxy extends Local-Proxy implements UI-Debugger-Stub
+    (method override (stub-reference self))
+    (method override (spy-hook self __layer __action __arguments)))
+  (class UI-Debugger-Remote-Proxy extends Remote-Proxy implements UI-Debugger-Stub
+    (method override (stub-reference self))
+    (method override (spy-hook self __layer __action __arguments))))

@@ -1,0 +1,4 @@
+(module jazz.editor.diff.autoload jazz
+  (export (jazz.editor.diff.text.Diff-Syntax (autoload Diff-Syntax Diff-Syntax)))
+  (export (jazz.editor.diff.text.Diff-Text-Preferences (autoload Diff-Text-Preferences Diff-Text-Preferences)))
+  (export (jazz.editor.diff.text.Diff-Text-View (autoload Diff-Text-View Diff-Text-View))))

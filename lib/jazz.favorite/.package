@@ -1,0 +1,18 @@
+(package jazz.favorite
+  
+  (title "Favorite")
+  (description "User favorites")
+  (authors "Guillaume Cartier")
+  (stage experimental)
+  (root "src")
+  (products (jazz.favorite (alias favorite)
+                           (update jazz.favorite)
+                           (dependencies jazz))
+            (jazz.favorite.desc (alias favorite.desc)
+                                (description "Favorite descriptors")
+                                (update jazz.favorite.descriptors)
+                                (dependencies jazz
+                                              jazz.descriptor
+                                              jazz.domain
+                                              jazz.markup)))
+  (project ".project"))

@@ -1,0 +1,15 @@
+(module jazz.ide.activity.Activities-Manager jazz
+  (import (jazz.handler))
+  (import (jazz.markup))
+  (import (jazz.resource))
+  (import (jazz.tree))
+  (import (jazz.ui))
+  (class Activities-Manager extends Layout-View
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (external-name self . rest))
+    (method meta override (host-icon self))
+    (method meta override (host-title self))
+    (method override (get-tools-view self))))

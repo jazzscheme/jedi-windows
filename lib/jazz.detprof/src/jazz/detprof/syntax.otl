@@ -1,0 +1,3 @@
+(module jazz.detprof.syntax jazz
+  (macro public (unroll n . rest))
+  (syntax public profile))

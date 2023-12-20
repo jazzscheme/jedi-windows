@@ -1,0 +1,3 @@
+(module jazz.profile.Me jazz
+  (import (jazz.profile))
+  (class Me extends Profile))

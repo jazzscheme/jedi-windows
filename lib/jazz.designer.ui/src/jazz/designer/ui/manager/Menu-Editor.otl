@@ -1,0 +1,7 @@
+(module jazz.designer.ui.manager.Menu-Editor jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (class Menu-Editor extends View-Editor
+    (method meta override (host-title self))
+    (method meta override (host-position self))
+    (method meta override (host-size self))))

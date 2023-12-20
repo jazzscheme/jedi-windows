@@ -1,0 +1,11 @@
+(module jazz.doc.doc.Property-Doc jazz
+  (import (jazz.doc))
+  (class Property-Doc extends Slot-Doc
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property getter accessors generate)
+    (property setter accessors generate)
+    (method override (present-text self)))
+  (hub get-getter)
+  (hub set-getter)
+  (hub get-setter)
+  (hub set-setter))

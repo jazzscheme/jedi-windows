@@ -1,0 +1,11 @@
+(module jazz.editor.java.autoload jazz
+  (export (jazz.editor.java.catalog.Java-Definition-Entry (autoload Java-Definition-Entry Java-Definition-Entry)))
+  (export (jazz.editor.java.catalog.Java-Entry (autoload Java-Entry Java-Entry)))
+  (export (jazz.editor.java.catalog.Java-File-Entry (autoload Java-File-Entry Java-File-Entry)))
+  (export (jazz.editor.java.catalog.Java-Import-Entry (autoload Java-Import-Entry Java-Import-Entry)))
+  (export (jazz.editor.java.catalog.Java-Package-Entry (autoload Java-Package-Entry Java-Package-Entry)))
+  (export (jazz.editor.java.parser.Java-Parser (autoload Java-Parser Java-Parser)))
+  (export (jazz.editor.java.syntax.Java-Syntax (autoload Java-Syntax Java-Syntax)))
+  (export (jazz.editor.java.text.Java-Explorer (autoload Java-Explorer Java-Explorer)))
+  (export (jazz.editor.java.text.Java-Text-Preferences (autoload Java-Text-Preferences Java-Text-Preferences)))
+  (export (jazz.editor.java.text.Java-Text-View (autoload Java-Text-View Java-Text-View))))

@@ -1,0 +1,7 @@
+(module jazz.io.literals jazz
+  (import (jazz.io))
+  (definition package (construct-file . rest))
+  (definition package (construct-directory . rest))
+  (definition package (construct-path . path))
+  (definition package (construct-manifest . rest))
+  (definition package (construct-directory-group . rest)))

@@ -1,0 +1,10 @@
+(module jazz.presence.autoload jazz
+  (export (jazz.presence.register.Register (autoload Register Register)))
+  (export (jazz.presence.register.stub (autoload Register-Stub Register-Stub)))
+  (export (jazz.presence.remotable.IOR (autoload IOR IOR)))
+  (export (jazz.presence.remotable.Local-Proxy (autoload Local-Proxy Local-Proxy)))
+  (export (jazz.presence.remotable.Proxy (autoload Proxy Proxy)))
+  (export (jazz.presence.remotable.Remote-Proxy (autoload Remote-Proxy Remote-Proxy)))
+  (export (jazz.presence.remotable.Remotable-Stub (autoload Remotable-Stub Remotable-Stub)))
+  (export (jazz.presence.remotable.Remote-Listener (autoload Remote-Listener Remote-Listener)))
+  (export (jazz.presence.remotable.Stub-Interface (autoload Stub-Interface Stub-Interface))))

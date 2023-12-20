@@ -1,0 +1,15 @@
+(module jazz.editor.lisp.parser.Lisp-Parser jazz
+  (import (jazz.catalog))
+  (import (jazz.editor.lisp))
+  (import (jazz.markup))
+  (import (jazz.text))
+  (class Lisp-Parser extends File-Parser
+    (method meta protected virtual (iterate-references self name <string> proc <procedure>))
+    (method meta override (get-match-test self))
+    (method meta override (get-constituent-test self))
+    (method override (parse self file digest dialect))
+    (method (parse-definitions self file))
+    (method protected virtual (text-view-class self))
+    (method package virtual (explorer-class self file)))
+  (hub text-view-class)
+  (hub explorer-class))

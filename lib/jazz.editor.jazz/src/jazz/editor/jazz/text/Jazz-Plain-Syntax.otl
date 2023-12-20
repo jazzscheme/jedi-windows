@@ -1,0 +1,13 @@
+(module jazz.editor.jazz.text.Jazz-Plain-Syntax jazz
+  (import (jazz.editor.jazz))
+  (import (jazz.editor.lisp))
+  (import (jazz.text))
+  (class Jazz-Plain-Syntax extends Text-Syntax
+    (definition Comment)
+    (definition Title-Comment)
+    (method override (comment-string self))
+    (method override (title-comment-string self))
+    (method override (colorize-syntax self (colorizer?: colorizer? (unspecified))))
+    (method override (colorize-comments self . rest))
+    (method override (recolorize-text self syntax-style start end-line))
+    (method (type-heuristic self))))

@@ -1,0 +1,13 @@
+(module jedi.run jazz
+  (import (jazz.ide.login))
+  (import (jazz.io))
+  (import (jazz.presence))
+  (import (jazz.presence.transmission))
+  (import (jazz.process))
+  (import (jazz.snapshot))
+  (import (jedi))
+  (import (jedi.problem))
+  (definition (setup-snapshot))
+  (definition (setup-presence))
+  (definition (setup-login))
+  (definition (run descriptor)))

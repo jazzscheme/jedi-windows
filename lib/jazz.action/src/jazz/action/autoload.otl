@@ -1,0 +1,9 @@
+(module jazz.action.autoload jazz
+  (export (jazz.action.Action (autoload Action Action)))
+  (export (jazz.action.Action-Event (autoload Action-Event Action-Event)))
+  (export (jazz.action.Action-Item (autoload Action-Item Action-Item)))
+  (export (jazz.action.Actionable (autoload Actionable Actionable)))
+  (export (jazz.action.Actions (autoload Actions Actions)))
+  (export (jazz.action.Bindings (autoload Bindings Bindings)))
+  (export (jazz.action.Orphaned-Actions (autoload Orphaned-Actions Orphaned-Actions)))
+  (export (jazz.action.Shortcut (autoload Shortcut Shortcut))))

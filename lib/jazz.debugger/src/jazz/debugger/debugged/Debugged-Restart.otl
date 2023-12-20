@@ -1,0 +1,8 @@
+(module jazz.debugger.debugged.Debugged-Restart jazz
+  (import (jazz.debugger))
+  (class Debugged-Restart extends Debugged
+    (method override (same? self debugged))
+    (method public (get-name self))
+    (method public (get-message self)))
+  (hub get-name)
+  (hub get-message))

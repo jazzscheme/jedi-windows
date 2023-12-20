@@ -1,0 +1,4 @@
+(module jazz.webserver.HTTP-Request-Handler jazz
+  (class HTTP-Request-Handler extends Object
+    (method public virtual (handle-request self request port server)))
+  (hub handle-request))

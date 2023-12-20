@@ -1,0 +1,17 @@
+(module jazz.window.Window-Manager jazz
+  (import (jazz.component))
+  (import (jazz.geometry))
+  (import (jazz.ui))
+  (import (jazz.view))
+  (import (jazz.window))
+  (class Window-Manager extends Object
+    (method package virtual (popups-border self))
+    (method package virtual (popup self origin-view <View> view <View> position/location (padding: padding (unspecified)) (alternate-position: alternate-position (unspecified)) (initiator: initiator (unspecified)) (class: class (unspecified)) (border: border (unspecified)) (fade-speed: fade-speed (unspecified)) (effect: effect (unspecified)) (close-behavior: close-behavior (unspecified))))
+    (method package virtual (effective-player self view))
+    (method package virtual (close-popups self player (all?: all? (unspecified)) (exclude: exclude (unspecified)) (initiator: initiator (unspecified))))
+    (method package virtual (close-popup self popup)))
+  (hub popups-border)
+  (hub popup)
+  (hub effective-player)
+  (hub close-popups)
+  (hub close-popup))

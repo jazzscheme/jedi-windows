@@ -1,0 +1,8 @@
+(module jazz.menu.Separator-Item jazz
+  (import (jazz.graphic))
+  (import (jazz.menu))
+  (import (jazz.skin))
+  (class Separator-Item extends Item
+    (method override (default-size self))
+    (method override (preferred-height self))
+    (method override (draw self surface context))))

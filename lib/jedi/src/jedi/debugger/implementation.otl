@@ -1,0 +1,12 @@
+(module jedi.debugger.implementation jazz
+  (import (jazz.application))
+  (import (jazz.event))
+  (class Jedi-Debugger extends Object
+    (method public (show-properties self debuggee class properties))
+    (method public (live-jedi/world self debuggee))
+    (method public (design-jedi/world self debuggee))
+    (method public (restore-jedi/world self debuggee)))
+  (hub show-properties)
+  (hub live-jedi/world)
+  (hub design-jedi/world)
+  (hub restore-jedi/world))

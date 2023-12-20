@@ -1,0 +1,4 @@
+(module jazz.platform.trace jazz
+  (import (jazz.syntax (phase syntax)))
+  (definition public (trace-platform? . rest))
+  (definition public (trace-platform . rest)))

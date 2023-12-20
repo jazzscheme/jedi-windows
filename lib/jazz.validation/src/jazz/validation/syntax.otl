@@ -1,0 +1,5 @@
+(module jazz.validation.syntax jazz
+  (syntax public check)
+  (syntax public checking)
+  (syntax public declaration-failed?)
+  (syntax public error-occurred?))

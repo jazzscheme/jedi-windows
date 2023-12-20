@@ -1,0 +1,16 @@
+(module jazz.recorder.playee.Recorder-Playee jazz
+  (import (jazz.application))
+  (import (jazz.presence))
+  (import (jazz.recorder))
+  (import (jazz.recorder.playee.stub))
+  (class Recorder-Playee extends Object
+    (method override (initialize self))
+    (method (setup-playback self))
+    (method public (start-recording self))
+    (method public (stop-recording self))
+    (method public (play-recording self player))
+    (method public (end-playing self player)))
+  (hub start-recording)
+  (hub stop-recording)
+  (hub play-recording)
+  (hub end-playing))

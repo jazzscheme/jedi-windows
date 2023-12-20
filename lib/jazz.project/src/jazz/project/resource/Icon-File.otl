@@ -1,0 +1,6 @@
+(module jazz.project.resource.Icon-File jazz
+  (import (jazz.project))
+  (import (jazz.resource))
+  (class Icon-File extends Resource-File
+    (method override (resource-class self))
+    (method override (resource-marker self))))

@@ -1,0 +1,10 @@
+(module jazz.integrity.Violations-Found jazz
+  (class Violations-Found extends Signal
+    (slot design-file getter generate)
+    (slot architecture getter generate)
+    (slot violations getter generate)
+    (method override (initialize self design-file architecture violations))
+    (method (forwardable? self)))
+  (hub get-design-file)
+  (hub get-architecture)
+  (hub get-violations))

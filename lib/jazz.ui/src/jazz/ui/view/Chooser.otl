@@ -1,0 +1,12 @@
+(module jazz.ui.view.Chooser jazz
+  (import (jazz.graphic))
+  (import (jazz.handler))
+  (import (jazz.markup))
+  (import (jazz.ui))
+  (import (jazz.view))
+  (class Chooser extends View
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (resize self dh dv))))

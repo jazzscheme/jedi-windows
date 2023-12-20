@@ -1,0 +1,4 @@
+(module jazz.presence.remotable.Remotable-Stub jazz
+  (interface Remotable-Stub
+    (method public virtual abstract (stub-reference self)))
+  (hub stub-reference))

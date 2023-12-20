@@ -1,0 +1,6 @@
+(module jedi.validate.Jedi-Tester jazz
+  (import (jazz.debuggee.view))
+  (import (jazz.recorder))
+  (import (jazz.validation))
+  (class Jedi-Tester extends Tester
+    (method override (test self))))

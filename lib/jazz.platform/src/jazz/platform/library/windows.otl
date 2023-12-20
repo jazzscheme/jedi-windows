@@ -1,0 +1,6 @@
+(module jazz.platform.library.windows jazz
+  (import (jazz.io))
+  (import (jazz.platform))
+  (definition dumpbin)
+  (definition public (library-dependencies file))
+  (definition public (validate-dependencies exe-dir dir)))

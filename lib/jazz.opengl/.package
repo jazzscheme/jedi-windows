@@ -1,0 +1,30 @@
+(package jazz.opengl
+  
+  (title "OpenGL")
+  (description "Interface to the OpenGL 3D graphic library")
+  (authors "Guillaume Cartier" "Fred LeMaster")
+  (stage release)
+  (root "src")
+  (install jazz.opengl.install)
+  (products (jazz.opengl (alias opengl)
+                         (remote (linux "togethersphere.com/jazz-opengl-linux")
+                                 (silicon "togethersphere.com/jazz-opengl-silicon")
+                                 (mac "togethersphere.com/jazz-opengl-mac")
+                                 (windows "togethersphere.com/jazz-opengl-windows"))
+                         (product jazz.opengl.product)
+                         (update jazz.opengl
+                                 jazz.opengl.autoload
+                                 jazz.opengl.frame
+                                 jazz.opengl.glew
+                                 jazz.opengl.install
+                                 jazz.opengl.platform
+                                 jazz.opengl.product
+                                 jazz.opengl.render
+                                 jazz.opengl.syntax
+                                 jazz.opengl.texture
+                                 jazz.opengl.trace
+                                 jazz.opengl.window)
+                         (dependencies jazz
+                                       jazz.foreign
+                                       jazz.platform)))
+  (project ".project"))

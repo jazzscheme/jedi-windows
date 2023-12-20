@@ -1,0 +1,3 @@
+(module jazz.designer.ui.entry.Editor-Suite jazz
+  (import (jazz.component))
+  (class Editor-Suite extends Component))

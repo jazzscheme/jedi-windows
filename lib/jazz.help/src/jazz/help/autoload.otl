@@ -1,0 +1,3 @@
+(module jazz.help.autoload jazz
+  (export (jazz.help.Help-Contents (autoload Help-Contents Help-Contents)))
+  (export (jazz.help.Help-Index (autoload Help-Index Help-Index))))

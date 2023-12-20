@@ -1,0 +1,5 @@
+(module jazz.ui.dialog.Symbol-Request jazz
+  (import (jazz.ide))
+  (import (jazz.ui))
+  (class Symbol-Request extends String-Request
+    (method override (form-model self form))))

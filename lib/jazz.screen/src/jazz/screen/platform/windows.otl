@@ -1,0 +1,8 @@
+(module jazz.screen.platform.windows jazz
+  (import (jazz.platform))
+  (definition public (platform-main-screen))
+  (definition public (platform-primary-screen))
+  (definition public (platform-all-screens))
+  (definition public (platform-main-screen-scale-factor))
+  (definition public (platform-screen-frame-rect handle))
+  (definition public (platform-screen-content-rect handle)))

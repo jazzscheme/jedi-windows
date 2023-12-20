@@ -1,0 +1,10 @@
+(module jazz.editor.clojure.text.Clojure-Syntax jazz
+  (import (jazz.editor.clojure))
+  (import (jazz.editor.lisp))
+  (import (jazz.preferences))
+  (class Clojure-Syntax extends Lisp-Syntax
+    (method override (default-extension self))
+    (method override (extensions self))
+    (method override (explorer-class self))
+    (method override (preferences self))
+    (method override (declaration-style self documented?))))

@@ -1,0 +1,3 @@
+(module jazz.designer.Dispatch-Designer jazz
+  (import (jazz.designer))
+  (class Dispatch-Designer extends Designer))

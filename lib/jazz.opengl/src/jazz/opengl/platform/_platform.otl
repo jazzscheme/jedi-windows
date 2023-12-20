@@ -1,0 +1,2 @@
+(module jazz.opengl.platform jazz
+  (export (jazz.opengl.platform.windows)))

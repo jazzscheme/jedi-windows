@@ -1,0 +1,9 @@
+(module jazz.print.platform.windows jazz
+  (import (jazz.cairo))
+  (import (jazz.graphic))
+  (import (jazz.platform))
+  (import (jazz.print.hubs))
+  (import (jazz.ui))
+  (import (jazz.ui.dialog))
+  (import (jazz.view))
+  (definition package (platform-print-document view)))

@@ -1,0 +1,10 @@
+(module jazz.editor.clike.text.CLike-Text-View jazz
+  (import (jazz.editor))
+  (import (jazz.editor.clike))
+  (class CLike-Text-View extends Code-Text-View
+    (method override (install self rest))
+    (method override (new-syntax self))
+    (method override (return-press self evt))
+    (method override (mouse-insert self copy))
+    (definition public onsite headers)
+    (method override (get-headers self))))

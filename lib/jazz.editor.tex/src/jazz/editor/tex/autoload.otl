@@ -1,0 +1,5 @@
+(module jazz.editor.tex.autoload jazz
+  (export (jazz.editor.tex.text.Tex-Explorer (autoload Tex-Explorer Tex-Explorer)))
+  (export (jazz.editor.tex.text.Tex-Syntax (autoload Tex-Syntax Tex-Syntax)))
+  (export (jazz.editor.tex.text.Tex-Text-Preferences (autoload Tex-Text-Preferences Tex-Text-Preferences)))
+  (export (jazz.editor.tex.text.Tex-Text-View (autoload Tex-Text-View Tex-Text-View))))

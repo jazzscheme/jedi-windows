@@ -1,0 +1,10 @@
+(module jazz.editor.diff.text.Diff-Text-View jazz
+  (import (jazz.editor))
+  (import (jazz.editor.diff))
+  (import (jazz.preferences))
+  (class Diff-Text-View extends Code-Text-View
+    (method meta override (external-name self . rest))
+    (method override (preferences self))
+    (method override (new-syntax self))
+    (method override (install self rest))
+    (method override (host-workspaces self))))

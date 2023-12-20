@@ -1,0 +1,18 @@
+(package jazz.outline
+  
+  (title "Outline")
+  (description "Outline-based views")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.outline (alias outline)
+                          (update jazz.outline)
+                          (dependencies jazz))
+            (jazz.outline.desc (alias outline.desc)
+                               (description "Outline view descriptors")
+                               (update jazz.outline.descriptors)
+                               (dependencies jazz
+                                             jazz.descriptor
+                                             jazz.domain
+                                             jazz.markup)))
+  (project ".project"))

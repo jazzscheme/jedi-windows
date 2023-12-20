@@ -1,0 +1,20 @@
+(package jazz.fontconfig
+  
+  (title "Fontconfig")
+  (description "Interface to the Fontconfig font access library")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.fontconfig (alias fontconfig)
+                             (remote (linux "togethersphere.com/jazz-fontconfig-linux")
+                                     (silicon "togethersphere.com/jazz-fontconfig-silicon")
+                                     (mac "togethersphere.com/jazz-fontconfig-mac")
+                                     (windows "togethersphere.com/jazz-fontconfig-windows"))
+                             (test jazz.fontconfig.test)
+                             (product jazz.fontconfig.product)
+                             (update jazz.fontconfig
+                                     jazz.fontconfig.product)
+                             (dependencies jazz
+                                           jazz.foreign
+                                           jazz.platform)))
+  (project ".project"))

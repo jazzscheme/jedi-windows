@@ -1,0 +1,5 @@
+(module jazz.sample.gomoku.run jazz
+  (import (jazz.process))
+  (import (jazz.sample.gomoku))
+  (import (jazz.sample.game.minimax))
+  (definition (run-gomoku descriptor)))

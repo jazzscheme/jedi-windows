@@ -1,0 +1,10 @@
+(module jazz.editor.lisp.autoload jazz
+  (export (jazz.editor.lisp.catalog.Lisp-Entry (autoload Lisp-Entry Lisp-Entry)))
+  (export (jazz.editor.lisp.catalog.Lisp-File-Entry (autoload Lisp-File-Entry Lisp-File-Entry)))
+  (export (jazz.editor.lisp.parser.Lisp-Parser (autoload Lisp-Parser Lisp-Parser)))
+  (export (jazz.editor.lisp.text.Lisp-Console-Manager (autoload Lisp-Console-Manager Lisp-Console-Manager)))
+  (export (jazz.editor.lisp.text.Lisp-Explorer (autoload Lisp-Explorer Lisp-Explorer)))
+  (export (jazz.editor.lisp.text.Lisp-Text-Actions (autoload Lisp-Text-Actions Lisp-Text-Actions)))
+  (export (jazz.editor.lisp.text.Lisp-Text-Preferences (autoload Lisp-Text-Preferences Lisp-Text-Preferences)))
+  (export (jazz.editor.lisp.text.Lisp-Text-View (autoload Lisp-Text-View Lisp-Text-View)))
+  (export (jazz.editor.lisp.text.Lisp-Syntax (autoload Lisp-Syntax Lisp-Syntax))))

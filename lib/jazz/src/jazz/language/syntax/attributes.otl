@@ -1,0 +1,4 @@
+(module jazz.language.syntax.attributes scheme
+  (import (jazz.language.runtime.kernel))
+  (native private jazz:getf)
+  (native private jazz:system-format))

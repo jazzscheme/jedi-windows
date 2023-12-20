@@ -1,0 +1,3 @@
+(module jazz.debuggee.configure jazz
+  (definition public default-debugger)
+  (definition public (default-debugger-set! debugger)))

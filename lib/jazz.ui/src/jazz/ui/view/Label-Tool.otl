@@ -1,0 +1,18 @@
+(module jazz.ui.view.Label-Tool jazz
+  (import (jazz.geometry))
+  (import (jazz.graphic))
+  (import (jazz.locale))
+  (import (jazz.ui))
+  (class Label-Tool extends Tool-Button
+    (property justification accessors explicit)
+    (property color accessors explicit)
+    (method override (default-size self))
+    (method public (get-justification self))
+    (method public (set-justification self value))
+    (method public (get-color self))
+    (method public (set-color self value))
+    (method override (draw-tool self surface context)))
+  (hub get-justification)
+  (hub set-justification)
+  (hub get-color)
+  (hub set-color))

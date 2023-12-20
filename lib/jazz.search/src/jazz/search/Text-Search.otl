@@ -1,0 +1,5 @@
+(module jazz.search.Text-Search jazz
+  (import (jazz.resource))
+  (import (jazz.search))
+  (class Text-Search extends Search
+    (method override (get-icon self))))

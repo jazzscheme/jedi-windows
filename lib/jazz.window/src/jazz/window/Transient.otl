@@ -1,0 +1,3 @@
+(module jazz.window.Transient jazz
+  (import (jazz.window))
+  (class Transient extends Popup))

@@ -1,0 +1,7 @@
+(module jazz.language.syntax.bind-keywords scheme
+  (import (gambit (only string->keyword)))
+  (import (jazz.language.runtime.kernel))
+  (native private jazz:last-tail)
+  (native private jazz:last)
+  (native private jazz:butlast)
+  (syntax public bind-keywords))

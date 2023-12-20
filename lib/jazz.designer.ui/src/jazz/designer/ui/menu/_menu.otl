@@ -1,0 +1,10 @@
+(module jazz.designer.ui.menu jazz
+  (import (jazz.action))
+  (import (jazz.component))
+  (import (jazz.descriptor))
+  (import (jazz.handler))
+  (import (jazz.locale))
+  (import (jazz.menu))
+  (import (jazz.view))
+  (definition (add-label reference menu add))
+  (definition package (update-component-menu menu components reference-categories add-component named-children add-named-child)))

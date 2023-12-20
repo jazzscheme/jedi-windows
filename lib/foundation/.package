@@ -1,0 +1,12 @@
+(package foundation
+  
+  (title "Foundation")
+  (description "Jazz foundation")
+  (authors "Guillaume Cartier")
+  (stage internal)
+  (root "src")
+  (products (foundation (update foundation
+                                foundation.dialect
+                                foundation.language.runtime)
+                        (dependencies dialect)))
+  (project ".project"))

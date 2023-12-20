@@ -1,0 +1,3 @@
+(module jazz.editor.tex.text.Tex-Explorer jazz
+  (import (jazz.editor.c))
+  (class Tex-Explorer extends C-Explorer))

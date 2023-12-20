@@ -1,0 +1,16 @@
+(package jazz.io
+  
+  (title "IO")
+  (description "Input / Output")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (install jazz.io.install)
+  (products (jazz.io (alias io)
+                     (update jazz.io
+                             jazz.io.install
+                             jazz.io.literals)
+                     (dependencies jazz
+                                   jazz.time))
+            (jazz.io.protocol (update jazz.io.protocol)))
+  (project ".project"))

@@ -1,0 +1,4 @@
+(module jazz.designer.ui.row.Handler-Row jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (class Handler-Row extends Value-Row))

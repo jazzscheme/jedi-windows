@@ -1,0 +1,4 @@
+(module jazz.debugger.gambit.data.project jazz
+  (export (jazz.debugger.gambit))
+  (export (jazz.debugger.jazz))
+  (export (jazz.ide.data.project)))

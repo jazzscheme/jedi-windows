@@ -1,0 +1,15 @@
+(module jedi.application.Jedi-Toolbar jazz
+  (import (jazz.action))
+  (import (jazz.handler))
+  (import (jazz.ide))
+  (import (jazz.layout))
+  (import (jazz.markup))
+  (import (jazz.resource))
+  (import (jazz.ui))
+  (class Jedi-Toolbar extends IDE-Toolbar
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (host-icon self))
+    (method meta override (host-title self))))

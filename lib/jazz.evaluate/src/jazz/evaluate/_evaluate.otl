@@ -1,0 +1,9 @@
+(module jazz.evaluate jazz
+  (import (jazz.debuggee))
+  (import (jazz.io))
+  (import (jazz.platform))
+  (import (jazz.settings))
+  (definition temporary-evaluation-file)
+  (definition (get-temporary-evaluation-file))
+  (definition package (effective-evaluation-mode evaluation-mode))
+  (definition public (evaluate-forms syntax str container line col evaluation-mode (file: file (unspecified)) (readtable: readtable (unspecified)) (evaluate?: evaluate? (unspecified)) (scripting?: scripting? (unspecified)))))

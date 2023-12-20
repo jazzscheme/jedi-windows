@@ -1,0 +1,14 @@
+(module jazz.editor.javascript.text.JavaScript-Text-View jazz
+  (import (jazz.editor))
+  (import (jazz.editor.clike))
+  (import (jazz.editor.javascript))
+  (import (jazz.ide))
+  (import (jazz.preferences))
+  (import (jazz.text))
+  (class JavaScript-Text-View extends CLike-Text-View
+    (method meta override (external-name self . rest))
+    (method override (new-model self))
+    (method override (preferences self))
+    (method override (host-workspaces self))
+    (method override (new-syntax self))
+    (method override (save-content self moniker))))

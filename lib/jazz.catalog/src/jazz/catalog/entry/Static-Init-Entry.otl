@@ -1,0 +1,8 @@
+(module jazz.catalog.entry.Static-Init-Entry jazz
+  (import (jazz.catalog))
+  (import (jazz.resource))
+  (class Static-Init-Entry extends Hierarchical-Entry
+    (method override (present-name self))
+    (method override (print-catalog self level output))
+    (method override (get-image self))
+    (method override (update-indexes self definitions-index references-index))))

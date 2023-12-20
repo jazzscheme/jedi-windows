@@ -1,0 +1,18 @@
+(module jazz.descriptor.Property-Descriptor jazz
+  (import (jazz.component))
+  (import (jazz.descriptor))
+  (class Property-Descriptor extends Component
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property title accessors generate)
+    (property category accessors generate)
+    (property standard? accessors generate)
+    (method public (get-domain self)))
+  (hub get-title)
+  (hub set-title)
+  (hub get-category)
+  (hub set-category)
+  (hub get-standard?)
+  (hub set-standard?)
+  (hub get-domain)
+  (class Property-Descriptor-Descriptor extends Component-Descriptor
+    (method meta override (get-class-descriptor self (context: context (unspecified))))))

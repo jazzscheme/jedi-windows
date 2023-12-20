@@ -1,0 +1,5 @@
+(module jazz.editor.c.catalog.C-Extern-Entry jazz
+  (import (jazz.editor.c))
+  (import (jazz.resource))
+  (class C-Extern-Entry extends C-Definition-Entry
+    (method override (get-image self))))

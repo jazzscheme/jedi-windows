@@ -1,0 +1,3 @@
+(module jazz.graphic.DC-Snapshot jazz
+  (import (jazz.graphic))
+  (class DC-Snapshot extends Object implements Viewable))

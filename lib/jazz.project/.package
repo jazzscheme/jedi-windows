@@ -1,0 +1,18 @@
+(package jazz.project
+  
+  (title "Project")
+  (description "Workbench projects")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.project (alias project)
+                          (update jazz.project)
+                          (dependencies jazz))
+            (jazz.project.desc (alias project.desc)
+                               (description "Project descriptors")
+                               (update jazz.project.descriptors)
+                               (dependencies jazz
+                                             jazz.descriptor
+                                             jazz.domain
+                                             jazz.markup)))
+  (project ".project"))

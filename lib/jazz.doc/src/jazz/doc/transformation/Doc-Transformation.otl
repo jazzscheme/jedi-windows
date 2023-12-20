@@ -1,0 +1,3 @@
+(module jazz.doc.transformation.Doc-Transformation jazz
+  (import (jazz.markup))
+  (class Doc-Transformation extends Markup-Transformation))

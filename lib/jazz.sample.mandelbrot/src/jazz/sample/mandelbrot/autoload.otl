@@ -1,0 +1,2 @@
+(module jazz.sample.mandelbrot.autoload jazz
+  (export (jazz.sample.mandelbrot.Mandelbrot (autoload Mandelbrot Mandelbrot))))

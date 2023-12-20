@@ -1,0 +1,9 @@
+(module jazz.webserver.HTTP-Response jazz
+  (import (jazz.webserver))
+  (class HTTP-Response extends HTTP-Message
+    (slot code getter generate)
+    (method override (initialize self (code: code (unspecified)) (content: content (unspecified))))
+    (method override (parse self port))
+    (method override (send self port)))
+  (hub get-code)
+  (definition private (read-chars length port)))

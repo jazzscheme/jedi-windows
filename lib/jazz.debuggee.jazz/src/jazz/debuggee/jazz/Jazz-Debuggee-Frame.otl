@@ -1,0 +1,17 @@
+(module jazz.debuggee.jazz.Jazz-Debuggee-Frame jazz
+  (import (jazz.debuggee.autoload))
+  (import (jazz.inspector))
+  (class Jazz-Debuggee-Frame extends Debuggee-Frame
+    (slot id)
+    (slot continuation)
+    (slot name)
+    (slot hidden?)
+    (slot location)
+    (method override (initialize self id location continuation name hidden?))
+    (method override (get-id self))
+    (method override (get-continuation self))
+    (method override (get-name self))
+    (method override (get-interpreted? self))
+    (method override (get-hidden? self))
+    (method override (get-location self))
+    (method override (get-variables self kind))))

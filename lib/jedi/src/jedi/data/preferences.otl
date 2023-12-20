@@ -1,0 +1,6 @@
+(module jedi.data.preferences jazz
+  (export (jedi))
+  (export (jazz.application))
+  (export (jazz.component))
+  (export (jazz.groupware))
+  (export (jazz.ui)))

@@ -1,0 +1,21 @@
+(package jazz.tree
+  
+  (title "Tree")
+  (description "Tree view")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.tree (alias tree)
+                       (update jazz.tree)
+                       (dependencies jazz
+                                     jazz.locator
+                                     jazz.outline
+                                     jazz.selection))
+            (jazz.tree.desc (alias tree.desc)
+                            (description "Tree view descriptors")
+                            (update jazz.tree.descriptors)
+                            (dependencies jazz
+                                          jazz.descriptor
+                                          jazz.domain
+                                          jazz.markup)))
+  (project ".project"))

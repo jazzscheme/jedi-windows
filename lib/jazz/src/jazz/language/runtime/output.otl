@@ -1,0 +1,11 @@
+(module jazz.language.runtime.output jazz.dialect
+  (import (jazz.language.runtime.format))
+  (import (jazz.language.runtime.functional))
+  (import (jazz.language.runtime.object))
+  (definition public (output-header title printer (language: language (unspecified)) (system: system (unspecified)) (license: license (unspecified)) (author: author (unspecified)) (copyright: copyright (unspecified)) (contributors: contributors (unspecified)) (end-proper?: end-proper? (unspecified))))
+  (definition public (output-section title output (language: language (unspecified)) (level: level (unspecified))))
+  (native jazz:unspecified)
+  (class Formatter extends Object
+    (method public virtual (format-directive self formatting output directive)))
+  (hub format-directive)
+  (class Print-Sequencer extends Object))

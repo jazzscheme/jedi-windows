@@ -1,0 +1,15 @@
+(module jazz.doc.doc.Element-Doc jazz
+  (import (jazz.component))
+  (import (jazz.doc))
+  (class Element-Doc extends Doc
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property access accessors generate)
+    (property examples accessors generate)
+    (property package-name accessors generate)
+    (method override (install-child self form creator creator-branch restore-form)))
+  (hub get-access)
+  (hub set-access)
+  (hub get-examples)
+  (hub set-examples)
+  (hub get-package-name)
+  (hub set-package-name))

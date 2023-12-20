@@ -1,0 +1,12 @@
+(module jazz.editor.jazz.log.User-Log jazz
+  (import (jazz.debuggee.view))
+  (import (jazz.resource))
+  (import (jazz.ui))
+  (class User-Log extends Log-View
+    (method meta override (external-name self . rest))
+    (method meta override (host-icon self))
+    (method meta override (host-title self))
+    (method override (finish self initargs))
+    (method override (get-tools-view self))
+    (method override (focus-default self))
+    (method (view-entry self node))))

@@ -1,0 +1,7 @@
+(module jazz.search.Reference-Search-Result jazz
+  (import (jazz.catalog))
+  (import (jazz.catalog.edit))
+  (import (jazz.search))
+  (class Reference-Search-Result extends Definition-Search-Result
+    (method override (edit self select (visible?: visible? (unspecified)) (activate-focus?: activate-focus? (unspecified))))
+    (method override (drill-down self))))

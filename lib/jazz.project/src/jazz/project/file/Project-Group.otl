@@ -1,0 +1,7 @@
+(module jazz.project.file.Project-Group jazz
+  (import (jazz.component))
+  (import (jazz.project))
+  (class Project-Group extends Group implements Project-Container
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (method override (print self output readably))
+    (method override (catalog-name self))))

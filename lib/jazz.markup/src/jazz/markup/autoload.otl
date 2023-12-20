@@ -1,0 +1,10 @@
+(module jazz.markup.autoload jazz
+  (export (jazz.markup.model.Markup-Element (autoload Markup-Element Markup-Element Markup-Element)))
+  (export (jazz.markup.model.Markup-Node (autoload Markup-Node Markup-Node Markup-Node)))
+  (export (jazz.markup.model.Markup-Text (autoload Markup-Text Markup-Text Markup-Text)))
+  (export (jazz.markup.parser.Markup-Parser (autoload Markup-Parser Markup-Parser Markup-Parser)))
+  (export (jazz.markup.preference.Markup-Preferences (autoload Markup-Preferences Markup-Preferences Markup-Preferences)))
+  (export (jazz.markup.renderer.Markup-Renderer (autoload Markup-Renderer Markup-Renderer Markup-Renderer)))
+  (export (jazz.markup.transformation.Markup-Transformation (autoload Markup-Transformation Markup-Transformation Markup-Transformation)))
+  (export (jazz.markup.xhtml.XHTML-Parser (autoload XHTML-Parser XHTML-Parser XHTML-Parser)))
+  (export (jazz.markup.xhtml.XHTML-Renderer (autoload XHTML-Renderer XHTML-Renderer XHTML-Renderer))))

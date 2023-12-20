@@ -1,0 +1,8 @@
+(module jazz.tree.Tree-Path jazz
+  (import (jazz.tree))
+  (class Tree-Path extends Tree-Label
+    (slot protected father-row getter generate)
+    (method override (initialize self father-row . rest))
+    (method public (update-path-title self)))
+  (hub get-father-row)
+  (hub update-path-title))

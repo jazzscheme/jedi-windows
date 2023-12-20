@@ -1,0 +1,14 @@
+(module jazz.locale.descriptors jazz
+  (import (jazz.component))
+  (import (jazz.component.descriptors))
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.locale))
+  (import (jazz.locale.components))
+  (import (jazz.markup))
+  (class Locale-Node-Descriptor extends Component-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (component-get-categorized-addable-classes self component))))

@@ -1,0 +1,3 @@
+(module jazz.doc.doc.Module-Doc jazz
+  (import (jazz.doc))
+  (class Module-Doc extends Doc))

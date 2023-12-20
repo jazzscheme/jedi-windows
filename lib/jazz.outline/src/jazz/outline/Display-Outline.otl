@@ -1,0 +1,13 @@
+(module jazz.outline.Display-Outline jazz
+  (import (jazz.outline))
+  (class Display-Outline extends Outline
+    (slot first-displayed getter generate)
+    (slot first-displayed-line <fx> getter generate)
+    (slot first-displayed-offset <fx> getter generate)
+    (method override (get-row self n))
+    (method override (call-with-v->line self v scrolled proc))
+    (method override (update-displayed self display-v))
+    (method override (follow self display-v v)))
+  (hub get-first-displayed)
+  (hub get-first-displayed-line)
+  (hub get-first-displayed-offset))

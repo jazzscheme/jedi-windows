@@ -1,0 +1,6 @@
+(module jazz.editor.javascript.autoload jazz
+  (export (jazz.editor.javascript.parser.JavaScript-Parser (autoload JavaScript-Parser JavaScript-Parser)))
+  (export (jazz.editor.javascript.text.JavaScript-Explorer (autoload JavaScript-Explorer JavaScript-Explorer)))
+  (export (jazz.editor.javascript.text.JavaScript-Syntax (autoload JavaScript-Syntax JavaScript-Syntax)))
+  (export (jazz.editor.javascript.text.JavaScript-Text-Preferences (autoload JavaScript-Text-Preferences JavaScript-Text-Preferences)))
+  (export (jazz.editor.javascript.text.JavaScript-Text-View (autoload JavaScript-Text-View JavaScript-Text-View))))

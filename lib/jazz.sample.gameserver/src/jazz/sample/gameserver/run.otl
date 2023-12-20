@@ -1,0 +1,4 @@
+(module jazz.sample.gameserver.run jazz
+  (import (jazz.process))
+  (import (jazz.sample.gameserver.Game-Server))
+  (definition (run-gameserver descriptor)))

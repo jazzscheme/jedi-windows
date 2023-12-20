@@ -1,0 +1,19 @@
+(package jazz.console
+  
+  (title "Console")
+  (description "Console widget")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.console (alias console)
+                          (update jazz.console)
+                          (dependencies jazz
+                                        jazz.platform))
+            (jazz.console.desc (alias console.desc)
+                               (description "Console descriptors")
+                               (update jazz.console.descriptors)
+                               (dependencies jazz
+                                             jazz.descriptor
+                                             jazz.domain
+                                             jazz.markup)))
+  (project ".project"))

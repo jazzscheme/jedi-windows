@@ -1,0 +1,7 @@
+(module jazz.designer.ui.book.Book-Controller jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (import (jazz.document))
+  (class Book-Controller extends Document-Controller
+    (method override (get-modified? self))
+    (method override (set-modified? self state))))

@@ -1,0 +1,9 @@
+(module jazz.favorite.Favorite-File jazz
+  (import (jazz.application))
+  (import (jazz.favorite))
+  (class Favorite-File extends Favorite
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property file accessors generate)
+    (method override (launch self)))
+  (hub get-file)
+  (hub set-file))

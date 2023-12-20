@@ -1,0 +1,17 @@
+(module jazz.text.Filter-Text-View jazz
+  (import (jazz.markup))
+  (import (jazz.text))
+  (import (jazz.view))
+  (class Filter-Text-View extends Plain-Text-View
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (property target-name accessors generate)
+    (method override (new-model self))
+    (method (find-target self))
+    (method override (return-press self evt))
+    (method public (filter-target self)))
+  (hub get-target-name)
+  (hub set-target-name)
+  (hub filter-target))

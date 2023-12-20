@@ -1,0 +1,4 @@
+(module jazz.designer.ui.entry.Presentation-Entry jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (class Presentation-Entry extends String-Entry))

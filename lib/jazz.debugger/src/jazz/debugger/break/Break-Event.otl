@@ -1,0 +1,3 @@
+(module jazz.debugger.break.Break-Event jazz
+  (import (jazz.event))
+  (class Break-Event extends Event))

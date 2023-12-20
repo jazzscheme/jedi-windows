@@ -1,0 +1,8 @@
+(module jazz.editor.commonlisp.text.CommonLisp-Explorer jazz
+  (import (jazz.editor.lisp))
+  (class CommonLisp-Explorer extends Lisp-Explorer
+    (method override (find-named-walker self name))
+    (method (walk-define self context symbol form declaration keyword expression doc))
+    (method (walk-define-macro self context symbol form declaration keyword expression doc))
+    (method (walk-define-variable self context symbol form declaration keyword expression doc))
+    (method (walk-eval-when self context symbol form declaration keyword expression doc))))

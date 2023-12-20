@@ -1,0 +1,11 @@
+(module jazz.ide.login jazz
+  (import (jazz.action))
+  (import (jazz.ide))
+  (import (jazz.syntax (phase syntax)))
+  (import (jazz.view))
+  (definition public (choose-login (invite: invite (unspecified))))
+  (definition public (show-jazz-profiles? . rest))
+  (definition public (show-profiles-appl . rest))
+  (definition *profile-kinds*)
+  (definition public (get-profile-kinds))
+  (definition public (set-profile-kinds kinds)))

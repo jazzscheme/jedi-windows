@@ -1,0 +1,17 @@
+(module jazz.print.Page-Text-View jazz
+  (import (jazz.graphic))
+  (import (jazz.outline))
+  (import (jazz.text))
+  (class Page-Text-View extends Formatted-Text-View
+    (method override (new-model self))
+    (method override (scrollee-height self))
+    (method override (layout-scrollee-content self))
+    (method override (get-context-menu self))
+    (method override (default-size self))
+    (method (on-insert-filename self evt))
+    (method (on-insert-no self evt))
+    (method (on-insert-count self evt))
+    (method (on-insert-date self evt))
+    (method (on-insert-time self evt))
+    (method public (insert-info self what)))
+  (hub insert-info))

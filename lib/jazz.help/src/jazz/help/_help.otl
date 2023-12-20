@@ -1,0 +1,3 @@
+(module jazz.help jazz
+  (export (jazz.help.autoload))
+  (hub resize-center))

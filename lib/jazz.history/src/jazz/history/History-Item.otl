@@ -1,0 +1,8 @@
+(module jazz.history.History-Item jazz
+  (class History-Item extends Object
+    (method public virtual (valid? self))
+    (method public virtual (open-item self))
+    (method public virtual (present self)))
+  (hub valid?)
+  (hub open-item)
+  (hub present))

@@ -1,0 +1,4 @@
+(module jazz.designer.ui.entry.Name-Entry jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (class Name-Entry extends String-Entry))

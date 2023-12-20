@@ -1,0 +1,10 @@
+(module jazz.tree.Tree-Data jazz
+  (class Tree-Data extends Object
+    (slot protected background accessors generate)
+    (slot protected frame-color accessors generate)
+    (method override (initialize self (background: background (unspecified)) (frame-color: frame-color (unspecified))))
+    (method override (print self output readably)))
+  (hub get-background)
+  (hub set-background)
+  (hub get-frame-color)
+  (hub set-frame-color))

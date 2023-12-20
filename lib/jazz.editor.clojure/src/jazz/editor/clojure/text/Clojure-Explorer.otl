@@ -1,0 +1,6 @@
+(module jazz.editor.clojure.text.Clojure-Explorer jazz
+  (import (jazz.editor.lisp))
+  (class Clojure-Explorer extends Lisp-Explorer
+    (method override (forward-delimited-string self))
+    (method override (find-named-walker self name))
+    (method (walk-def self context symbol form declaration keyword expression doc))))

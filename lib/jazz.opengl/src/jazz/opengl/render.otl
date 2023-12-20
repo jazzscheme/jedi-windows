@@ -1,0 +1,9 @@
+(module jazz.opengl.render jazz
+  (import (jazz.syntax (phase syntax)))
+  (definition public render-mutex)
+  (definition public (with-render-mutex thunk))
+  (definition public (with-reentrant-render-mutex thunk))
+  (definition public (assert-render-mutex? . rest))
+  (definition public (assert-render-mutex name))
+  (definition protected (render-mutex-owner))
+  (definition protected (render-mutex-owner?)))

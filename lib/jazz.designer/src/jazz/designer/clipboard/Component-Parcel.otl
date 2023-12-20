@@ -1,0 +1,13 @@
+(module jazz.designer.clipboard.Component-Parcel jazz
+  (import (jazz.clipboard))
+  (import (jazz.component))
+  (class Component-Parcel extends Clipboard-Parcel
+    (slot imports getter generate)
+    (method override (initialize self process-id object-id imports content))
+    (method public (get-master self))
+    (method public (get-master-model self))
+    (method public (get-master-name self)))
+  (hub get-imports)
+  (hub get-master)
+  (hub get-master-model)
+  (hub get-master-name))

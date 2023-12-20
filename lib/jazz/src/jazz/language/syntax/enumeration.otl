@@ -1,0 +1,2 @@
+(module jazz.language.syntax.enumeration scheme
+  (syntax public enumeration))

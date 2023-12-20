@@ -1,0 +1,4 @@
+(module %name% jazz
+
+
+(class %name% extends Object))

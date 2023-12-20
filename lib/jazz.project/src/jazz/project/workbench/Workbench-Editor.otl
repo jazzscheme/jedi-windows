@@ -1,0 +1,6 @@
+(module jazz.project.workbench.Workbench-Editor jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (import (jazz.project))
+  (class Workbench-Editor extends Descendants-Editor
+    (method override (form-model self form))))

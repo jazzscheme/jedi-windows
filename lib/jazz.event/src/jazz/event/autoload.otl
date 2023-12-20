@@ -1,0 +1,3 @@
+(module jazz.event.autoload jazz
+  (export (jazz.event.Event (autoload Event Event Event)))
+  (export (jazz.event.Pulse (autoload Pulse Pulse Pulse))))

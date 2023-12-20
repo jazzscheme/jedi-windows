@@ -1,0 +1,5 @@
+(module jazz.catalog.entry.Constructor-Entry jazz
+  (import (jazz.catalog))
+  (import (jazz.resource))
+  (class Constructor-Entry extends Method-Entry
+    (method override (get-image self))))

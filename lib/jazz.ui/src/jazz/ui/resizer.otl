@@ -1,0 +1,10 @@
+(module jazz.ui.resizer jazz
+  (import (jazz.platform))
+  (definition public onsite Border-Size)
+  (definition public onsite Handle-Size)
+  (definition public onsite Middle-Size)
+  (definition public onsite Part-Array)
+  (definition public onsite Part-Cursor)
+  (definition public (find-resize-part pt size (full?: full? (unspecified))))
+  (definition public (get-resize-cursor part))
+  (definition public (resize-client dh dv part proc)))

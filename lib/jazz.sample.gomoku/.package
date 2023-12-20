@@ -1,0 +1,23 @@
+(package jazz.sample.gomoku
+  
+  (title "Gomoku")
+  (description "Gomoku sample")
+  (authors "Guillaume Cartier")
+  (stage sample)
+  (root "src")
+  (products (jazz.sample.gomoku (alias gomoku)
+                                (title "Gomoku")
+                                (run jazz.sample.gomoku.run)
+                                (update jazz.sample.gomoku
+                                        jazz.sample.gomoku.graphics
+                                        jazz.sample.gomoku.run)
+                                (build (gomoku bundle: "gomoku"))
+                                (dependencies jazz
+                                              jazz.graphic
+                                              jazz.io
+                                              jazz.markup
+                                              jazz.media
+                                              jazz.platform
+                                              jazz.ui
+                                              jazz.sample.game)))
+  (project ".project"))

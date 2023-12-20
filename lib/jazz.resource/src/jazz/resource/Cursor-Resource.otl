@@ -1,0 +1,4 @@
+(module jazz.resource.Cursor-Resource jazz
+  (import (jazz.resource))
+  (class Cursor-Resource extends Resource
+    (method meta override (resource-type self))))

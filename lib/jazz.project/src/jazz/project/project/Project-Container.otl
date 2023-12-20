@@ -1,0 +1,4 @@
+(module jazz.project.project.Project-Container jazz
+  (interface Project-Container
+    (method public virtual abstract (catalog-name self)))
+  (hub catalog-name))

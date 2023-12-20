@@ -1,0 +1,5 @@
+(module jazz.doc.doc.Slot-Doc jazz
+  (import (jazz.doc))
+  (class Slot-Doc extends Definition-Doc
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (method override (present-text self))))

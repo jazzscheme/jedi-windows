@@ -1,0 +1,7 @@
+(module jazz.text.Text-Size-Combo jazz
+  (import (jazz.handler))
+  (import (jazz.text))
+  (class Text-Size-Combo extends Text-Combo
+    (method override (client-update self))
+    (method override (selection-change self))
+    (method override (combo-choice self))))

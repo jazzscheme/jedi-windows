@@ -1,0 +1,3 @@
+(module jazz.action.Action-Event jazz
+  (import (jazz.event))
+  (class Action-Event extends Event))

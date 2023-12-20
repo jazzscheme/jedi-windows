@@ -1,0 +1,13 @@
+(module jazz.text.Indicator jazz
+  (import (jazz.text))
+  (import (jazz.ui))
+  (import (jazz.view))
+  (class Indicator extends Object
+    (slot color)
+    (slot active-text)
+    (slot active)
+    (method override (initialize self color))
+    (method public (edit self text position/range (ensure-displayed?: ensure-displayed? (unspecified)) (select?: select? (unspecified))))
+    (method public (reset self)))
+  (hub edit)
+  (hub reset))

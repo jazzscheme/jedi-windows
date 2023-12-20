@@ -1,0 +1,15 @@
+(module jazz.groupware.compare.Compare-Run jazz
+  (import (jazz.text))
+  (class Compare-Run extends Object
+    (slot protected color getter generate)
+    (slot protected start <fx> getter generate)
+    (slot protected end <fx> getter generate)
+    (method override (initialize self c s e))
+    (method package (get-range self text))
+    (method package (get-height self text))
+    (method override (print self output readably)))
+  (hub get-color)
+  (hub get-start)
+  (hub get-end)
+  (hub get-range)
+  (hub get-height))

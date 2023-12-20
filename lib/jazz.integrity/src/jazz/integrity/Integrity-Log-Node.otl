@@ -1,0 +1,11 @@
+(module jazz.integrity.Integrity-Log-Node jazz
+  (import (jazz.debuggee.view))
+  (import (jazz.designer))
+  (import (jazz.designer.ui.view))
+  (import (jazz.io))
+  (import (jazz.resource))
+  (import (jazz.view))
+  (class Integrity-Log-Node extends Log-Node
+    (method override (node-image self))
+    (method override (node-location self))
+    (method override (edit-location self tree))))

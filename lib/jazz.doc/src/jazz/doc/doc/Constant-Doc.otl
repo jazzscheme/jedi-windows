@@ -1,0 +1,4 @@
+(module jazz.doc.doc.Constant-Doc jazz
+  (import (jazz.doc))
+  (class Constant-Doc extends Element-Doc
+    (method meta override (get-class-descriptor self (context: context (unspecified))))))

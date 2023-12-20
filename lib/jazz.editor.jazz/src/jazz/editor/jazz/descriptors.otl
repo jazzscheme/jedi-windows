@@ -1,0 +1,22 @@
+(module jazz.editor.jazz.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.document.descriptors))
+  (import (jazz.domain))
+  (import (jazz.markup))
+  (import (jazz.preferences.descriptors))
+  (import (jazz.project.descriptors))
+  (class Jazz-File-Descriptor extends Project-File-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Inspector-Preferences-Descriptor extends Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Jazz-Text-Preferences-Descriptor extends Document-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

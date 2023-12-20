@@ -1,0 +1,6 @@
+(module jazz.editor.java.literals jazz
+  (import (jazz.editor.java))
+  (definition package (construct-java-file-entry file digest dialect . definitions))
+  (definition package (construct-java-package-entry name line column end-line end-column))
+  (definition package (construct-java-import-entry name line column end-line end-column))
+  (definition package (construct-java-definition-entry name kind parameters line column end-line end-column body-line body-column body-end-line body-end-column references)))

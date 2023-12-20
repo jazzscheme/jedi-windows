@@ -1,0 +1,12 @@
+(module zlib scheme
+  (native gzip-genport)
+  (native gunzip-genport)
+  (native deflate-genport)
+  (native inflate-genport)
+  (native gzip-u8vector)
+  (native gunzip-u8vector)
+  (native deflate-u8vector)
+  (native inflate-u8vector)
+  (native make-zlib-condition)
+  (native zlib-condition?)
+  (native zlib-condition-msg))

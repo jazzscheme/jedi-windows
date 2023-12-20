@@ -1,0 +1,3 @@
+(module jazz.editor.c.catalog.C-Define-Entry jazz
+  (import (jazz.editor.c))
+  (class C-Define-Entry extends C-Definition-Entry))

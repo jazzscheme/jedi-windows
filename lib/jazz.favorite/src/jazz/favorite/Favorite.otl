@@ -1,0 +1,7 @@
+(module jazz.favorite.Favorite jazz
+  (import (jazz.component))
+  (class Favorite extends Component
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property title accessors generate))
+  (hub get-title)
+  (hub set-title))

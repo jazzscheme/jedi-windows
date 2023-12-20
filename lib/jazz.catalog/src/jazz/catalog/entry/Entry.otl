@@ -1,0 +1,2 @@
+(module jazz.catalog.entry.Entry jazz
+  (class Entry extends Object))

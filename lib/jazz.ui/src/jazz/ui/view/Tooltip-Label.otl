@@ -1,0 +1,14 @@
+(module jazz.ui.view.Tooltip-Label jazz
+  (import (jazz.graphic))
+  (import (jazz.locale))
+  (import (jazz.markup))
+  (import (jazz.view))
+  (class Tooltip-Label extends View
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (preferred-size self))
+    (method (standard-title self))
+    (definition Background-Color)
+    (method override (draw self surface context))))

@@ -1,0 +1,6 @@
+(module jazz.editor.diff jazz
+  (export (jazz.editor.diff.autoload))
+  (hub get-add-style)
+  (hub get-diff-style)
+  (hub get-file-style)
+  (hub get-remove-style))

@@ -1,0 +1,3 @@
+(module jazz.ide.data.project jazz
+  (export (jazz.component))
+  (export (jazz.project)))

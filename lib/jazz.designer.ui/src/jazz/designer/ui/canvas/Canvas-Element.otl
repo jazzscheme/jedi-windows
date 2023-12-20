@@ -1,0 +1,14 @@
+(module jazz.designer.ui.canvas.Canvas-Element jazz
+  (import (jazz.component))
+  (import (jazz.descriptor))
+  (import (jazz.markup))
+  (class Canvas-Element extends Component
+    (method meta override (get-class-descriptor self (context: context (unspecified)))))
+  (class Canvas-Element-Descriptor extends Component-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (class-presentation->name self class presentation))
+    (method override (class-name->presentation self class name))
+    (method override (component-get-addable-details self component))))

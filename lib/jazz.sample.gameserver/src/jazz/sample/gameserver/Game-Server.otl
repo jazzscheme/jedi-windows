@@ -1,0 +1,14 @@
+(module jazz.sample.gameserver.Game-Server jazz
+  (import (jazz.io))
+  (import (jazz.process))
+  (import (jazz.sample.gameserver))
+  (import (jazz.sample.gameserver.Gomoku-Pages))
+  (import (jazz.sample.gameserver.C4-Pages))
+  (import (jazz.webserver))
+  (class Game-Server-Process extends Process
+    (slot port)
+    (slot server)
+    (method override (initialize self (port: port (unspecified))))
+    (method override (start-process self))
+    (method public (stop self)))
+  (hub stop))

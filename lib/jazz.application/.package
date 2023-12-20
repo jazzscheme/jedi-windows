@@ -1,0 +1,22 @@
+(package jazz.application
+  
+  (title "Application")
+  (description "Applications with user interface")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.application (alias application)
+                              (update jazz.application
+                                      jazz.application.services)
+                              (dependencies jazz
+                                            jazz.platform
+                                            jazz.process))
+            (jazz.application.desc (alias application.desc)
+                                   (description "Application descriptors")
+                                   (update jazz.application.descriptors)
+                                   (dependencies jazz
+                                                 jazz.descriptor
+                                                 jazz.domain
+                                                 jazz.markup))
+            (sample-app (run jazz.application.sample)))
+  (project ".project"))

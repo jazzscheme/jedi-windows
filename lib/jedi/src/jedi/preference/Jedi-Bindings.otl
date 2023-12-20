@@ -1,0 +1,9 @@
+(module jedi.preference.Jedi-Bindings jazz
+  (import (jedi))
+  (import (jazz.ide))
+  (import (jazz.markup))
+  (class Jedi-Bindings extends IDE-Bindings
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

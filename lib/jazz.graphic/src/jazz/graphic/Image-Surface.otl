@@ -1,0 +1,9 @@
+(module jazz.graphic.Image-Surface jazz
+  (import (jazz.cairo))
+  (import (jazz.graphic))
+  (import (jazz.math))
+  (import (jazz.screen))
+  (class Image-Surface extends Surface
+    (method override (initialize self size (scale?: scale? (unspecified))))
+    (method public (get-size self)))
+  (hub get-size))

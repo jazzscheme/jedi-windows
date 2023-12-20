@@ -1,0 +1,11 @@
+(package jazz.validation
+  
+  (title "Validation")
+  (description "Automated unit testing")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.validation (alias validation)
+                             (update jazz.validation)
+                             (dependencies jazz)))
+  (project ".project"))

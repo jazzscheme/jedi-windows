@@ -1,0 +1,10 @@
+(module jazz.groupware.preference.Compare-Directories-Preferences jazz
+  (import (jazz.groupware))
+  (import (jazz.markup))
+  (import (jazz.resource))
+  (class Compare-Directories-Preferences extends Compare-Trees-Preferences
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (get-class-descriptor self (context: context (unspecified))))))

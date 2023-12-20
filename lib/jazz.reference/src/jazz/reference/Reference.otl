@@ -1,0 +1,17 @@
+(module jazz.reference.Reference jazz
+  (import (jazz.reference))
+  (class Reference extends Object
+    (slot context getter generate)
+    (slot symbol getter generate)
+    (method override (initialize self symbol))
+    (method override (print self output readably))
+    (method override (walk-references self proc))
+    (method override (setup-context self ctx))
+    (method public (get-runtime-reference self))
+    (method public (reference-resolve self))
+    (method public virtual (parameters-resolve self)))
+  (hub get-context)
+  (hub get-symbol)
+  (hub get-runtime-reference)
+  (hub reference-resolve)
+  (hub parameters-resolve))

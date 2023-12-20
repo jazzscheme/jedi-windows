@@ -1,0 +1,11 @@
+(module jazz.search.Replace jazz
+  (class Replace extends Object
+    (slot replace-list getter generate)
+    (slot preserve-case? accessors generate)
+    (slot play-recording? accessors generate)
+    (method override (initialize self replace-list (preserve-case?: preserve-case? (unspecified)) (play-recording?: play-recording? (unspecified)))))
+  (hub get-replace-list)
+  (hub get-preserve-case?)
+  (hub set-preserve-case?)
+  (hub get-play-recording?)
+  (hub set-play-recording?))

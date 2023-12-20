@@ -1,0 +1,8 @@
+(module jazz.presence.remotable.Proxy jazz
+  (import (jazz.presence))
+  (class Proxy extends Object
+    (slot presence getter generate)
+    (method override (initialize self presence))
+    (method public virtual abstract (live? self)))
+  (hub get-presence)
+  (hub live?))

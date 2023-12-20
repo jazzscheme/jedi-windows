@@ -1,0 +1,5 @@
+(module jazz.groupware.services jazz
+  (import (jazz.groupware))
+  (import (jazz.ui))
+  (import (jazz.view))
+  (import (jazz.workspace)))

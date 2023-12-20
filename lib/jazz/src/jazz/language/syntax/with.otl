@@ -1,0 +1,3 @@
+(module jazz.language.syntax.with scheme
+  (import (jazz.language.runtime.kernel))
+  (syntax public with))

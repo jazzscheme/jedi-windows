@@ -1,0 +1,10 @@
+(module jazz.favorite.Favorite-Directory jazz
+  (import (jazz.favorite))
+  (import (jazz.feedback))
+  (import (jazz.io))
+  (class Favorite-Directory extends Favorite
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property directory accessors generate)
+    (method override (launch self)))
+  (hub get-directory)
+  (hub set-directory))

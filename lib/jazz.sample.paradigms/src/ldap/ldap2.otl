@@ -1,0 +1,16 @@
+(module ldap.ldap2 jazz
+  (import (ldap.ffi))
+  (class LDAP-Connection extends Object
+    (slot connection getter generate)
+    (method override (initialize self host (port: port (unspecified)))))
+  (hub get-connection)
+  (generic (connection-add connection <LDAP-Connection> name value))
+  (generic (connection-delete connection <LDAP-Connection> name))
+  (generic (connection-search connection <LDAP-Connection> target))
+  (class LDAP-Entry extends Object
+    (slot connection getter generate)
+    (slot entry getter generate)
+    (method override (initialize self connection entry)))
+  (hub get-entry)
+  (generic (entry-name-get entry <LDAP-Entry>))
+  (generic (entry-value-get entry <LDAP-Entry>)))

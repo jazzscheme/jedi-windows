@@ -1,0 +1,6 @@
+(module jazz.debuggee.jazz.autoload jazz
+  (export (jazz.debuggee.jazz.Jazz-Debuggee-Frame (autoload Jazz-Debuggee-Frame Jazz-Debuggee-Frame)))
+  (export (jazz.debuggee.jazz.Jazz-Debuggee-Process (autoload Jazz-Debuggee-Process Jazz-Debuggee-Process)))
+  (export (jazz.debuggee.jazz.Jazz-Debuggee-Restart (autoload Jazz-Debuggee-Restart Jazz-Debuggee-Restart)))
+  (export (jazz.debuggee.jazz.Jazz-Debuggee-Stop (autoload Jazz-Debuggee-Stop Jazz-Debuggee-Stop)))
+  (export (jazz.debuggee.jazz.Jazz-Debuggee-Thread (autoload Jazz-Debuggee-Thread Jazz-Debuggee-Thread))))

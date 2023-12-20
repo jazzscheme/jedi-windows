@@ -1,0 +1,2 @@
+(module jazz.stream.platform jazz
+  (import (jazz.syntax (phase syntax))))

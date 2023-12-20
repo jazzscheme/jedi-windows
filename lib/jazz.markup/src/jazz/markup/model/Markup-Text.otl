@@ -1,0 +1,13 @@
+(module jazz.markup.model.Markup-Text jazz
+  (import (jazz.markup))
+  (class Markup-Text extends Markup-Node
+    (slot text accessors generate)
+    (method override (initialize self parent text))
+    (method override (print self output readably))
+    (method override (->markup self))
+    (method public (multi-line? self))
+    (method public (single-line? self)))
+  (hub get-text)
+  (hub set-text)
+  (hub multi-line?)
+  (hub single-line?))

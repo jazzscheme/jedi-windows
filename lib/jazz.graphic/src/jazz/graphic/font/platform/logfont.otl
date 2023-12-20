@@ -1,0 +1,8 @@
+(module jazz.graphic.font.platform.logfont jazz
+  (import (jazz.cairo))
+  (import (jazz.platform))
+  (definition public (create-logfont-font local? (font-name: font-name (unspecified)) (point-size: point-size (unspecified)) (bold?: bold? (unspecified)) (italic?: italic? (unspecified)) (underline?: underline? (unspecified))))
+  (definition public (destroy-logfont-font local? handle))
+  (definition public (create-cairo-logfont-font-face local? handle))
+  (definition public (destroy-cairo-logfont-font-face handle))
+  (definition public (get-logfont handle)))

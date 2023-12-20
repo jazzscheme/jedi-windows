@@ -1,0 +1,15 @@
+(module jazz.ui.view.Status-Toolbar jazz
+  (import (jazz.graphic))
+  (import (jazz.markup))
+  (import (jazz.skin))
+  (import (jazz.ui))
+  (import (jazz.workspace))
+  (class Status-Toolbar extends Toolbar
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (host-title self))
+    (method override (finish self rest))
+    (method override (draw-background self surface context))
+    (method override (get-skin self))))

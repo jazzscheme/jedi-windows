@@ -1,0 +1,3 @@
+(module jazz.ui.view.Color-Text-View jazz
+  (import (jazz.ui))
+  (class Color-Text-View extends Combo-Text-View))

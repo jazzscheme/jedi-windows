@@ -1,0 +1,5 @@
+(module jazz.opengl.syntax jazz
+  (definition tracable?)
+  (definition checkable-errors?)
+  (definition assertable-mutex?)
+  (macro public (opengl-external signature . rest)))

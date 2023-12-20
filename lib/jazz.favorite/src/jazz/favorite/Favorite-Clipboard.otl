@@ -1,0 +1,10 @@
+(module jazz.favorite.Favorite-Clipboard jazz
+  (import (jazz.clipboard))
+  (import (jazz.favorite))
+  (import (jazz.feedback))
+  (class Favorite-Clipboard extends Favorite
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property string accessors generate)
+    (method override (launch self)))
+  (hub get-string)
+  (hub set-string))

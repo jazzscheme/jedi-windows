@@ -1,0 +1,19 @@
+(package jazz.doc
+  
+  (title "Doc")
+  (description "Documentation classes")
+  (authors "Guillaume Cartier")
+  (stage experimental)
+  (root "src")
+  (products (jazz.doc (alias doc)
+                      (update jazz.doc
+                              jazz.doc.data)
+                      (dependencies jazz))
+            (jazz.doc.desc (alias doc.desc)
+                           (description "Doc descriptors")
+                           (update jazz.doc.descriptors)
+                           (dependencies jazz
+                                         jazz.descriptor
+                                         jazz.domain
+                                         jazz.markup)))
+  (project ".project"))

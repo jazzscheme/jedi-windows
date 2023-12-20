@@ -1,0 +1,9 @@
+(module jazz.language.runtime.tell jazz.dialect
+  (import (jazz.language.runtime.hubs))
+  (import (jazz.language.runtime.kernel))
+  (import (jazz.language.runtime.format))
+  (import (jazz.language.runtime.functional))
+  (native private jazz:error)
+  (definition public tell-precision)
+  (definition public (set-tell-precision precision))
+  (definition public (tell . rest)))

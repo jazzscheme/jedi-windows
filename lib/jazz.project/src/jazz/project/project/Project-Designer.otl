@@ -1,0 +1,4 @@
+(module jazz.project.project.Project-Designer jazz
+  (import (jazz.designer))
+  (class Project-Designer extends Designer
+    (method override (print self output readably))))

@@ -1,0 +1,2 @@
+(module jazz.editor.jazz.registry.Type-Viewer jazz
+  (class Type-Viewer extends Object))

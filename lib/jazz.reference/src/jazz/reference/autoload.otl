@@ -1,0 +1,5 @@
+(module jazz.reference.autoload jazz
+  (export (jazz.reference.Class-Reference (autoload Class-Reference Class-Reference Class-Reference)))
+  (export (jazz.reference.Environment (autoload Environment Environment Environment)))
+  (export (jazz.reference.Environment-Provider (autoload Environment-Provider Environment-Provider Environment-Provider)))
+  (export (jazz.reference.Reference (autoload Reference Reference Reference))))

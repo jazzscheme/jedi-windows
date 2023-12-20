@@ -1,0 +1,8 @@
+(module jazz.markup.renderer.Markup-Renderer jazz
+  (class Markup-Renderer extends Object
+    (slot preferences)
+    (method override (initialize self preferences))
+    (method public virtual (render self markup output))
+    (method public virtual (render-node self context markup simple? mix? level output)))
+  (hub render)
+  (hub render-node))

@@ -1,0 +1,9 @@
+(module jazz.favorite.Favorite-Definition jazz
+  (import (jazz.application))
+  (import (jazz.favorite))
+  (class Favorite-Definition extends Favorite
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property definition accessors generate)
+    (method override (launch self)))
+  (hub get-definition)
+  (hub set-definition))

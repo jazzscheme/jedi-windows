@@ -1,0 +1,17 @@
+(module jazz.io.Path jazz
+  (import (jazz.component))
+  (class Path extends Object
+    (slot path accessors generate)
+    (method override (initialize self path))
+    (method override (compare-object self target))
+    (method override (print self output readably))
+    (method public (get-parent self))
+    (method public (present self))
+    (method public virtual (follow-component self root))
+    (method public virtual (follow-form self form)))
+  (hub get-path)
+  (hub set-path)
+  (hub get-parent)
+  (hub present)
+  (hub follow-component)
+  (hub follow-form))

@@ -1,0 +1,16 @@
+(module jazz.ui.view.Push-Icon jazz
+  (import (jazz.markup))
+  (import (jazz.ui))
+  (class Push-Icon extends Push-Tool
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method public (get-combo self))
+    (method override (get-enabled? self))
+    (method override (get-state self))
+    (method override (mouse-enter self))
+    (method override (mouse-leave self))
+    (method override (mouse-down self evt))
+    (method override (drag-up self evt . rest)))
+  (hub get-combo))

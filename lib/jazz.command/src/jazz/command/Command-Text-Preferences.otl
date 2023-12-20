@@ -1,0 +1,13 @@
+(module jazz.command.Command-Text-Preferences jazz
+  (import (jazz.editor))
+  (import (jazz.markup))
+  (import (jazz.text))
+  (class Command-Text-Preferences extends Code-Text-Preferences
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property separator-style accessors generate))
+  (hub get-separator-style)
+  (hub set-separator-style))

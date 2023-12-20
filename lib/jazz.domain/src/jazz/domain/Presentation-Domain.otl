@@ -1,0 +1,3 @@
+(module jazz.domain.Presentation-Domain jazz
+  (import (jazz.domain))
+  (class Presentation-Domain extends Text-Domain))

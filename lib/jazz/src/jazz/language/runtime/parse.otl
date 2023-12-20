@@ -1,0 +1,10 @@
+(module jazz.language.runtime.parse jazz.dialect
+  (import (jazz.language.runtime.kernel))
+  (import (jazz.language.runtime.exception))
+  (import (jazz.language.runtime.format))
+  (import (jazz.language.runtime.functional))
+  (definition public (parse-integer string))
+  (definition public (parse-hexadecimal string))
+  (definition public (parse-boolean string))
+  (definition public (parse-strings string (separator: separator (unspecified))))
+  (definition public (parse-delimited-string string (separator: separator (unspecified)))))

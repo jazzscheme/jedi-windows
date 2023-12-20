@@ -1,0 +1,4 @@
+(module jazz.opengl.trace jazz
+  (import (jazz.syntax (phase syntax)))
+  (definition public (trace-opengl? . rest))
+  (definition public (trace-opengl . rest)))

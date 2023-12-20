@@ -1,0 +1,3 @@
+(module jazz.doc.doc.Project-Doc jazz
+  (import (jazz.doc))
+  (class Project-Doc extends Doc))

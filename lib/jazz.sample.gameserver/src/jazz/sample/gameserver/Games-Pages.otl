@@ -1,0 +1,5 @@
+(module jazz.sample.gameserver.Games-Pages jazz
+  (import (jazz.markup))
+  (import (jazz.webserver))
+  (class Games-Pages extends HTTP-Request-Handler
+    (method override (handle-request self request port server))))

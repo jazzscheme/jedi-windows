@@ -1,0 +1,15 @@
+(package jazz.recorder
+  
+  (title "Recorder")
+  (description "Textual recorder")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.recorder (alias recorder)
+                           (update jazz.recorder
+                                   jazz.recorder.playee
+                                   jazz.recorder.playee.stub
+                                   jazz.recorder.player
+                                   jazz.recorder.player.stub)
+                           (dependencies jazz)))
+  (project ".project"))

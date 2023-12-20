@@ -1,0 +1,7 @@
+(module jazz.domain.Choices-Domain jazz
+  (import (jazz.designer))
+  (import (jazz.domain))
+  (import (jazz.integrity))
+  (import (jazz.locale.components))
+  (class Choices-Domain extends List-Domain
+    (method override (validate-value self value (validation-context (unspecified))))))

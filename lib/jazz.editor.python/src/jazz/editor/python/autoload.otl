@@ -1,0 +1,6 @@
+(module jazz.editor.python.autoload jazz
+  (export (jazz.editor.python.parser.Python-Parser (autoload Python-Parser Python-Parser)))
+  (export (jazz.editor.python.syntax.Python-Syntax (autoload Python-Syntax Python-Syntax)))
+  (export (jazz.editor.python.text.Python-Explorer (autoload Python-Explorer Python-Explorer)))
+  (export (jazz.editor.python.text.Python-Text-Preferences (autoload Python-Text-Preferences Python-Text-Preferences)))
+  (export (jazz.editor.python.text.Python-Text-View (autoload Python-Text-View Python-Text-View))))

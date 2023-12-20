@@ -1,0 +1,4 @@
+(module jazz.debugger.jazz.autoload jazz
+  (export (jazz.debugger.jazz.Jazz-Debugger (autoload Jazz-Debugger Jazz-Debugger)))
+  (export (jazz.debugger.jazz.Jazz-Project (autoload Jazz-Project Jazz-Project)))
+  (export (jazz.debugger.jazz.Snapshot-Debugger (autoload Snapshot-Debugger Snapshot-Debugger))))

@@ -1,0 +1,4 @@
+(module jazz.designer.ui.row.Memo-Row jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (class Memo-Row extends Combo-Row))

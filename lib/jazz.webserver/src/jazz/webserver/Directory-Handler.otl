@@ -1,0 +1,9 @@
+(module jazz.webserver.Directory-Handler jazz
+  (import (jazz.io))
+  (import (jazz.webserver))
+  (class Directory-Handler extends HTTP-Request-Handler
+    (slot root-directory accessors generate)
+    (method override (initialize self (root-directory: root-directory (unspecified))))
+    (method override (handle-request self request port server)))
+  (hub get-root-directory)
+  (hub set-root-directory))

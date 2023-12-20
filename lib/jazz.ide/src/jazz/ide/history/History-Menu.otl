@@ -1,0 +1,15 @@
+(module jazz.ide.history.History-Menu jazz
+  (import (jazz.handler))
+  (import (jazz.history))
+  (import (jazz.ide.history))
+  (import (jazz.menu))
+  (class History-Menu extends Context-Menu
+    (property manager accessors generate)
+    (property direction accessors generate)
+    (method override (finish self rest))
+    (method package (on-action self evt)))
+  (hub get-manager)
+  (hub set-manager)
+  (hub get-direction)
+  (hub set-direction)
+  (hub on-action))

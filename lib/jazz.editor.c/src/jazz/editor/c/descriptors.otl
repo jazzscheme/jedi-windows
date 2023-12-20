@@ -1,0 +1,8 @@
+(module jazz.editor.c.descriptors jazz
+  (import (jazz.markup))
+  (import (jazz.project.descriptors))
+  (class C-File-Descriptor extends Project-File-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

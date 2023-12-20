@@ -1,0 +1,13 @@
+(module jazz.history.History-Document-Item jazz
+  (import (jazz.component))
+  (import (jazz.document))
+  (import (jazz.history))
+  (import (jazz.ui))
+  (import (jazz.view))
+  (class History-Document-Item extends History-Item
+    (slot document)
+    (slot selection)
+    (method override (initialize self document selection))
+    (method override (valid? self))
+    (method override (open-item self))
+    (method override (present self))))

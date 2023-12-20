@@ -1,0 +1,6 @@
+(module jazz.history.History-Provider jazz
+  (interface History-Provider
+    (method public virtual abstract (current-history-item self))
+    (method public virtual abstract (update-history-actions self)))
+  (hub current-history-item)
+  (hub update-history-actions))

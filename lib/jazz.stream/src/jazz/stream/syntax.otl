@@ -1,0 +1,5 @@
+(module jazz.stream.syntax jazz
+  (definition tracable?)
+  (macro public (gst-external signature . rest))
+  (syntax public gst-pipeline2)
+  (syntax public with-unref))

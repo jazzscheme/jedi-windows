@@ -1,0 +1,11 @@
+(package jazz.automata
+  
+  (title "Automata")
+  (description "Finite State Automata")
+  (authors "Guillaume Cartier")
+  (stage obsolete)
+  (root "src")
+  (products (jazz.automata (alias automata)
+                           (update jazz.automata)
+                           (dependencies jazz)))
+  (project ".project"))

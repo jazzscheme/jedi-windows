@@ -1,0 +1,3 @@
+(module jazz.debugger.snapshot.Thread-Snapshot jazz
+  (import (jazz.component))
+  (class Thread-Snapshot extends Component))

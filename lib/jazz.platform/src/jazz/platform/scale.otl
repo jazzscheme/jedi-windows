@@ -1,0 +1,3 @@
+(module jazz.platform.scale jazz
+  (definition protected application-scale <fl+>)
+  (definition protected (set-application-scale scale)))

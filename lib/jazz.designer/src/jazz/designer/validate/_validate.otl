@@ -1,0 +1,14 @@
+(module jazz.designer.validate jazz
+  (import (jazz.component))
+  (import (jazz.markup))
+  (import (jazz.runtime))
+  (import (jazz.validation))
+  (class Designer-Descriptors-Tester extends Tester
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (property repositories accessors generate)
+    (method override (test self)))
+  (hub get-repositories)
+  (hub set-repositories))

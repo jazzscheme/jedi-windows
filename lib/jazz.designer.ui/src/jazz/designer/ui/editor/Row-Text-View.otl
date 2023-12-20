@@ -1,0 +1,11 @@
+(module jazz.designer.ui.editor.Row-Text-View jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (import (jazz.outline))
+  (import (jazz.text))
+  (class Row-Text-View extends Plain-Text-View
+    (method override (new-model self))
+    (method (get-value-row self))
+    (method (document-menu self))
+    (method override (focus-lose self))
+    (method override (focus-master self))))

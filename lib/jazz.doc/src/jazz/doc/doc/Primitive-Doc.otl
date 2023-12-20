@@ -1,0 +1,4 @@
+(module jazz.doc.doc.Primitive-Doc jazz
+  (import (jazz.doc))
+  (class Primitive-Doc extends Definition-Doc
+    (method meta override (get-class-descriptor self (context: context (unspecified))))))

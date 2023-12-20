@@ -1,0 +1,18 @@
+(module jazz.ui.view.Stage-Border jazz
+  (import (jazz.graphic))
+  (import (jazz.skin))
+  (import (jazz.ui))
+  (import (jazz.view))
+  (import (jazz.workspace))
+  (class Stage-Border extends View
+    (method override (size-change self size))
+    (method public (get-stage self))
+    (method override (maximize self))
+    (method override (restore self))
+    (method package (layout-stage self size <Dimension>))
+    (definition Active-Color)
+    (definition Frame-Color)
+    (method override (draw self surface context))
+    (method override (get-skin self)))
+  (hub get-stage)
+  (hub layout-stage))

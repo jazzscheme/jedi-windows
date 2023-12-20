@@ -1,0 +1,4 @@
+(module jazz.stream.directories jazz
+  (definition protected *gstreamer-dir*)
+  (definition protected (gstreamer-dir))
+  (definition protected (gstreamer-bin-dir)))

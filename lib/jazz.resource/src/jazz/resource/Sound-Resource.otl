@@ -1,0 +1,4 @@
+(module jazz.resource.Sound-Resource jazz
+  (import (jazz.resource))
+  (class Sound-Resource extends Resource
+    (method meta override (resource-type self))))

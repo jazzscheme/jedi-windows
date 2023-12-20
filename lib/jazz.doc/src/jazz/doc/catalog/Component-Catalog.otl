@@ -1,0 +1,16 @@
+(module jazz.doc.catalog.Component-Catalog jazz
+  (import (jazz.catalog))
+  (import (jazz.component))
+  (class Component-Catalog extends Catalog
+    (slot client getter generate)
+    (slot definitions-index getter generate)
+    (slot references-index getter generate)
+    (method override (initialize self name client))
+    (method public (get-statistics self))
+    (method (update-catalog-indexes self))
+    (method override (get-definitions self name))
+    (method override (get-references self name)))
+  (hub get-client)
+  (hub get-definitions-index)
+  (hub get-references-index)
+  (hub get-statistics))

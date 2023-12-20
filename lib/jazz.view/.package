@@ -1,0 +1,21 @@
+(package jazz.view
+  
+  (title "View")
+  (description "Platform agnostic views")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.view (alias view)
+                       (update jazz.view
+                               jazz.view.dnd
+                               jazz.view.hubs)
+                       (dependencies jazz
+                                     jazz.figure))
+            (jazz.view.desc (alias view.desc)
+                            (description "View descriptors")
+                            (update jazz.view.descriptors)
+                            (dependencies jazz
+                                          jazz.descriptor
+                                          jazz.domain
+                                          jazz.markup)))
+  (project ".project"))

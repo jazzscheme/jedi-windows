@@ -1,0 +1,2 @@
+(module jazz.debugger.snapshot.Stack-Snapshot jazz
+  (class Stack-Snapshot extends Object))

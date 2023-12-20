@@ -1,0 +1,10 @@
+(module jazz.descriptor.Children-Descriptor jazz
+  (import (jazz.component))
+  (import (jazz.descriptor))
+  (class Children-Descriptor extends Component
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property addable? accessors generate))
+  (hub get-addable?)
+  (hub set-addable?)
+  (class Children-Descriptor-Descriptor extends Component-Descriptor
+    (method meta override (get-class-descriptor self (context: context (unspecified))))))

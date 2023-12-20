@@ -1,0 +1,3 @@
+(module jazz.editor.c.catalog.C-Entry jazz
+  (import (jazz.catalog))
+  (class C-Entry extends Indexed-Entry))

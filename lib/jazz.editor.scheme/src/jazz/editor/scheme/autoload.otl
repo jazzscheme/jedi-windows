@@ -1,0 +1,7 @@
+(module jazz.editor.scheme.autoload jazz
+  (export (jazz.editor.scheme.parser.Scheme-Parser (autoload Scheme-Parser Scheme-Parser)))
+  (export (jazz.editor.scheme.syntax.Scheme-Syntax (autoload Scheme-Syntax Scheme-Syntax)))
+  (export (jazz.editor.scheme.text.Scheme-Explorer (autoload Scheme-Explorer Scheme-Explorer)))
+  (export (jazz.editor.scheme.text.Scheme-Text-Actions (autoload Scheme-Text-Actions Scheme-Text-Actions)))
+  (export (jazz.editor.scheme.text.Scheme-Text-Preferences (autoload Scheme-Text-Preferences Scheme-Text-Preferences)))
+  (export (jazz.editor.scheme.text.Scheme-Text-View (autoload Scheme-Text-View Scheme-Text-View))))

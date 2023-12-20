@@ -1,0 +1,7 @@
+(module jazz.sample.gomoku.graphics jazz
+  (import (jazz.feedback))
+  (import (jazz.io))
+  (import (jazz.sample.gameserver.imagemagick))
+  (definition Gomoku-Images)
+  (definition (generate-gomoku))
+  (definition (generate-stone name color size)))

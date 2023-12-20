@@ -1,0 +1,8 @@
+(module jazz.locale.ui jazz
+  (import (jazz.handler))
+  (import (jazz.locale))
+  (import (jazz.menu))
+  (class Locales-Menu extends Context-Menu
+    (method override (install self rest))
+    (method package (on-action self evt)))
+  (hub on-action))

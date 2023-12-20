@@ -1,0 +1,3 @@
+(module jazz.editor.javascript.couple.catalog jazz
+  (import (jazz.catalog))
+  (import (jazz.editor.javascript)))

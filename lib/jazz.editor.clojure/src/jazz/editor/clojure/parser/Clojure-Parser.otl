@@ -1,0 +1,7 @@
+(module jazz.editor.clojure.parser.Clojure-Parser jazz
+  (import (jazz.editor.clojure))
+  (import (jazz.editor.lisp))
+  (class Clojure-Parser extends Lisp-Parser
+    (method meta override (get-constituent-test self))
+    (method override (text-view-class self))
+    (method override (explorer-class self file))))

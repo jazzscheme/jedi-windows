@@ -1,0 +1,4 @@
+(module jazz.text.Filterable jazz
+  (interface Filterable
+    (method public virtual abstract (filter self filter-search)))
+  (hub filter))

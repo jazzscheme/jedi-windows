@@ -1,0 +1,3 @@
+(module jazz.action.Bindings jazz
+  (import (jazz.component))
+  (class Bindings extends Component))

@@ -1,0 +1,11 @@
+(package backend
+  
+  (title "Backend")
+  (description "Backend")
+  (authors "Guillaume Cartier")
+  (stage internal)
+  (root "src")
+  (products (backend (update backend.runtime
+                             backend.syntax)
+                     (dependencies)))
+  (project ".project"))

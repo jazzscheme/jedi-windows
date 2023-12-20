@@ -1,0 +1,19 @@
+(module ldap.ldap3 jazz
+  (import (ldap.ffi))
+  (class LDAP-Connection extends Object
+    (slot connection)
+    (method override (initialize self host (port: port (unspecified))))
+    (method public (add self name value))
+    (method public (delete self name))
+    (method public (search-for self target)))
+  (hub add)
+  (hub delete)
+  (hub search-for)
+  (class LDAP-Entry extends Object
+    (slot connection)
+    (slot entry)
+    (method override (initialize self connection entry))
+    (method public (get-name self))
+    (method public (get-value self)))
+  (hub get-name)
+  (hub get-value))

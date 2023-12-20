@@ -1,0 +1,18 @@
+(module jazz.ui.dialog.Dialog jazz
+  (import (jazz.event))
+  (import (jazz.opengl.frame))
+  (import (jazz.ui))
+  (import (jazz.window))
+  (class Dialog extends OpenGL-Frame
+    (property closable? accessors generate)
+    (property miniaturizable? accessors generate)
+    (property sizable? accessors generate)
+    (method override (new-root self))
+    (method override (close-window self))
+    (method override (destroy self)))
+  (hub get-closable?)
+  (hub set-closable?)
+  (hub get-miniaturizable?)
+  (hub set-miniaturizable?)
+  (hub get-sizable?)
+  (hub set-sizable?))

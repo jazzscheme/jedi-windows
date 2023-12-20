@@ -1,0 +1,12 @@
+(package jazz.print
+  
+  (title "Print")
+  (description "Printing")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.print (alias print)
+                        (update jazz.print
+                                jazz.print.hubs)
+                        (dependencies jazz)))
+  (project ".project"))

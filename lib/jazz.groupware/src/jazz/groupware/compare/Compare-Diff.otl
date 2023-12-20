@@ -1,0 +1,13 @@
+(module jazz.groupware.compare.Compare-Diff jazz
+  (import (jazz.groupware))
+  (class Compare-Diff extends Object
+    (slot protected green <Compare-Run+> getter generate)
+    (slot protected blue <Compare-Run+> getter generate)
+    (method override (initialize self g b))
+    (method package (get-start self))
+    (method package (get-end self))
+    (method override (print self output readably)))
+  (hub get-green)
+  (hub get-blue)
+  (hub get-start)
+  (hub get-end))

@@ -1,0 +1,3 @@
+(module jazz.ide.application.IDE-Toplevel jazz
+  (import (jazz.window))
+  (class IDE-Toplevel extends Toplevel))

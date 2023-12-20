@@ -1,0 +1,11 @@
+(package jazz.profile
+  
+  (title "Profile")
+  (description "User profiles")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.profile (alias profile)
+                          (update jazz.profile)
+                          (dependencies jazz)))
+  (project ".project"))

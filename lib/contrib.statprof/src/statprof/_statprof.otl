@@ -1,0 +1,2 @@
+(module statprof jazz
+  (native statprof))

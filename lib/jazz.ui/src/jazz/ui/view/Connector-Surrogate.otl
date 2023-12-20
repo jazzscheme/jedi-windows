@@ -1,0 +1,10 @@
+(module jazz.ui.view.Connector-Surrogate jazz
+  (import (jazz.ui))
+  (import (jazz.view))
+  (class Connector-Surrogate extends Line-Surrogate
+    (method override (move-client? self))
+    (method override (size-client? self))
+    (method override (select self rank focus?))
+    (method override (redraw-border self))
+    (method override (draw self surface))
+    (method override (draw-selected self surface rank))))

@@ -1,0 +1,13 @@
+(module jazz.reference.Environment jazz
+  (import (jazz.reference))
+  (class Environment extends Object implements Environment-Provider
+    (slot data getter generate)
+    (slot locator getter generate)
+    (method override (initialize self data locator))
+    (method override (print self output readably))
+    (method override (setup-context self context))
+    (method override (get-reference self symbol))
+    (method override (locate-reference self symbol))
+    (method override (require-reference self symbol)))
+  (hub get-data)
+  (hub get-locator))

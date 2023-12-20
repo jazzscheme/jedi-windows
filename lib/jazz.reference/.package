@@ -1,0 +1,13 @@
+(package jazz.reference
+  
+  (title "Reference")
+  (description "References")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (install jazz.reference.install)
+  (products (jazz.reference (alias reference)
+                            (update jazz.reference
+                                    jazz.reference.install)
+                            (dependencies jazz)))
+  (project ".project"))

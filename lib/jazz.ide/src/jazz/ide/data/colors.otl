@@ -1,0 +1,2 @@
+(module jazz.ide.data.colors jazz
+  (export (jazz.ide)))

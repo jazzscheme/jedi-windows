@@ -1,0 +1,4 @@
+(module jazz.process.Quit-Listener jazz
+  (interface Quit-Listener
+    (method public virtual abstract (prepare-quit self)))
+  (hub prepare-quit))

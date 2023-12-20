@@ -1,0 +1,4 @@
+(module jazz.designer.ui.row.Directory-Group-Row jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (class Directory-Group-Row extends Pathname-Row))

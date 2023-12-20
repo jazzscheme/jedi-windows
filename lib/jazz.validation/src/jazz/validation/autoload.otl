@@ -1,0 +1,6 @@
+(module jazz.validation.autoload jazz
+  (export (jazz.validation.tester.Tester (autoload Tester Tester)))
+  (export (jazz.validation.tester.Tester-Error (autoload Tester-Error Tester-Error)))
+  (export (jazz.validation.validate.Validate (autoload Validate Validate)))
+  (export (jazz.validation.validate.Validation-Manager (autoload Validation-Manager Validation-Manager)))
+  (export (jazz.validation.validate.Validation-Suite (autoload Validation-Suite Validation-Suite))))

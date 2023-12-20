@@ -1,0 +1,3 @@
+(module jazz.editor.lua.text.Lua-Explorer jazz
+  (import (jazz.editor.c))
+  (class Lua-Explorer extends C-Explorer))

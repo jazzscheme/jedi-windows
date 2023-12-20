@@ -1,0 +1,6 @@
+(module jazz.catalog.entry.Code-Entry jazz
+  (import (jazz.catalog))
+  (class Code-Entry extends Hierarchical-Entry
+    (slot type getter generate)
+    (method override (initialize self name type line column end-line end-column definitions)))
+  (hub get-type))

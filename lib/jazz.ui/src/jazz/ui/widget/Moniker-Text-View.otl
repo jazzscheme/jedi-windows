@@ -1,0 +1,4 @@
+(module jazz.ui.widget.Moniker-Text-View jazz
+  (import (jazz.ide))
+  (class Moniker-Text-View extends IDE-Text-View
+    (method override (get-scroll-context self))))

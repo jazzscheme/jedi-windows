@@ -1,0 +1,22 @@
+(package jazz.groupware
+  
+  (title "Groupware")
+  (description "Groupware tools")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (install jazz.groupware.install)
+  (products (jazz.groupware (alias groupware)
+                            (update jazz.groupware
+                                    jazz.groupware.install
+                                    jazz.groupware.services)
+                            (dependencies jazz
+                                          jazz.platform))
+            (jazz.groupware.desc (alias groupware.desc)
+                                 (description "Groupware descriptors")
+                                 (update jazz.groupware.descriptors)
+                                 (dependencies jazz
+                                               jazz.descriptor
+                                               jazz.domain
+                                               jazz.markup)))
+  (project ".project"))

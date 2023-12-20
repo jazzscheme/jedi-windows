@@ -1,0 +1,15 @@
+(module jazz.debuggee.jazz.Jazz-Debuggee-Thread jazz
+  (import (jazz.debuggee))
+  (import (jazz.debuggee.autoload))
+  (class Jazz-Debuggee-Thread extends Debuggee-Thread
+    (slot thread accessors generate)
+    (method override (initialize self thread))
+    (method override (get-id self))
+    (method override (get-name self))
+    (method override (get-state self))
+    (method override (get-priority self))
+    (method override (get-debugged-continuation? self))
+    (method override (get-stops self))
+    (method override (set-repl-frame self frame-proxy)))
+  (hub get-thread)
+  (hub set-thread))

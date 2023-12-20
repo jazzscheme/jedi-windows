@@ -1,0 +1,16 @@
+(module jazz.project.file.Project-File jazz
+  (import (jazz.component))
+  (import (jazz.project))
+  (class Project-File extends Component implements Project-Container
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property source accessors generate)
+    (property build? accessors generate)
+    (method override (catalog-name self))
+    (method public virtual (preprocess self project reporter log output . rest))
+    (method public virtual (build self project reporter log output . rest)))
+  (hub get-source)
+  (hub set-source)
+  (hub get-build?)
+  (hub set-build?)
+  (hub preprocess)
+  (hub build))

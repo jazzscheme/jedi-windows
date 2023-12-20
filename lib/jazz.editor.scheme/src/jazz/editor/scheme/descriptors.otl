@@ -1,0 +1,3 @@
+(module jazz.editor.scheme.descriptors jazz
+  (import (jazz.document.descriptors))
+  (class Scheme-Text-Preferences-Descriptor extends Document-Preferences-Descriptor))

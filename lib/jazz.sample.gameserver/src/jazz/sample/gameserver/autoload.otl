@@ -1,0 +1,4 @@
+(module jazz.sample.gameserver.autoload jazz
+  (export (jazz.sample.gameserver.Game-Server (autoload Game-Server-Process Game-Server-Process)))
+  (export (jazz.sample.gameserver.Game-Pages (autoload Game-Pages Game-Pages)))
+  (export (jazz.sample.gameserver.Games-Pages (autoload Games-Pages Games-Pages))))

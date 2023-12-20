@@ -1,0 +1,5 @@
+(module jazz.debuggee.jazz.autoload-external jazz
+  (export (jazz.application (autoload current-application current-application)))
+  (export (jazz.platform (autoload get-temporary-file get-temporary-file)))
+  (export (jazz.process (autoload current-process current-process)))
+  (export (jazz.snapshot (autoload new-safe-thread new-safe-thread))))

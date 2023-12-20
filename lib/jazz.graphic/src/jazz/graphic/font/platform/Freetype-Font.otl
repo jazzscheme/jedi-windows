@@ -1,0 +1,10 @@
+(module jazz.graphic.font.platform.Freetype-Font jazz
+  (import (jazz.cairo))
+  (import (jazz.graphic))
+  (import (jazz.graphic.font))
+  (class Freetype-Font extends Concrete-Font
+    (method override (create-font self . rest))
+    (method override (destroy-font self . rest))
+    (method override (create-cairo-font-face self . rest))
+    (method override (destroy-cairo-font-face self . rest))
+    (method override (cairo-glyph-index self font char))))

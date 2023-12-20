@@ -1,0 +1,4 @@
+(module jazz.domain.Symbol-Domain jazz
+  (import (jazz.domain))
+  (class Symbol-Domain extends Value-Domain
+    (method override (validate-value self value (validation-context (unspecified))))))

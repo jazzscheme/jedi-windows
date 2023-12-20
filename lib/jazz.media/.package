@@ -1,0 +1,12 @@
+(package jazz.media
+  
+  (title "Media")
+  (description "Platform media access")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.media (alias media)
+                        (update jazz.media)
+                        (dependencies jazz
+                                      jazz.platform)))
+  (project ".project"))

@@ -1,0 +1,18 @@
+;;;==============
+;;;  JazzScheme
+;;;==============
+;;;
+;;;; %product-title% Product
+;;;
+
+
+(unit %product-unit%.product
+
+
+;;;
+;;;; Register
+;;;
+
+
+(jazz:register-product '%product%
+  title: "%product-title%"))

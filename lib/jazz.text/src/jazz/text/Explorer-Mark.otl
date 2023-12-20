@@ -1,0 +1,8 @@
+(module jazz.text.Explorer-Mark jazz
+  (class Explorer-Mark extends Object
+    (slot kind <symbol> getter generate)
+    (slot range <Range$Cell$> getter generate)
+    (method override (initialize self kind range))
+    (method override (print self output readably)))
+  (hub get-kind)
+  (hub get-range))

@@ -1,0 +1,14 @@
+(package jazz.network
+  
+  (title "Network")
+  (description "Network primitives")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.network (alias network)
+                          (update jazz.network
+                                  jazz.network.websocket
+                                  jazz.network.websocket.foreign)
+                          (dependencies jazz
+                                        base64)))
+  (project ".project"))

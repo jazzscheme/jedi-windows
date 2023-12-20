@@ -1,0 +1,8 @@
+(module jazz.doc.doc.Category-Doc jazz
+  (import (jazz.doc))
+  (class Category-Doc extends Element-Doc
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (slot catalog)
+    (method override (get-catalog self))
+    (method override (set-catalog self cat))
+    (method override (update-indexes self definitions-index references-index))))

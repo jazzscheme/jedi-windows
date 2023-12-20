@@ -1,0 +1,20 @@
+(module jazz.graphic.pdf jazz
+  (import (jazz.cairo))
+  (import (jazz.graphic))
+  (import (jazz.io))
+  (import (jazz.print))
+  (import (jazz.view))
+  (definition pdf-dpi)
+  (definition public (with-pdf-job view file proc (page-setup: page-setup (unspecified)) (scaling: scaling (unspecified))))
+  (definition public (document->pdf view file (page-setup: page-setup (unspecified)) (scaling: scaling (unspecified))))
+  (class PDF-Job extends Print-Job
+    (slot page-no)
+    (method public (emit-page self page))
+    (method override (end-page self no))
+    (method override (print-orientation self)))
+  (hub emit-page)
+  (class PDF-Surface extends Surface
+    (method override (initialize self _ size filename))
+    (method override (painting-tree-algorithm self))
+    (method override (frame-rect self rect <Rect> color))
+    (method override (show-page self))))

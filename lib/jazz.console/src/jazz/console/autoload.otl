@@ -1,0 +1,7 @@
+(module jazz.console.autoload jazz
+  (export (jazz.console.Console-Manager (autoload Console-Manager Console-Manager)))
+  (export (jazz.console.Console-Preferences (autoload Console-Preferences Console-Preferences)))
+  (export (jazz.console.Console-Text-Actions (autoload Console-Text-Actions Console-Text-Actions)))
+  (export (jazz.console.Console-Text-Preferences (autoload Console-Text-Preferences Console-Text-Preferences)))
+  (export (jazz.console.Console-Text-View (autoload Console-Text-View Console-Text-View)))
+  (export (jazz.console.Console-View (autoload Console-View Console-View))))

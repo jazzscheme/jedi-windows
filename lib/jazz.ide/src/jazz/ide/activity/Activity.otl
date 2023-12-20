@@ -1,0 +1,2 @@
+(module jazz.ide.activity.Activity jazz
+  (class Activity extends Object))

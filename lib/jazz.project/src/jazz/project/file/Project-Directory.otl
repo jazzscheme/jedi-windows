@@ -1,0 +1,7 @@
+(module jazz.project.file.Project-Directory jazz
+  (import (jazz.project))
+  (class Project-Directory extends Project-Group
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property directory accessors generate))
+  (hub get-directory)
+  (hub set-directory))

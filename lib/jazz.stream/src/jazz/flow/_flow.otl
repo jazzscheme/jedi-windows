@@ -1,0 +1,10 @@
+(module jazz.flow jazz
+  (class Flow extends Object
+    (method public virtual abstract (running-time self))
+    (method public virtual abstract (process-window self))
+    (method public virtual (freeze self))
+    (method public virtual (thaw self)))
+  (hub running-time)
+  (hub process-window)
+  (hub freeze)
+  (hub thaw))

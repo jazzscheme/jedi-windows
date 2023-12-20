@@ -1,0 +1,3 @@
+(module jazz.presence.literals jazz
+  (import (jazz.presence))
+  (definition package (construct-ior uuid remotable reference values)))

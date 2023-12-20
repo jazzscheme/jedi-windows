@@ -1,0 +1,27 @@
+(package jazz.stream
+  
+  (title "Stream")
+  (description "Interface to the GStreamer library")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.stream (alias stream)
+                         (remote (linux "togethersphere.com/jazz-stream-linux")
+                                 (silicon "togethersphere.com/jazz-stream-silicon")
+                                 (mac "togethersphere.com/jazz-stream-mac")
+                                 (windows "togethersphere.com/jazz-stream-windows"))
+                         (run jazz.stream.run)
+                         (switches "fps" "info" "debug" "trace" "graph" "mode" "latency" "caps" "queue" "clock" "threads")
+                         (product jazz.stream.product)
+                         (update jazz.flow
+                                 jazz.stream
+                                 jazz.stream.foreign
+                                 jazz.stream.platform
+                                 jazz.stream.product
+                                 jazz.stream.run
+                                 jazz.stream.setup
+                                 jazz.stream.syntax)
+                         (dependencies jazz
+                                       jazz.foreign
+                                       jazz.platform)))
+  (project ".project"))

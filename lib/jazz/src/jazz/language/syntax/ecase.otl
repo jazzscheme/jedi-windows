@@ -1,0 +1,5 @@
+(module jazz.language.syntax.ecase scheme
+  (import (jazz.language.runtime.kernel))
+  (native private jazz:error)
+  (syntax public ecase)
+  (syntax public nucase))

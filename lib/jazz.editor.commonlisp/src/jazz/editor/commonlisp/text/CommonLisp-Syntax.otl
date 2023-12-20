@@ -1,0 +1,10 @@
+(module jazz.editor.commonlisp.text.CommonLisp-Syntax jazz
+  (import (jazz.editor.commonlisp))
+  (import (jazz.editor.lisp))
+  (import (jazz.preferences))
+  (class CommonLisp-Syntax extends Lisp-Syntax
+    (method override (default-extension self))
+    (method override (extensions self))
+    (method override (explorer-class self))
+    (method override (preferences self))
+    (method override (declaration-style self documented?))))

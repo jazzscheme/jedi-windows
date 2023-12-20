@@ -1,0 +1,21 @@
+(module jazz.groupware.compare.Threeway-Compare-Text-View jazz
+  (import (jazz.action))
+  (import (jazz.event))
+  (import (jazz.groupware))
+  (import (jazz.locale))
+  (import (jazz.markup))
+  (import (jazz.menu))
+  (import (jazz.resource))
+  (class Threeway-Compare-Text-View extends Compare-Text-View
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (tab-press self evt))
+    (method override (tab-stop-enter self))
+    (method override (get-context-menu self)))
+  (class Threeway-Compare-Text-Menu extends Context-Menu
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

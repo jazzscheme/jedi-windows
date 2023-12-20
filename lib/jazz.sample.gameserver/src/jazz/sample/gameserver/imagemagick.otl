@@ -1,0 +1,3 @@
+(module jazz.sample.gameserver.imagemagick jazz
+  (definition public (image-convert cmd))
+  (definition public (image-composite cmd)))

@@ -1,0 +1,20 @@
+(package jazz.freetype
+  
+  (title "Freetype")
+  (description "Interface to the Freetype font rendering library")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.freetype (alias freetype)
+                           (remote (linux "togethersphere.com/jazz-freetype-linux")
+                                   (silicon "togethersphere.com/jazz-freetype-silicon")
+                                   (mac "togethersphere.com/jazz-freetype-mac")
+                                   (windows "togethersphere.com/jazz-freetype-windows"))
+                           (test jazz.freetype.test)
+                           (product jazz.freetype.product)
+                           (update jazz.freetype
+                                   jazz.freetype.product)
+                           (dependencies jazz
+                                         jazz.foreign
+                                         jazz.platform)))
+  (project ".project"))

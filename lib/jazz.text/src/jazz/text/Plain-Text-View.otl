@@ -1,0 +1,10 @@
+(module jazz.text.Plain-Text-View jazz
+  (import (jazz.preferences))
+  (import (jazz.text))
+  (class Plain-Text-View extends Text-View
+    (method meta override (external-name self . rest))
+    (method override (new-model self))
+    (method override (host-workspaces self))
+    (definition public onsite headers)
+    (method override (get-headers self))
+    (method override (preferences self))))

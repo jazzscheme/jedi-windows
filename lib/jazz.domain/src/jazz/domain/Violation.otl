@@ -1,0 +1,6 @@
+(module jazz.domain.Violation jazz
+  (class Violation extends Object
+    (slot message getter generate)
+    (method override (initialize self (message: message (unspecified))))
+    (method override (print self output readably)))
+  (hub get-message))

@@ -1,0 +1,3 @@
+(module jazz.editor.java.catalog.Java-Entry jazz
+  (import (jazz.catalog))
+  (class Java-Entry extends Indexed-Entry))

@@ -1,0 +1,9 @@
+(module jazz.catalog.entry.Category-Entry jazz
+  (import (jazz.catalog))
+  (class Category-Entry extends Hierarchical-Entry
+    (slot extends accessors generate)
+    (method override (initialize self modifiers qualified name extends line column end-line end-column definitions))
+    (method override (present self))
+    (method override (update-indexes self definitions-index references-index)))
+  (hub get-extends)
+  (hub set-extends))

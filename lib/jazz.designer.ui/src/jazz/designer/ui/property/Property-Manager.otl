@@ -1,0 +1,16 @@
+(module jazz.designer.ui.property.Property-Manager jazz
+  (interface Property-Manager
+    (method public virtual abstract (editor-focus-gained self editor))
+    (method public virtual abstract (editor-focus-lose self editor))
+    (method public virtual abstract (editor-left-arrow self editor))
+    (method public virtual abstract (editor-right-arrow self editor))
+    (method public virtual abstract (editor-up-arrow self editor))
+    (method public virtual abstract (editor-down-arrow self editor))
+    (method public virtual abstract (editor-return self editor)))
+  (hub editor-focus-gained)
+  (hub editor-focus-lose)
+  (hub editor-left-arrow)
+  (hub editor-right-arrow)
+  (hub editor-up-arrow)
+  (hub editor-down-arrow)
+  (hub editor-return))

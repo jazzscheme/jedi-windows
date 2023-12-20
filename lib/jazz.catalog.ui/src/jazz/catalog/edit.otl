@@ -1,0 +1,8 @@
+(module jazz.catalog.edit jazz
+  (import (jazz.application))
+  (import (jazz.catalog))
+  (import (jazz.io))
+  (import (jazz.search))
+  (generic (edit-entry entry <Catalog-Entry> . rest))
+  (generic (edit-reference entry <Catalog-Entry> direction search-result . rest))
+  (definition public (edit-textual-reference entry <Catalog-Entry> target . rest)))

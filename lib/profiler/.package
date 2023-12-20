@@ -1,0 +1,11 @@
+(package profiler
+  
+  (title "Profiler")
+  (description "Profiler access")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (profiler (update profiler)
+                      (dependencies jazz
+                                    scheme)))
+  (project ".project"))

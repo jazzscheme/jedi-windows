@@ -1,0 +1,8 @@
+(module jazz.ide.log.Loggable jazz
+  (interface Loggable
+    (method public virtual abstract (log-info self output))
+    (method public virtual abstract (edit self))
+    (method public virtual abstract (edit-child self child)))
+  (hub log-info)
+  (hub edit)
+  (hub edit-child))

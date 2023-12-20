@@ -1,0 +1,4 @@
+(module jazz.doc.doc.Syntax-Doc jazz
+  (import (jazz.doc))
+  (class Syntax-Doc extends Definition-Doc
+    (method meta override (get-class-descriptor self (context: context (unspecified))))))

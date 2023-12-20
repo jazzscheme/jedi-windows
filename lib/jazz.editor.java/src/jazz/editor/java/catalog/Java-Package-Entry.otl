@@ -1,0 +1,9 @@
+(module jazz.editor.java.catalog.Java-Package-Entry jazz
+  (import (jazz.editor.java))
+  (import (jazz.io))
+  (import (jazz.resource))
+  (class Java-Package-Entry extends Java-Entry
+    (method override (initialize self name line column end-line end-column))
+    (method override (print-catalog self level output))
+    (method override (get-image self))
+    (method override (update-indexes self definitions-index references-index))))

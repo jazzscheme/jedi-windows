@@ -1,0 +1,3 @@
+(module jazz.editor.c jazz
+  (export (jazz.editor.c.autoload))
+  (hub get-header?))

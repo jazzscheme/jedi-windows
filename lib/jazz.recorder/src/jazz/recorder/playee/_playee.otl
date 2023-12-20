@@ -1,0 +1,5 @@
+(module jazz.recorder.playee jazz
+  (import (jazz.recorder))
+  (import (jazz.recorder.playee.stub))
+  (import (jazz.presence))
+  (definition public (make-recorder-playee)))

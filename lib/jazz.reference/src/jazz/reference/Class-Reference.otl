@@ -1,0 +1,3 @@
+(module jazz.reference.Class-Reference jazz
+  (import (jazz.reference))
+  (class Class-Reference extends Reference))

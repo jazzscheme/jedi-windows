@@ -1,0 +1,2 @@
+(module jazz.debuggee.setup jazz
+  (import (jazz.debuggee)))

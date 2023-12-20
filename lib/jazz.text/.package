@@ -1,0 +1,20 @@
+(package jazz.text
+  
+  (title "Text")
+  (description "Text view")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.text (alias text)
+                       (update jazz.text
+                               jazz.text.preferences)
+                       (dependencies jazz
+                                     jazz.outline))
+            (jazz.text.desc (alias text.desc)
+                            (description "Text descriptors")
+                            (update jazz.text.descriptors)
+                            (dependencies jazz
+                                          jazz.descriptor
+                                          jazz.domain
+                                          jazz.markup)))
+  (project ".project"))

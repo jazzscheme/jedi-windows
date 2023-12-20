@@ -1,0 +1,5 @@
+(module jazz.ide.history jazz
+  (import (jazz.ide))
+  (import (jazz.view))
+  (definition public (track-history sender initiator manager direction))
+  (definition public (get-history manager direction)))

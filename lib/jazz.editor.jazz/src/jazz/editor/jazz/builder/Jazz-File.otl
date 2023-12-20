@@ -1,0 +1,10 @@
+(module jazz.editor.jazz.builder.Jazz-File jazz
+  (import (jazz.project))
+  (class Jazz-File extends Project-File
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property tester? accessors generate)
+    (method override (print self output readably))
+    (method public (get-product self)))
+  (hub get-tester?)
+  (hub set-tester?)
+  (hub get-product))

@@ -1,0 +1,11 @@
+(module jazz.editor.clike.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.document.descriptors))
+  (import (jazz.domain))
+  (import (jazz.editor.descriptors))
+  (import (jazz.markup))
+  (class CLike-Text-Preferences-Descriptor extends Document-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

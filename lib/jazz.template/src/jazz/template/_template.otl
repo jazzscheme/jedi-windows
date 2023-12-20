@@ -1,0 +1,17 @@
+(module jazz.template jazz
+  (import (jazz.io))
+  (hub expand)
+  (definition name-delimiter-start)
+  (definition name-delimiter-end)
+  (definition content-delimiter-start)
+  (definition content-delimiter-end)
+  (definition public (copy-template template destination associations (ignored-nodes: ignored-nodes (unspecified)) (non-expanded-nodes: non-expanded-nodes (unspecified)) (non-expanded-leaves: non-expanded-leaves (unspecified))))
+  (definition default-delimiter-escape)
+  (definition default-delimiter-start)
+  (definition default-delimiter-end)
+  (class Template-Expander extends Object
+    (slot delimiter-escape)
+    (slot delimiter-start)
+    (slot delimiter-end)
+    (method override (initialize self (delimiter-escape: delimiter-escape (unspecified)) (delimiter-start: delimiter-start (unspecified)) (delimiter-end: delimiter-end (unspecified))))
+    (method public (expand self template associations output (printer: printer (unspecified))))))

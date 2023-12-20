@@ -1,0 +1,3 @@
+(module jazz.graphic.syntax jazz
+  (macro public (define-color name . rest))
+  (macro public (define-font name . rest)))

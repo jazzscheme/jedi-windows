@@ -1,0 +1,4 @@
+(module jazz.doc.doc.Field-Doc jazz
+  (import (jazz.doc))
+  (class Field-Doc extends Definition-Doc
+    (method meta override (get-class-descriptor self (context: context (unspecified))))))

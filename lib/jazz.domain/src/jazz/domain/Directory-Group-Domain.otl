@@ -1,0 +1,6 @@
+(module jazz.domain.Directory-Group-Domain jazz
+  (import (jazz.domain))
+  (import (jazz.ui))
+  (class Directory-Group-Domain extends Domain
+    (method override (present-value self value))
+    (method override (setup-entry self view client))))

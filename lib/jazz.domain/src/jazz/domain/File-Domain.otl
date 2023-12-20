@@ -1,0 +1,8 @@
+(module jazz.domain.File-Domain jazz
+  (import (jazz.domain))
+  (import (jazz.io))
+  (import (jazz.ui))
+  (class File-Domain extends Domain
+    (method override (present-value self value))
+    (method override (parse-presentation self text))
+    (method override (setup-entry self view client))))

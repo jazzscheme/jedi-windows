@@ -1,0 +1,18 @@
+(module jazz.columnar.Column-Preferences jazz
+  (import (jazz.columnar))
+  (import (jazz.preferences))
+  (class Column-Preferences extends Preferences
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property border accessors generate)
+    (property border-after accessors generate)
+    (property minimum accessors generate)
+    (method package virtual (column-class self))
+    (method public virtual (new-column self display)))
+  (hub get-border)
+  (hub set-border)
+  (hub get-border-after)
+  (hub set-border-after)
+  (hub get-minimum)
+  (hub set-minimum)
+  (hub column-class)
+  (hub new-column))

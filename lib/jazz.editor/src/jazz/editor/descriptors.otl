@@ -1,0 +1,14 @@
+(module jazz.editor.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.markup))
+  (import (jazz.text.descriptors))
+  (class Completions-Domain extends List-Domain
+    (method override (finish self rest)))
+  (class Completion-Domain extends String-Domain
+    (method override (present-value self value)))
+  (class Code-Text-Preferences-Descriptor extends Text-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

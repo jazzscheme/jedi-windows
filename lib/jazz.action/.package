@@ -1,0 +1,13 @@
+(package jazz.action
+  
+  (title "Action")
+  (description "Actions")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (install jazz.action.install)
+  (products (jazz.action (alias action)
+                         (update jazz.action
+                                 jazz.action.install)
+                         (dependencies jazz)))
+  (project ".project"))

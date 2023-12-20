@@ -1,0 +1,11 @@
+(module jazz.project.repositories.Repository jazz
+  (import (jazz.component))
+  (class Repository extends Component
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property title accessors generate)
+    (property directory accessors generate)
+    (method override (print self output readably)))
+  (hub get-title)
+  (hub set-title)
+  (hub get-directory)
+  (hub set-directory))

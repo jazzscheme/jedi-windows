@@ -1,0 +1,3 @@
+(module jazz.text.Date-Text-View jazz
+  (import (jazz.text))
+  (class Date-Text-View extends Text-View))

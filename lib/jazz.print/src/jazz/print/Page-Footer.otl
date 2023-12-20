@@ -1,0 +1,5 @@
+(module jazz.print.Page-Footer jazz
+  (import (jazz.graphic))
+  (import (jazz.print))
+  (class Page-Footer extends Page-Text-View
+    (method override (get-drawing-background self context))))

@@ -1,0 +1,14 @@
+(module jazz.project.project.Project-Catalog jazz
+  (import (jazz.catalog))
+  (import (jazz.io))
+  (import (jazz.project))
+  (class Project-Catalog extends Filing-Catalog
+    (slot project getter generate)
+    (method override (initialize self project . rest))
+    (method override (get-active? self))
+    (method override (get-extensions self))
+    (method override (get-heuristics self))
+    (method override (setup-contexts self))
+    (method override (save? self))
+    (method override (iterate-files self proc)))
+  (hub get-project))

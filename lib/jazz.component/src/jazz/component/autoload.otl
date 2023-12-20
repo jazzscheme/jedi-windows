@@ -1,0 +1,10 @@
+(module jazz.component.autoload jazz
+  (export (jazz.component.Branch (autoload Branch Branch Branch)))
+  (export (jazz.component.Component (autoload Component-Class Component Component-Class Component Component-Class Component)))
+  (export (jazz.component.Data (autoload Data Data Data)))
+  (export (jazz.component.Form (autoload Form Form Form)))
+  (export (jazz.component.Former (autoload Former Former Former)))
+  (export (jazz.component.Group (autoload Group Group Group)))
+  (export (jazz.component.Restore-Form (autoload Restore-Form Restore-Form Restore-Form)))
+  (export (jazz.component.Trait (autoload Trait Trait Trait)))
+  (export (jazz.component.Trait-Reference (autoload Trait-Reference Trait-Reference Trait-Reference))))

@@ -1,0 +1,9 @@
+(module jazz.sample.mandelbrot jazz
+  (export (jazz.sample.mandelbrot.autoload))
+  (hub clear)
+  (hub get-c)
+  (hub get-color)
+  (hub get-pos)
+  (hub line)
+  (hub set-color)
+  (hub set-pos))

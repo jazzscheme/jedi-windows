@@ -1,0 +1,11 @@
+(module jazz.webserver.HTTP-Dispatcher jazz
+  (import (jazz.webserver))
+  (class HTTP-Dispatcher extends Object
+    (slot default-404-handler)
+    (slot handlers accessors generate)
+    (method public (dispatch-request self request port server))
+    (method public (add-handler self handler)))
+  (hub get-handlers)
+  (hub set-handlers)
+  (hub dispatch-request)
+  (hub add-handler))

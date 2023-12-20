@@ -1,0 +1,14 @@
+(module jazz.presence.remotable.Remote-Listener jazz
+  (import (jazz.network))
+  (import (jazz.presence))
+  (class Remote-Listener extends TCP-Server
+    (slot presence getter generate)
+    (method override (initialize self presence . rest))
+    (method override (print self output readably))
+    (method override (server-name self))
+    (method override (server-title self))
+    (method override (connection-name self))
+    (method override (connection-readtable self))
+    (method override (create-thread self name . rest))
+    (method override (accept-connection self port)))
+  (hub get-presence))

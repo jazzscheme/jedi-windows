@@ -1,0 +1,13 @@
+(module jazz.search.Search-Resultset jazz
+  (class Search-Resultset extends Object
+    (slot search getter generate)
+    (slot selection accessors generate)
+    (slot queue)
+    (method override (initialize self search))
+    (method public (get-results self))
+    (method public (add-result self result)))
+  (hub get-search)
+  (hub get-selection)
+  (hub set-selection)
+  (hub get-results)
+  (hub add-result))

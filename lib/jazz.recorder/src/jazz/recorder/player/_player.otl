@@ -1,0 +1,5 @@
+(module jazz.recorder.player jazz
+  (import (jazz.recorder))
+  (import (jazz.recorder.player.stub))
+  (import (jazz.presence))
+  (definition public (make-recorder-player)))

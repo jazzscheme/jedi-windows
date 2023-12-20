@@ -1,0 +1,15 @@
+(module jazz.project.preference.Workbench-Preferences jazz
+  (import (jazz.markup))
+  (import (jazz.preferences))
+  (class Workbench-Preferences extends Preferences
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property active-project accessors generate)
+    (property active-traits accessors generate))
+  (hub get-active-project)
+  (hub set-active-project)
+  (hub get-active-traits)
+  (hub set-active-traits))

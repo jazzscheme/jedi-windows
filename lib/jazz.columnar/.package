@@ -1,0 +1,18 @@
+(package jazz.columnar
+  
+  (title "Columnar")
+  (description "Column display")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.columnar (alias columnar)
+                           (update jazz.columnar)
+                           (dependencies jazz))
+            (jazz.columnar.desc (alias columnar.desc)
+                                (description "Columnar descriptors")
+                                (update jazz.columnar.descriptors)
+                                (dependencies jazz
+                                              jazz.descriptor
+                                              jazz.domain
+                                              jazz.markup)))
+  (project ".project"))

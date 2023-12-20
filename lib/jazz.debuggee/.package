@@ -1,0 +1,24 @@
+(package jazz.debuggee
+  
+  (title "Debuggee")
+  (description "Debuggee")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.debuggee (alias debuggee)
+                           (update jazz.debuggee
+                                   jazz.debuggee.configure
+                                   jazz.debuggee.setup
+                                   jazz.debuggee.stub
+                                   jazz.debuggee.update)
+                           (dependencies jazz
+                                         jazz.debuggee.jazz
+                                         jazz.debugger.stub
+                                         jazz.core
+                                         jazz.inspector
+                                         jazz.io
+                                         jazz.network
+                                         jazz.presence
+                                         profiler
+                                         srfi-19)))
+  (project ".project"))

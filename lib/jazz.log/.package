@@ -1,0 +1,12 @@
+(package jazz.log
+  
+  (title "Log")
+  (description "Logging")
+  (authors "Guillaume Cartier")
+  (stage experimental)
+  (root "src")
+  (products (jazz.log (alias log)
+                      (update jazz.log
+                              jazz.logger)
+                      (dependencies jazz)))
+  (project ".project"))

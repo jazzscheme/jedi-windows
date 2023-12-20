@@ -1,0 +1,12 @@
+(module jazz.domain.Class-Reference-Domain jazz
+  (import (jazz.domain))
+  (import (jazz.reference))
+  (class Class-Reference-Domain extends Value-Domain
+    (property classes accessors generate)
+    (property runtime-reference? accessors generate)
+    (method override (present-value self reference))
+    (method override (setup-entry self view client)))
+  (hub get-classes)
+  (hub set-classes)
+  (hub get-runtime-reference?)
+  (hub set-runtime-reference?))

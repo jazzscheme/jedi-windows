@@ -1,0 +1,4 @@
+(module jazz.resource.Icon-Resource jazz
+  (import (jazz.resource))
+  (class Icon-Resource extends Resource
+    (method meta override (resource-type self))))

@@ -1,0 +1,3 @@
+(module jazz.profile.autoload jazz
+  (export (jazz.profile.Profile (autoload Profile Profile)))
+  (export (jazz.profile.Me (autoload Me Me))))

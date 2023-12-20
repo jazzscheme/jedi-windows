@@ -1,0 +1,11 @@
+(package jazz.webserver
+  
+  (title "Webserver")
+  (description "Jazz web server")
+  (authors "Guillaume Cartier")
+  (stage experimental)
+  (root "src")
+  (products (jazz.webserver (update jazz.webserver)
+                            (dependencies contrib.webserver
+                                          jazz)))
+  (project ".project"))

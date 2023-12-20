@@ -1,0 +1,18 @@
+(package jazz.search
+  
+  (title "Search")
+  (description "Search")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.search (alias search)
+                         (update jazz.search)
+                         (dependencies jazz))
+            (jazz.search.desc (alias search.desc)
+                              (description "Search descriptors")
+                              (update jazz.search.descriptors)
+                              (dependencies jazz
+                                            jazz.descriptor
+                                            jazz.domain
+                                            jazz.markup)))
+  (project ".project"))

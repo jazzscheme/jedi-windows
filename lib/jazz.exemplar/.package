@@ -1,0 +1,18 @@
+(package jazz.exemplar
+  
+  (title "Exemplar")
+  (description "Prototype-based programming")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.exemplar (alias exemplar)
+                           (update jazz.exemplar)
+                           (dependencies jazz))
+            (jazz.exemplar.desc (alias exemplar.desc)
+                                (description "Exemplar descriptors")
+                                (update jazz.exemplar.descriptors)
+                                (dependencies jazz
+                                              jazz.descriptor
+                                              jazz.domain
+                                              jazz.markup)))
+  (project ".project"))

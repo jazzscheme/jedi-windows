@@ -1,0 +1,4 @@
+(module jazz.project.project.Project-Not-Found jazz
+  (import (jazz.project))
+  (class Project-Not-Found extends Project
+    (method meta override (get-class-descriptor self (context: context (unspecified))))))

@@ -1,0 +1,6 @@
+(module jazz.process.autoload jazz
+  (export (jazz.process.Command-Line (autoload Command-Line Command-Line)))
+  (export (jazz.process.Quit-Listener (autoload Quit-Listener Quit-Listener)))
+  (export (jazz.process.Process (autoload Process Process)))
+  (export (jazz.process.Process-Preferences (autoload Process-Preferences Process-Preferences)))
+  (export (jazz.process.Save-Environment-Listener (autoload Save-Environment-Listener Save-Environment-Listener))))

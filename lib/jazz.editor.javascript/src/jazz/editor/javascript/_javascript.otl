@@ -1,0 +1,5 @@
+(module jazz.editor.javascript jazz
+  (export (jazz.editor.javascript.autoload))
+  (hub get-definitions)
+  (hub get-keywords)
+  (definition public (javascript-constituent? c)))

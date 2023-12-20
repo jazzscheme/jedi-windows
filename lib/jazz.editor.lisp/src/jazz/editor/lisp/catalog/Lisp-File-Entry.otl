@@ -1,0 +1,3 @@
+(module jazz.editor.lisp.catalog.Lisp-File-Entry jazz
+  (import (jazz.catalog))
+  (class Lisp-File-Entry extends File-Entry))

@@ -1,0 +1,5 @@
+(module jazz.ui.view.Separator-View jazz
+  (import (jazz.graphic))
+  (import (jazz.view))
+  (class Separator-View extends View
+    (method override (draw self surface context))))

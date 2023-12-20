@@ -1,0 +1,5 @@
+(module jazz.project.resource.Sound-File jazz
+  (import (jazz.project))
+  (import (jazz.resource))
+  (class Sound-File extends Resource-File
+    (method override (resource-class self))))

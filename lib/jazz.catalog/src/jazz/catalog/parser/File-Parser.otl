@@ -1,0 +1,12 @@
+(module jazz.catalog.parser.File-Parser jazz
+  (class File-Parser extends Object
+    (method meta protected virtual (get-match-test self))
+    (method meta protected virtual (get-constituent-test self))
+    (slot catalog)
+    (slot char-encoding)
+    (slot heuristics)
+    (slot references?)
+    (method override (initialize self catalog (char-encoding: char-encoding (unspecified)) (heuristics: heuristics (unspecified)) (references?: references? (unspecified))))
+    (method (get-heuristic self name))
+    (method public virtual abstract (parse self file digest dialect)))
+  (hub parse))

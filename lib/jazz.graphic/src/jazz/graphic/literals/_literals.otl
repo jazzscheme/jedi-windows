@@ -1,0 +1,7 @@
+(module jazz.graphic.literals jazz
+  (import (jazz.exemplar))
+  (import (jazz.graphic))
+  (definition package (construct-color . rest))
+  (definition package (construct-font . rest))
+  (definition package (construct-gradient kind . rest))
+  (definition package (construct-texture mode . rest)))

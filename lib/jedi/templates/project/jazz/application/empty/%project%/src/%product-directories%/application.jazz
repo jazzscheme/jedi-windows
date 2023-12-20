@@ -1,0 +1,44 @@
+;;;==============
+;;;  JazzScheme
+;;;==============
+;;;
+;;;; %product-title%
+;;;
+
+
+(module %product-unit%.application jazz
+
+
+(import (jazz.application)
+        (jazz.markup)
+        (jazz.platform)
+        (jazz.ui)
+        (jazz.window))
+
+
+;;;
+;;;; Application
+;;;
+
+
+(class %project-name%-Application extends Application
+
+  
+  (method override (process-name self)
+    "%project-title%")
+  
+  
+  (method override (new-toplevel self)
+    (new %project-name%-Toplevel)))
+
+
+;;;
+;;;; Toplevel
+;;;
+
+
+(class %project-name%-Toplevel extends Toplevel
+  
+  
+  (form
+    (<install> caption-base: "%project-title%" size: {Dimension 400 400}))))

@@ -1,0 +1,6 @@
+(module jazz.catalog.entry.Variable-Entry jazz
+  (import (jazz.catalog))
+  (import (jazz.resource))
+  (class Variable-Entry extends Definition-Entry
+    (method override (print-catalog self level output))
+    (method override (get-image self))))

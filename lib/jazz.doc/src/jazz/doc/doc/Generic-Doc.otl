@@ -1,0 +1,3 @@
+(module jazz.doc.doc.Generic-Doc jazz
+  (import (jazz.doc))
+  (class Generic-Doc extends Definition-Doc))

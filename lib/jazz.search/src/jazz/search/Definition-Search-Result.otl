@@ -1,0 +1,16 @@
+(module jazz.search.Definition-Search-Result jazz
+  (import (jazz.catalog))
+  (import (jazz.catalog.edit))
+  (import (jazz.editor.lisp))
+  (import (jazz.search))
+  (class Definition-Search-Result extends Search-Result
+    (slot entry getter generate)
+    (method override (initialize self resultset entry))
+    (method override (get-icon self))
+    (method override (present self))
+    (method override (present-name self))
+    (method override (present-location self))
+    (method override (present-type self))
+    (method override (location-sort-value self))
+    (method override (edit self select (visible?: visible? (unspecified)) (activate-focus?: activate-focus? (unspecified)))))
+  (hub get-entry))

@@ -1,0 +1,7 @@
+(module jazz.platform.requests jazz
+  (definition public drop-file-callback)
+  (definition public music-played-callback)
+  (definition public quit-callback)
+  (definition public sleep-callback)
+  (definition public wake-callback)
+  (definition public user-notification))

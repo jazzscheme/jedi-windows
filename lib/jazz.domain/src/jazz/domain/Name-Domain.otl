@@ -1,0 +1,9 @@
+(module jazz.domain.Name-Domain jazz
+  (import (jazz.domain))
+  (class Name-Domain extends Info-Domain
+    (property limit accessors generate)
+    (method override (validate-value self value (validation-context (unspecified))))
+    (method override (present-value self value))
+    (method override (parse-presentation self text)))
+  (hub get-limit)
+  (hub set-limit))

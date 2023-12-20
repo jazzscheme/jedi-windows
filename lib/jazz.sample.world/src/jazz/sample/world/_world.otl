@@ -1,0 +1,5 @@
+(module jazz.sample.world jazz
+  (import (jazz.platform))
+  (import (jazz.process))
+  (class World extends Process
+    (method override (start-process self))))

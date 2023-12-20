@@ -1,0 +1,2 @@
+(module jazz.editor.scheme jazz
+  (export (jazz.editor.scheme.autoload)))

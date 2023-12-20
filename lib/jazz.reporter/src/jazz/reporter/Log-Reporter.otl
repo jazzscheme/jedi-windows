@@ -1,0 +1,17 @@
+(module jazz.reporter.Log-Reporter jazz
+  (import (jazz.reporter))
+  (class Log-Reporter extends Object implements Reporter
+    (slot log)
+    (method override (initialize self log))
+    (method override (section-title self title))
+    (method override (set-message self msg))
+    (method override (report-message self fmt . rest))
+    (method override (set-range self range))
+    (method override (set-pos self pos))
+    (method override (delta-pos self increment))
+    (method override (set-step self increment))
+    (method override (step-it self))
+    (method override (set-done self))
+    (method override (disable-cancel self))
+    (method override (cancel-requested? self))
+    (method override (test-cancelled self))))

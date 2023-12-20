@@ -1,0 +1,6 @@
+(module jazz.language.syntax.bind scheme
+  (import (jazz.language.runtime.kernel))
+  (native private jazz:naturals)
+  (syntax public bind)
+  (syntax public bind-vector)
+  (syntax public bind-values))

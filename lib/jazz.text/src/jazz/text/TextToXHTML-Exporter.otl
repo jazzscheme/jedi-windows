@@ -1,0 +1,17 @@
+(module jazz.text.TextToXHTML-Exporter jazz
+  (import (jazz.exemplar))
+  (import (jazz.graphic))
+  (import (jazz.text))
+  (class TextToXHTML-Exporter extends Object
+    (slot text)
+    (method override (initialize self text))
+    (method public (export-html self))
+    (method (export-head self))
+    (method (export-body self))
+    (method (export-element self element in-table?))
+    (method package (export-text self element in-table?))
+    (method (export-paragraph self paragraph in-table?))
+    (method (export-runs self paragraph in-table?))
+    (method (export-run self run in-table?)))
+  (hub export-html)
+  (hub export-text))

@@ -1,0 +1,3 @@
+(module jazz.editor.lua.couple.catalog jazz
+  (import (jazz.catalog))
+  (import (jazz.editor.lua)))

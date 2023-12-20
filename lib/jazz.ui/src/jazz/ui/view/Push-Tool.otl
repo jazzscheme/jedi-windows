@@ -1,0 +1,5 @@
+(module jazz.ui.view.Push-Tool jazz
+  (import (jazz.ui))
+  (class Push-Tool extends Image-Tool
+    (method override (default-size self))
+    (method override (up self))))

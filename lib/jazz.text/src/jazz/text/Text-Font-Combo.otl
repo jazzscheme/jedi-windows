@@ -1,0 +1,9 @@
+(module jazz.text.Text-Font-Combo jazz
+  (import (jazz.graphic))
+  (import (jazz.handler))
+  (import (jazz.text))
+  (definition (font-list))
+  (class Text-Font-Combo extends Text-Combo
+    (method override (client-update self))
+    (method override (selection-change self))
+    (method override (combo-choice self))))

@@ -1,0 +1,2 @@
+(module jazz.website.server.JazzScheme-Site jazz
+  (class JazzScheme-Site extends Object))

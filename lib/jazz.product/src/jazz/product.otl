@@ -1,0 +1,7 @@
+(module jazz.product jazz
+  (import (jazz.io))
+  (definition protected (ignored-extensions source-access? scriptable?))
+  (definition public (install-application descriptor destination (name: name (unspecified)) (application?: application? (unspecified)) (executable?: executable? (unspecified)) (jazz?: jazz? (unspecified)) (source-access?: source-access? (unspecified)) (scriptable?: scriptable? (unspecified)) (platform?: platform? (unspecified)) (opengl?: opengl? (unspecified)) (git?: git? (unspecified)) (gstreamer?: gstreamer? (unspecified)) (files: files (unspecified)) (directories: directories (unspecified)) (metadata: metadata (unspecified)) (ignored-contents: ignored-contents (unspecified)) (ignored-macosx: ignored-macosx (unspecified))))
+  (definition public (deploy-application descriptor installation-directory (make: make (unspecified)) (install: install (unspecified)) (deploy: deploy (unspecified))))
+  (definition public (deploy-git name dir))
+  (definition public (deploy-jas name dir)))

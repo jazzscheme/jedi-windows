@@ -1,0 +1,21 @@
+(package jazz.sample.gameserver
+  
+  (title "Server")
+  (description "Game server sample")
+  (authors "Guillaume Cartier")
+  (stage sample)
+  (root "src")
+  (products (jazz.sample.gameserver (title "Game Server")
+                                    #; ;; wait-fix
+                                    (run jazz.sample.gameserver.run)
+                                    (update jazz.sample.gameserver
+                                            jazz.sample.gameserver.imagemagick
+                                            jazz.sample.gameserver.run)
+                                    #; ;; wait-fix
+                                    (build gameserver)
+                                    (dependencies jazz
+                                                  jazz.sample.game
+                                                  jazz.sample.c4
+                                                  jazz.sample.gomoku
+                                                  jazz.webserver)))
+  (project ".project"))

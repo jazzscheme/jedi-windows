@@ -1,0 +1,18 @@
+(module jazz.ui.view.Entry-Combo-Text-View jazz
+  (import (jazz.designer))
+  (import (jazz.markup))
+  (import (jazz.text))
+  (import (jazz.ui))
+  (class Entry-Combo-Text-View extends Combo-Text-View
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property editor accessors generate)
+    (method override (new-model self))
+    (method override (focus-gained self))
+    (method override (focus-lose self))
+    (method override (get-context-menu self)))
+  (hub get-editor)
+  (hub set-editor))

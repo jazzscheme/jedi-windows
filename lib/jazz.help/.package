@@ -1,0 +1,11 @@
+(package jazz.help
+  
+  (title "Help")
+  (description "Help")
+  (authors "Guillaume Cartier")
+  (stage experimental)
+  (root "src")
+  (products (jazz.help (alias help)
+                       (update jazz.help)
+                       (dependencies jazz)))
+  (project ".project"))

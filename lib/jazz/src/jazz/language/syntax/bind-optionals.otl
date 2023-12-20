@@ -1,0 +1,3 @@
+(module jazz.language.syntax.bind-optionals scheme
+  (import (jazz.language.runtime.kernel))
+  (syntax public bind-optionals))

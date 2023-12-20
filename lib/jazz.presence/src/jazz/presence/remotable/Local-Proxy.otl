@@ -1,0 +1,13 @@
+(module jazz.presence.remotable.Local-Proxy jazz
+  (import (jazz.presence))
+  (class Local-Proxy extends Proxy
+    (method meta override (marshall-object self object))
+    (method meta override (unmarshall-object self content))
+    (slot object accessors generate)
+    (method override (initialize self presence object))
+    (method override (print self output readably))
+    (method package virtual (proxy-values self))
+    (method override (live? self)))
+  (hub get-object)
+  (hub set-object)
+  (hub proxy-values))

@@ -1,0 +1,10 @@
+(module jazz.webserver.HTTP-Listener jazz
+  (interface HTTP-Listener
+    (method public virtual abstract (hit self server))
+    (method public virtual abstract (receive-request self server request))
+    (method public virtual abstract (receive-pages-request self server request resource pages-class))
+    (method public virtual abstract (process-request self server request response)))
+  (hub hit)
+  (hub receive-request)
+  (hub receive-pages-request)
+  (hub process-request))

@@ -1,0 +1,10 @@
+(module jazz.editor.lisp.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.editor.descriptors))
+  (import (jazz.markup))
+  (class Lisp-Text-Preferences-Descriptor extends Code-Text-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

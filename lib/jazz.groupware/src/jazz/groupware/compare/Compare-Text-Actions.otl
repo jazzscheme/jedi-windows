@@ -1,0 +1,9 @@
+(module jazz.groupware.compare.Compare-Text-Actions jazz
+  (import (jazz.action))
+  (import (jazz.handler))
+  (import (jazz.markup))
+  (class Compare-Text-Actions extends Actions
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

@@ -1,0 +1,11 @@
+(module jazz.graphic.Gradient jazz
+  (import (jazz.graphic))
+  (class Gradient extends Object
+    (slot kind <symbol> getter generate)
+    (slot parts <list> getter generate)
+    (method override (initialize self kind . parts))
+    (method override (copy-object self deep?))
+    (method override (compare-object self target))
+    (method override (print self output readably)))
+  (hub get-kind)
+  (hub get-parts))

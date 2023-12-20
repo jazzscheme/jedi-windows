@@ -1,0 +1,7 @@
+(module jazz.project.resource.Resource-File jazz
+  (import (jazz.project))
+  (class Resource-File extends Project-File
+    (method public virtual (resource-class self))
+    (method public virtual (resource-marker self)))
+  (hub resource-class)
+  (hub resource-marker))

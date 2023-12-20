@@ -1,0 +1,9 @@
+(module jazz.markup.transformation.Markup-Transformation jazz
+  (import (jazz.markup))
+  (class Markup-Transformation extends Object
+    (slot parser)
+    (method override (initialize self (parser-class: parser-class (unspecified))))
+    (method public virtual (transform self node))
+    (method public (transform-node self node)))
+  (hub transform)
+  (hub transform-node))

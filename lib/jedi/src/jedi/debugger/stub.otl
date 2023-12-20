@@ -1,0 +1,27 @@
+(module jedi.debugger.stub jazz
+  (import (jazz.presence.syntax (phase syntax)))
+  (import (jazz.presence))
+  (class Jedi-Debugger-Stub-Interface extends Stub-Interface
+    (method override (local-class self))
+    (method override (remote-class self)))
+  (interface Jedi-Debugger-Stub metaclass Jedi-Debugger-Stub-Interface extends Remotable-Stub
+    (method public virtual abstract (show-properties self __debuggee __class __properties))
+    (method public virtual abstract (live-jedi/world self __debuggee))
+    (method public virtual abstract (design-jedi/world self __debuggee))
+    (method public virtual abstract (restore-jedi/world self __debuggee)))
+  (hub show-properties)
+  (hub live-jedi/world)
+  (hub design-jedi/world)
+  (hub restore-jedi/world)
+  (class Jedi-Debugger-Local-Proxy extends Local-Proxy implements Jedi-Debugger-Stub
+    (method override (stub-reference self))
+    (method override (show-properties self __debuggee __class __properties))
+    (method override (live-jedi/world self __debuggee))
+    (method override (design-jedi/world self __debuggee))
+    (method override (restore-jedi/world self __debuggee)))
+  (class Jedi-Debugger-Remote-Proxy extends Remote-Proxy implements Jedi-Debugger-Stub
+    (method override (stub-reference self))
+    (method override (show-properties self __debuggee __class __properties))
+    (method override (live-jedi/world self __debuggee))
+    (method override (design-jedi/world self __debuggee))
+    (method override (restore-jedi/world self __debuggee))))

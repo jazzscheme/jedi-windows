@@ -1,0 +1,5 @@
+(module jazz.print.Page-Header jazz
+  (import (jazz.graphic))
+  (import (jazz.print))
+  (class Page-Header extends Page-Text-View
+    (method override (get-drawing-background self context))))

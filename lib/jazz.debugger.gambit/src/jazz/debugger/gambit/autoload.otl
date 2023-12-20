@@ -1,0 +1,3 @@
+(module jazz.debugger.gambit.autoload jazz
+  (export (jazz.debugger.gambit.Gambit-Debugger (autoload Gambit-Debugger Gambit-Debugger)))
+  (export (jazz.debugger.gambit.Gambit-Project (autoload Gambit-Project Gambit-Project))))

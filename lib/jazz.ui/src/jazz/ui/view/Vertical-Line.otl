@@ -1,0 +1,6 @@
+(module jazz.ui.view.Vertical-Line jazz
+  (import (jazz.graphic))
+  (import (jazz.view))
+  (class Vertical-Line extends View
+    (method override (default-size self))
+    (method override (draw self surface context))))

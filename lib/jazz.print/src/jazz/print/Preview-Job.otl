@@ -1,0 +1,5 @@
+(module jazz.print.Preview-Job jazz
+  (import (jazz.print))
+  (class Preview-Job extends Print-Job
+    (method override (printed-page self))
+    (method override (print-orientation self))))

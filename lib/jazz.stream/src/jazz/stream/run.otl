@@ -1,0 +1,4 @@
+(module jazz.stream.run jazz
+  (import (jazz.debuggee))
+  (import (jazz.stream.test))
+  (definition (run descriptor)))

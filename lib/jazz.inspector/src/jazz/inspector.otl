@@ -1,0 +1,11 @@
+(module jazz.inspector jazz
+  (import (jazz.presence))
+  (definition presentation-limit)
+  (definition Unbound)
+  (definition public (package-unbound))
+  (definition public (package-info value (kind: kind (unspecified)) (mutable?: mutable? (unspecified)) (max-width: max-width (unspecified))))
+  (definition public onsite inspect-max-width)
+  (definition public onsite inspect-max-content)
+  (definition public (inspect-value value (max-width: max-width (unspecified)) (max-content: max-content (unspecified)) (packager: packager (unspecified))))
+  (definition kind-cache)
+  (definition (cached-kind-fields kind)))

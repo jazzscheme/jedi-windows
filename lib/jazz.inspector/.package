@@ -1,0 +1,12 @@
+(package jazz.inspector
+  
+  (title "Inspector")
+  (description "Data inspector")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.inspector (alias inspector)
+                            (update jazz.inspector)
+                            (dependencies jazz
+                                          jazz.presence)))
+  (project ".project"))

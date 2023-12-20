@@ -1,0 +1,3 @@
+(module jazz.debuggee.autoload jazz
+  (export (jazz.debuggee.base (autoload Debuggee-Frame Debuggee-Process Debuggee-Restart Debuggee-Stop Debuggee-Thread Debuggee-Frame Debuggee-Process Debuggee-Restart Debuggee-Stop Debuggee-Thread)))
+  (export (jazz.debuggee.stub (autoload Debuggee-Frame-Stub Debuggee-Process-Stub Debuggee-Restart-Stub Debuggee-Stop-Stub Debuggee-Thread-Stub Debuggee-Frame-Stub Debuggee-Process-Stub Debuggee-Restart-Stub Debuggee-Stop-Stub Debuggee-Thread-Stub))))

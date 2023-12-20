@@ -1,0 +1,4 @@
+(module jazz.process.Save-Environment-Listener jazz
+  (interface Save-Environment-Listener
+    (method public virtual abstract (save-environment self)))
+  (hub save-environment))

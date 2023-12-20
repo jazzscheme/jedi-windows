@@ -1,0 +1,15 @@
+(module jazz.catalog.entry.Hierarchical-Entry jazz
+  (import (jazz.catalog))
+  (class Hierarchical-Entry extends Indexed-Entry
+    (slot modifiers)
+    (slot qualified accessors generate)
+    (method override (initialize self modifiers qualified . rest))
+    (method override (print-catalog self level output))
+    (method package (get-modifiers self))
+    (method public (has-modifier? self modifier))
+    (method public (get-visibility self)))
+  (hub get-qualified)
+  (hub set-qualified)
+  (hub get-modifiers)
+  (hub has-modifier?)
+  (hub get-visibility))

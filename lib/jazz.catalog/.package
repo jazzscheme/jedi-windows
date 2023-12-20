@@ -1,0 +1,18 @@
+(package jazz.catalog
+  
+  (title "Catalog")
+  (description "Multi-language cross-reference catalog")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.catalog (alias catalog)
+                          (update jazz.catalog
+                                  jazz.catalog.entry)
+                          (dependencies jazz
+                                        jazz.digest
+                                        jazz.event
+                                        jazz.feedback
+                                        jazz.io
+                                        jazz.resource
+                                        jazz.version)))
+  (project ".project"))

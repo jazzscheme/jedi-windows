@@ -1,0 +1,11 @@
+(package jazz.execution
+  
+  (title "Execution")
+  (description "Execution user-level")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.execution (alias execution)
+                            (update jazz.execution)
+                            (dependencies jazz)))
+  (project ".project"))

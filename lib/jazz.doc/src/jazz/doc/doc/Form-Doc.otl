@@ -1,0 +1,6 @@
+(module jazz.doc.doc.Form-Doc jazz
+  (import (jazz.doc))
+  (class Form-Doc extends Element-Doc
+    (property parameters accessors generate))
+  (hub get-parameters)
+  (hub set-parameters))

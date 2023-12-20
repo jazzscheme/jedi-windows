@@ -1,0 +1,12 @@
+(module jazz.doc.doc.Definition-Doc jazz
+  (import (jazz.doc))
+  (class Definition-Doc extends Element-Doc
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property parameters accessors generate)
+    (property result-type accessors generate)
+    (method override (present self))
+    (method override (present-text self)))
+  (hub get-parameters)
+  (hub set-parameters)
+  (hub get-result-type)
+  (hub set-result-type))

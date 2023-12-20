@@ -1,0 +1,7 @@
+(module jazz.integrity.autoload jazz
+  (export (jazz.integrity.Integrity-Constraint (autoload Integrity-Constraint Integrity-Constraint)))
+  (export (jazz.integrity.Integrity-Log-Node (autoload Integrity-Log-Node Integrity-Log-Node)))
+  (export (jazz.integrity.Integrity-Manager (autoload Integrity-Manager Integrity-Manager)))
+  (export (jazz.integrity.Integrity-Violation (autoload Integrity-Violation Integrity-Violation)))
+  (export (jazz.integrity.Violations-Found (autoload Violations-Found Violations-Found)))
+  (export (jazz.integrity.Violations-Manager (autoload Violations-Manager Violations-Manager))))

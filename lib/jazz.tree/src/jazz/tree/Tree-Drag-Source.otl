@@ -1,0 +1,11 @@
+(module jazz.tree.Tree-Drag-Source jazz
+  (import (jazz.outline))
+  (import (jazz.view.dnd))
+  (class Tree-Drag-Source extends Drag-Source
+    (slot row getter generate)
+    (slot col getter generate)
+    (method override (initialize self . rest))
+    (method public (get-cell self)))
+  (hub get-row)
+  (hub get-col)
+  (hub get-cell))

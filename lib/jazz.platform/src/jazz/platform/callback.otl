@@ -1,0 +1,3 @@
+(module jazz.platform.callback jazz
+  (definition protected event-callback)
+  (definition protected (event-callback-set! callback)))

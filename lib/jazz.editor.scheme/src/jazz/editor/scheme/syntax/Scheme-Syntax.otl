@@ -1,0 +1,13 @@
+(module jazz.editor.scheme.syntax.Scheme-Syntax jazz
+  (import (jazz.editor.scheme))
+  (import (jazz.editor.lisp))
+  (import (jazz.preferences))
+  (class Scheme-Syntax extends Lisp-Syntax
+    (method override (preferences self))
+    (method override (default-extension self))
+    (method override (extensions self))
+    (method override (translate-key self key))
+    (method override (get-constituent-test self))
+    (method override (explorer-class self))
+    (method override (get-readtable self))
+    (method override (declaration-style self documented?))))

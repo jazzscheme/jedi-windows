@@ -1,0 +1,13 @@
+(package scheme
+  
+  (title "Scheme")
+  (description "Scheme dialect")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (scheme (update scheme
+                            scheme.dialect
+                            scheme.syntax
+                            scheme.syntax-rules)
+                    (dependencies foundation)))
+  (project ".project"))

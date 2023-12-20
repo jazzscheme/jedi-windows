@@ -1,0 +1,3 @@
+(module jazz.tree.Tree-Path-Column jazz
+  (import (jazz.tree))
+  (class Tree-Path-Column extends Tree-Label-Column))

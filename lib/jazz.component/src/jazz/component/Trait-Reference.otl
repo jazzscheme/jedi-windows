@@ -1,0 +1,9 @@
+(module jazz.component.Trait-Reference jazz
+  (import (jazz.component))
+  (import (jazz.reference))
+  (class Trait-Reference extends Reference
+    (slot parameters getter generate)
+    (method override (initialize self symbol parameters))
+    (method override (print self output readably))
+    (method override (parameters-resolve self)))
+  (hub get-parameters))

@@ -1,0 +1,13 @@
+(module jazz.io.URL jazz
+  (import (jazz.io))
+  (definition public (extract-url-name url))
+  (definition (tokenise-url filename))
+  (class URL-Class extends Pathname-Class)
+  (class URL metaclass URL-Class extends Pathname
+    (slot title getter generate)
+    (method override (initialize self lst (title: title (unspecified))))
+    (method override (get-name self))
+    (method override (print self output readably))
+    (method public (extract-parts self)))
+  (hub get-title)
+  (hub extract-parts))

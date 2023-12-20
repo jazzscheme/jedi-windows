@@ -1,0 +1,12 @@
+(module jazz.catalog.entry.Method-Entry jazz
+  (import (jazz.catalog))
+  (import (jazz.resource))
+  (class Method-Entry extends Definition-Entry
+    (slot parameters getter generate)
+    (slot throws)
+    (method override (initialize self modifiers name type literal? parameters throws line column end-line end-column definitions references))
+    (method override (print-catalog self level output))
+    (method override (present-detailed self))
+    (method override (get-image self))
+    (method (get-throws self)))
+  (hub get-parameters))

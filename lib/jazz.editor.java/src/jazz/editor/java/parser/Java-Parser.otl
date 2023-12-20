@@ -1,0 +1,9 @@
+(module jazz.editor.java.parser.Java-Parser jazz
+  (import (jazz.catalog))
+  (import (jazz.editor.clike))
+  (import (jazz.editor.java))
+  (import (jazz.io))
+  (class Java-Parser extends File-Parser
+    (method meta override (get-constituent-test self))
+    (definition ignored-references)
+    (method override (parse self file digest dialect))))

@@ -1,0 +1,7 @@
+(module jazz.editor.c.literals jazz
+  (import (jazz.editor.c))
+  (definition package (construct-c-file-entry file digest dialect . definitions))
+  (definition package (construct-c-category-entry name))
+  (definition package (construct-c-define-entry name line column end-line end-column))
+  (definition package (construct-c-include-entry name line column end-line end-column))
+  (definition package (construct-c-export-entry name line column end-line end-column)))

@@ -1,0 +1,19 @@
+(module jazz.columnar.descriptors jazz
+  (import (jazz.columnar))
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.markup))
+  (import (jazz.preferences.descriptors))
+  (class Column-Preferences-Descriptor extends Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (component-presentation-property? self component property))
+    (method override (component-get-presentation self component))
+    (method override (component-set-presentation self component designer title)))
+  (class Indented-Column-Preferences-Descriptor extends Column-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

@@ -1,0 +1,6 @@
+(module jazz.recorder.player.Recorder-Player jazz
+  (class Recorder-Player extends Object
+    (method public (playee-feedback self playee step))
+    (method public (play-recording-feedback self playee)))
+  (hub playee-feedback)
+  (hub play-recording-feedback))

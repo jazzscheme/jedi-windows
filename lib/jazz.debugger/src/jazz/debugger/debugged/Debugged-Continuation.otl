@@ -1,0 +1,6 @@
+(module jazz.debugger.debugged.Debugged-Continuation jazz
+  (import (jazz.debugger))
+  (class Debugged-Continuation extends Debugged-Thread
+    (method override (same? self debugged))
+    (method override (get-stops self))
+    (method override (get-active-stop self))))

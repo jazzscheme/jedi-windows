@@ -1,0 +1,73 @@
+(package jazz.ide
+  
+  (title "IDE")
+  (description "Integrated Development Environment")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.ide (alias ide)
+                      (update jazz.ide
+                              jazz.ide.activity
+                              jazz.ide.data.colors
+                              jazz.ide.data.favorites
+                              jazz.ide.data.fonts
+                              jazz.ide.data.formats
+                              jazz.ide.data.pagesetup
+                              jazz.ide.data.project
+                              jazz.ide.data.servers
+                              jazz.ide.data.skins
+                              jazz.ide.data.styles
+                              jazz.ide.data.toolbox
+                              jazz.ide.data.workbench
+                              jazz.ide.data.workspaces
+                              jazz.ide.descriptors
+                              jazz.ide.development
+                              jazz.ide.history
+                              jazz.ide.leaks
+                              jazz.ide.login
+                              jazz.ide.menu
+                              jazz.ide.snapshots
+                              jazz.ide.ui
+                              jazz.ide.ui.stub)
+                      (dependencies jazz
+                                    jazz.application
+                                    jazz.catalog
+                                    jazz.catalog.ui
+                                    jazz.clipboard
+                                    jazz.command
+                                    jazz.console
+                                    jazz.designer
+                                    jazz.document
+                                    jazz.editor.c
+                                    jazz.editor.clojure
+                                    jazz.editor.commonlisp
+                                    jazz.editor.diff
+                                    jazz.editor.javascript
+                                    jazz.editor.jazz
+                                    jazz.editor.scheme
+                                    jazz.editor.tex
+                                    jazz.execution
+                                    jazz.favorite
+                                    jazz.groupware
+                                    jazz.history
+                                    jazz.inspector
+                                    jazz.menu
+                                    jazz.picker
+                                    jazz.preferences
+                                    jazz.print
+                                    jazz.product
+                                    jazz.profile
+                                    jazz.project
+                                    jazz.recorder
+                                    jazz.search
+                                    jazz.template
+                                    jazz.text
+                                    jazz.tree
+                                    jazz.ui
+                                    jazz.version
+                                    jazz.view
+                                    jazz.window
+                                    jazz.workspace));; to simplify building ide and all
+            (ide-all (dependencies ide
+                                   all)))
+  (project ".project"))

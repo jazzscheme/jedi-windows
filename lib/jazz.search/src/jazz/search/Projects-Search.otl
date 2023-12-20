@@ -1,0 +1,11 @@
+(module jazz.search.Projects-Search jazz
+  (import (jazz.resource))
+  (import (jazz.search))
+  (class Projects-Search extends Search
+    (slot domain getter generate)
+    (method override (initialize self domain find replace))
+    (method override (install-results self results-view results categorized? (sort?: sort? (unspecified))))
+    (method override (get-icon self))
+    (method override (supports-drill-down? self))
+    (method override (dynamic-search? self categorized?)))
+  (hub get-domain))

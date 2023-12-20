@@ -1,0 +1,88 @@
+(module jazz.doc.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.doc))
+  (import (jazz.markup))
+  (import (jazz.resource))
+  (class Doc-Descriptor extends Component-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (component-get-categorized-addable-classes self component)))
+  (class Element-Doc-Descriptor extends Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Category-Doc-Descriptor extends Element-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Class-Doc-Descriptor extends Category-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Concept-Doc-Descriptor extends Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Constant-Doc-Descriptor extends Element-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Definition-Doc-Descriptor extends Element-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Field-Doc-Descriptor extends Definition-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Interface-Doc-Descriptor extends Category-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Method-Doc-Descriptor extends Definition-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Package-Doc-Descriptor extends Element-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Primitive-Doc-Descriptor extends Definition-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Slot-Doc-Descriptor extends Definition-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Property-Doc-Descriptor extends Slot-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Section-Doc-Descriptor extends Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (component-sort-components? self component)))
+  (class Syntax-Doc-Descriptor extends Definition-Doc-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

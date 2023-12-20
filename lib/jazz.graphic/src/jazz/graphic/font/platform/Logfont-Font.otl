@@ -1,0 +1,13 @@
+(module jazz.graphic.font.platform.Logfont-Font jazz
+  (import (jazz.cairo))
+  (import (jazz.graphic))
+  (import (jazz.graphic.font))
+  (class Logfont-Font extends Concrete-Font
+    (method override (calculate-height self point-size) <fl>)
+    (method override (adjust-height-hack self height))
+    (method override (default-hint-style self))
+    (method override (create-font self . rest))
+    (method override (destroy-font self . rest))
+    (method override (create-cairo-font-face self . rest))
+    (method override (destroy-cairo-font-face self . rest))
+    (method override (cairo-glyph-index self font char))))

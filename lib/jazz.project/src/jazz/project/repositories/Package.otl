@@ -1,0 +1,8 @@
+(module jazz.project.repositories.Package jazz
+  (import (jazz.component))
+  (class Package extends Component
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property title accessors generate)
+    (method override (print self output readably)))
+  (hub get-title)
+  (hub set-title))

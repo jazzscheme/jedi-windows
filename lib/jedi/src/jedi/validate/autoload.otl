@@ -1,0 +1,2 @@
+(module jedi.validate.autoload jazz
+  (export (jedi.validate.Jedi-Tester (autoload Jedi-Tester Jedi-Tester))))

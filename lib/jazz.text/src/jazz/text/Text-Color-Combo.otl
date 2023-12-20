@@ -1,0 +1,11 @@
+(module jazz.text.Text-Color-Combo jazz
+  (import (jazz.markup))
+  (import (jazz.ui))
+  (class Text-Color-Combo extends Push-Combo
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (form-model self form))
+    (method public (popup-colors self (colors: colors (unspecified)) (geometry: geometry (unspecified)))))
+  (hub popup-colors))

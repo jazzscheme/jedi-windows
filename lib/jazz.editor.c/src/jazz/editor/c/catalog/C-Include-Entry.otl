@@ -1,0 +1,16 @@
+(module jazz.editor.c.catalog.C-Include-Entry jazz
+  (import (jazz.catalog))
+  (import (jazz.editor.c))
+  (import (jazz.io))
+  (import (jazz.resource))
+  (class C-Include-Entry extends C-Entry
+    (slot include getter generate)
+    (slot include-base)
+    (method override (initialize self include line column end-line end-column))
+    (method override (print self output readably))
+    (method override (print-catalog self level output))
+    (method override (get-image self))
+    (method override (present-name self))
+    (method public (get-include-file self)))
+  (hub get-include)
+  (hub get-include-file))

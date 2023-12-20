@@ -1,0 +1,15 @@
+(module jazz.markup.parser.Markup-Parser jazz
+  (import (jazz.io))
+  (import (jazz.markup))
+  (class Markup-Parser extends Object
+    (slot preferences getter generate)
+    (method override (initialize self (preferences: preferences (unspecified))))
+    (method public (parse self reader/expr))
+    (method protected virtual (tag-valid? self tag))
+    (method protected virtual (validate-tag self tag))
+    (method package virtual (get-alias self name . rest)))
+  (hub get-preferences)
+  (hub parse)
+  (hub tag-valid?)
+  (hub validate-tag)
+  (hub get-alias))

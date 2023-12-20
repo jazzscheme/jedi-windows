@@ -1,0 +1,3 @@
+(module jazz.editor.jazz.registry.Registry-Viewer jazz
+  (import (jazz.ui))
+  (class Registry-Viewer extends Layout-View))

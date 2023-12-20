@@ -1,0 +1,5 @@
+(module jazz.groupware.compare.Compare-Syntax jazz
+  (import (jazz.editor))
+  (class Compare-Syntax extends Code-Syntax
+    (method override (colorize-syntax self . rest))
+    (method override (recolorize-text self syntax-style start end-line))))

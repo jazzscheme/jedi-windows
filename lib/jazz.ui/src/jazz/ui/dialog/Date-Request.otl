@@ -1,0 +1,3 @@
+(module jazz.ui.dialog.Date-Request jazz
+  (import (jazz.ui))
+  (class Date-Request extends String-Request))

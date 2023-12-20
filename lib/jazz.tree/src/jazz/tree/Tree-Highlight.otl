@@ -1,0 +1,14 @@
+(module jazz.tree.Tree-Highlight jazz
+  (class Tree-Highlight extends Object
+    (slot row getter generate)
+    (slot col getter generate)
+    (slot insert getter generate)
+    (slot outer-color getter generate)
+    (slot inner-color getter generate)
+    (method override (initialize self row col (insert: insert (unspecified)) (outer-color: outer-color (unspecified)) (inner-color: inner-color (unspecified))))
+    (method override (compare-object self target)))
+  (hub get-row)
+  (hub get-col)
+  (hub get-insert)
+  (hub get-outer-color)
+  (hub get-inner-color))

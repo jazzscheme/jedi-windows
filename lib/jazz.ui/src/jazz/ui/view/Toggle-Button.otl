@@ -1,0 +1,11 @@
+(module jazz.ui.view.Toggle-Button jazz
+  (import (jazz.graphic))
+  (import (jazz.ui))
+  (class Toggle-Button extends Push-Button
+    (property selected? accessors explicit)
+    (method public (get-selected? self))
+    (method public (set-selected? self flag))
+    (method public (toggle-selected? self)))
+  (hub get-selected?)
+  (hub set-selected?)
+  (hub toggle-selected?))

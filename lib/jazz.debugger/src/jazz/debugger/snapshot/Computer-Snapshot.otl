@@ -1,0 +1,16 @@
+(module jazz.debugger.snapshot.Computer-Snapshot jazz
+  (import (jazz.component))
+  (class Computer-Snapshot extends Component
+    (property user-name accessors generate)
+    (property computer-name accessors generate)
+    (property processor-type accessors generate)
+    (property platform-version accessors generate)
+    (method override (print self output readably)))
+  (hub get-user-name)
+  (hub set-user-name)
+  (hub get-computer-name)
+  (hub set-computer-name)
+  (hub get-processor-type)
+  (hub set-processor-type)
+  (hub get-platform-version)
+  (hub set-platform-version))

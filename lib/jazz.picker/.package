@@ -1,0 +1,11 @@
+(package jazz.picker
+  
+  (title "Picker")
+  (description "View picker")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.picker (alias picker)
+                         (update jazz.picker)
+                         (dependencies jazz)))
+  (project ".project"))

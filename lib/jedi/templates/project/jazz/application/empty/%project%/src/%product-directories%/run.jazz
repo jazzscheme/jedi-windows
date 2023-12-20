@@ -1,0 +1,18 @@
+;;;==============
+;;;  JazzScheme
+;;;==============
+;;;
+;;;; %product-title% Run
+;;;
+
+
+(module %product-unit%.run jazz
+
+
+(import (%product-unit%.application)
+        (jazz.process))
+
+
+(register-product-run '%product%
+  (lambda (descriptor)
+    (boot-environment (new %project-name%-Application)))))

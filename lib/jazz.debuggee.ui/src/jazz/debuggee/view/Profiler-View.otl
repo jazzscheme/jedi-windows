@@ -1,0 +1,9 @@
+(module jazz.debuggee.view.Profiler-View jazz
+  (import (jazz.application))
+  (import (jazz.handler))
+  (import (jazz.markup))
+  (import (jazz.resource))
+  (import (jazz.tree))
+  (import (jazz.ui))
+  (import (profiler))
+  (class Profiler-View extends Layout-View))

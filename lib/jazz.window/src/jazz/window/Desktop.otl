@@ -1,0 +1,4 @@
+(module jazz.window.Desktop jazz
+  (import (jazz.window))
+  (class Desktop extends Window
+    (method override (initially-visible? self))))

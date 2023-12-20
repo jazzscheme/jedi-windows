@@ -1,0 +1,4 @@
+(module jazz.designer.ui.row.Font-Row jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (class Font-Row extends Combo-Row))

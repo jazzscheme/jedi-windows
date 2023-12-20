@@ -1,0 +1,14 @@
+(module jazz.project.workbench.Workbench-Cataloguer jazz
+  (import (jazz.catalog))
+  (import (jazz.project))
+  (class Workbench-Cataloguer extends Cataloguer
+    (slot catalog-table)
+    (definition *workbench-active-catalogs*)
+    (method package (reset-workbench-active-catalogs self))
+    (method package (get-workbench-active-catalogs self))
+    (method override (for-each-active-catalog self context proc))
+    (method override (add-catalog self catalog))
+    (method override (remove-catalog self catalog))
+    (method override (find-catalogs self key)))
+  (hub reset-workbench-active-catalogs)
+  (hub get-workbench-active-catalogs))

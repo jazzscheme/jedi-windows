@@ -1,0 +1,6 @@
+(module jazz.editor.c.catalog.C-Definition-Entry jazz
+  (import (jazz.editor.c))
+  (class C-Definition-Entry extends C-Entry
+    (method override (initialize self name line column end-line end-column))
+    (method override (print-catalog self level output))
+    (method override (update-indexes self definitions-index references-index))))

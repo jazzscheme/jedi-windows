@@ -1,0 +1,5 @@
+(module jazz.integrity.Integrity-Constraint jazz
+  (class Integrity-Constraint extends Object
+    (method meta public virtual (register-constraints self manager))
+    (method public virtual (validate self component root editor context manager)))
+  (hub validate))

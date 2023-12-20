@@ -1,0 +1,10 @@
+(module jazz.descriptor.meta jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.markup))
+  (import (jazz.reference))
+  (import (jazz.resource))
+  (definition public Component-Meta-Descriptor)
+  (definition public Properties-Meta-Descriptor)
+  (definition public Property-Meta-Descriptor)
+  (definition public Children-Meta-Descriptor))

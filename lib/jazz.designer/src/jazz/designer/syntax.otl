@@ -1,0 +1,2 @@
+(module jazz.designer.syntax jazz
+  (macro public (define-symbolic-addable-references name references)))

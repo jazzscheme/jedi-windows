@@ -1,0 +1,14 @@
+(module jazz.ui.view.Content-View jazz
+  (import (jazz.ui))
+  (class Content-View extends Layout-View
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (method override (size-change self size))
+    (method override (add-child self child))
+    (method override (remove-child self child))
+    (method public (get-container self))
+    (method public (get-client self))
+    (method override (inner? self view))
+    (method override (inner-widget self))
+    (method override (get-scroll-client self)))
+  (hub get-container)
+  (hub get-client))

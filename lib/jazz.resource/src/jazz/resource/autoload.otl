@@ -1,0 +1,6 @@
+(module jazz.resource.autoload jazz
+  (export (jazz.resource.Image-Resource (autoload Image-Resource Image-Resource)))
+  (export (jazz.resource.Cursor-Resource (autoload Cursor-Resource Cursor-Resource)))
+  (export (jazz.resource.Icon-Resource (autoload Icon-Resource Icon-Resource)))
+  (export (jazz.resource.Resource (autoload Resource Resource)))
+  (export (jazz.resource.Sound-Resource (autoload Sound-Resource Sound-Resource))))

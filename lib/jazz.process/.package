@@ -1,0 +1,20 @@
+(package jazz.process
+  
+  (title "Process")
+  (description "Processes with no user interface")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.process (alias process)
+                          (update jazz.process
+                                  jazz.process.stub)
+                          (dependencies jazz
+                                        jazz.platform))
+            (jazz.process.desc (alias process.desc)
+                               (description "Process descriptors")
+                               (update jazz.process.descriptors)
+                               (dependencies jazz
+                                             jazz.descriptor
+                                             jazz.domain
+                                             jazz.markup)))
+  (project ".project"))

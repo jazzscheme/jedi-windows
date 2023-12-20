@@ -1,0 +1,6 @@
+(module jazz.text.Plain-Formatted-Text-View jazz
+  (import (jazz.graphic))
+  (import (jazz.text))
+  (class Plain-Formatted-Text-View extends Formatted-Text-View
+    (method override (new-model self))
+    (method override (install self rest))))

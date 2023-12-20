@@ -1,0 +1,13 @@
+(module jazz.webserver.Session-Manager jazz
+  (import (jazz.webserver))
+  (class Session-Manager extends Object
+    (slot id-counter getter generate)
+    (slot sessions)
+    (slot session-manager-lock)
+    (method public (new-session self))
+    (method public (end-session self session))
+    (method public (get-session self request port)))
+  (hub get-id-counter)
+  (hub new-session)
+  (hub end-session)
+  (hub get-session))

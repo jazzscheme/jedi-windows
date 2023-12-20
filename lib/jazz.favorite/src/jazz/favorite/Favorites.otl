@@ -1,0 +1,4 @@
+(module jazz.favorite.Favorites jazz
+  (import (jazz.component))
+  (class Favorites extends Group
+    (method meta override (get-class-descriptor self (context: context (unspecified))))))

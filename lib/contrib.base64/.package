@@ -1,0 +1,12 @@
+(package contrib.base64
+  
+  (title "Base64")
+  (description "Base64 encoding and decoding")
+  (authors "Marc Feeley")
+  (stage release)
+  (root "src")
+  (products (contrib.base64 (alias base64)
+                            (update base64)
+                            (dependencies scheme
+                                          jazz)))
+  (project ".project"))

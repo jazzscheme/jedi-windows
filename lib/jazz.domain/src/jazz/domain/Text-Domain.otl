@@ -1,0 +1,5 @@
+(module jazz.domain.Text-Domain jazz
+  (import (jazz.domain))
+  (class Text-Domain extends Domain
+    (method override (present-value self value))
+    (method override (parse-presentation self text))))

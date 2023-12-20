@@ -1,0 +1,7 @@
+(module jazz.editor.commonlisp.parser.CommonLisp-Parser jazz
+  (import (jazz.editor.commonlisp))
+  (import (jazz.editor.lisp))
+  (class CommonLisp-Parser extends Lisp-Parser
+    (method meta override (get-constituent-test self))
+    (method override (text-view-class self))
+    (method override (explorer-class self file))))

@@ -1,0 +1,11 @@
+(package jazz.reporter
+  
+  (title "Reporter")
+  (description "Progress reporting")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.reporter (alias reporter)
+                           (update jazz.reporter)
+                           (dependencies jazz)))
+  (project ".project"))

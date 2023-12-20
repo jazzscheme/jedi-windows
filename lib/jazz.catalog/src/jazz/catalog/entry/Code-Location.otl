@@ -1,0 +1,4 @@
+(module jazz.catalog.entry.Code-Location jazz
+  (class Code-Location extends Object
+    (method public virtual (edit self . rest)))
+  (hub edit))

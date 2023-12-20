@@ -1,0 +1,10 @@
+(module jazz.ui.view.Minibuffer-Toolbar jazz
+  (import (jazz.command))
+  (import (jazz.markup))
+  (import (jazz.ui))
+  (class Minibuffer-Toolbar extends Toolbar
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (host-title self))))

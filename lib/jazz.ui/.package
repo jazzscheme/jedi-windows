@@ -1,0 +1,34 @@
+(package jazz.ui
+  
+  (title "UI")
+  (description "User interface")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (install jazz.ui.install)
+  (products (jazz.ui (alias ui)
+                     (test jazz.ui.test)
+                     (update jazz.ui
+                             jazz.ui.install
+                             jazz.ui.literals
+                             jazz.ui.literals.formats
+                             jazz.ui.literals.styles
+                             jazz.ui.development
+                             jazz.ui.dialog
+                             jazz.ui.preferences
+                             jazz.ui.resizer
+                             jazz.ui.skin)
+                     (dependencies jazz
+                                   jazz.platform
+                                   jazz.resources
+                                   jazz.skin
+                                   jazz.screen
+                                   jazz.undoer))
+            (jazz.ui.desc (alias ui.desc)
+                          (description "UI descriptors")
+                          (update jazz.ui.descriptors)
+                          (dependencies jazz
+                                        jazz.descriptor
+                                        jazz.domain
+                                        jazz.markup)))
+  (project ".project"))

@@ -1,0 +1,2 @@
+(module jazz.graphic.literals.colors jazz
+  (import (jazz.graphic)))

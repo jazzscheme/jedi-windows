@@ -1,0 +1,6 @@
+(module jazz.ui.hosting.Menu-Host jazz
+  (import (jazz.graphic))
+  (import (jazz.skin))
+  (import (jazz.ui))
+  (class Menu-Host extends Host-View
+    (method override (draw-background self surface context))))

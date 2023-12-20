@@ -1,0 +1,14 @@
+(module jazz.text.Formatted-Text-Model jazz
+  (import (jazz.markup))
+  (import (jazz.text))
+  (class Formatted-Text-Model extends Text-Model
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (external-name self . rest))
+    (method override (empty-content self))
+    (method override (get-content self))
+    (method override (set-content self text))
+    (method override (read-moniker self moniker))
+    (method override (save-to self moniker))))

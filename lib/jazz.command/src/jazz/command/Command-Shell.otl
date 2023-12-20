@@ -1,0 +1,19 @@
+(module jazz.command.Command-Shell jazz
+  (import (jazz.command))
+  (import (jazz.document))
+  (import (jazz.graphic))
+  (import (jazz.markup))
+  (import (jazz.skin))
+  (import (jazz.ui))
+  (class Command-Shell extends Layout-View
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (install self rest))
+    (method public (get-text self))
+    (method public (get-string-content self)))
+  (hub get-text)
+  (hub get-string-content)
+  (class Command-Status extends Label-View
+    (method override (get-skin self))))

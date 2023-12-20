@@ -1,0 +1,9 @@
+(module jazz.menu.Context-Menu jazz
+  (import (jazz.menu))
+  (class Context-Menu extends Menu
+    (property client accessors generate)
+    (method override (component-alias self name))
+    (method public (make-condensed-menu self user-items create-leaf (key: key (unspecified)) (max-leaves: max-leaves (unspecified)))))
+  (hub get-client)
+  (hub set-client)
+  (hub make-condensed-menu))

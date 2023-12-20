@@ -1,0 +1,3 @@
+(module jazz.window.Tooltip jazz
+  (import (jazz.window))
+  (class Tooltip extends Transient))

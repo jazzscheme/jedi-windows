@@ -1,0 +1,11 @@
+(module jazz.detprof jazz
+  (export (jazz.detprof.syntax (phase syntax)))
+  (import (jazz.detprof.syntax (phase syntax)))
+  (import (jazz.markup))
+  (import (jazz.syntax (phase syntax)))
+  (import (profiler))
+  (definition public (profiling-advice profile (time?: time? (unspecified))))
+  (definition public (profile-advice field locator original set))
+  (definition public (profile-code original proc))
+  (definition public (profile->markup profile))
+  (definition public detprof))

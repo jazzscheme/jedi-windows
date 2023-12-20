@@ -1,0 +1,3 @@
+(module jazz.editor.c.builder.C-File jazz
+  (import (jazz.project))
+  (class C-File extends Project-File))

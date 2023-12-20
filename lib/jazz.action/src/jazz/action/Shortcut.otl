@@ -1,0 +1,18 @@
+(module jazz.action.Shortcut jazz
+  (import (jazz.action))
+  (import (jazz.locale))
+  (class Shortcut extends Object
+    (method meta override (marshall-object self obj))
+    (method meta override (unmarshall-object self content))
+    (slot modifiers getter generate)
+    (slot key getter generate)
+    (method override (initialize self modifiers key))
+    (method override (hash-object self))
+    (method override (compare-object self target))
+    (method override (print self output readably))
+    (method public (present self))
+    (method public (present-shortcut self)))
+  (hub get-modifiers)
+  (hub get-key)
+  (hub present)
+  (hub present-shortcut))

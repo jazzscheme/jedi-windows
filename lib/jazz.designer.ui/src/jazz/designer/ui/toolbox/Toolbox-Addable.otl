@@ -1,0 +1,13 @@
+(module jazz.designer.ui.toolbox.Toolbox-Addable jazz
+  (import (jazz.component))
+  (import (jazz.descriptor))
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (class Toolbox-Addable extends Component
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property title accessors generate)
+    (method package virtual (get-class self)))
+  (hub get-title)
+  (hub set-title)
+  (hub get-class)
+  (class Toolbox-Addable-Descriptor extends Component-Descriptor))

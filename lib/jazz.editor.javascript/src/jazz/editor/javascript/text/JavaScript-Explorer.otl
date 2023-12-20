@@ -1,0 +1,3 @@
+(module jazz.editor.javascript.text.JavaScript-Explorer jazz
+  (import (jazz.editor.c))
+  (class JavaScript-Explorer extends C-Explorer))

@@ -1,0 +1,4 @@
+(module %name% jazz
+
+
+(interface %name%))

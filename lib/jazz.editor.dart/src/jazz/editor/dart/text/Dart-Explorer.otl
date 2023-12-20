@@ -1,0 +1,3 @@
+(module jazz.editor.dart.text.Dart-Explorer jazz
+  (import (jazz.editor.c))
+  (class Dart-Explorer extends C-Explorer))

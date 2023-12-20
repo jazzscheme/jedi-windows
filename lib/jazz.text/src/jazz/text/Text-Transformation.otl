@@ -1,0 +1,4 @@
+(module jazz.text.Text-Transformation jazz
+  (import (jazz.markup))
+  (class Text-Transformation extends Markup-Transformation
+    (method (<bulleted> self node))))

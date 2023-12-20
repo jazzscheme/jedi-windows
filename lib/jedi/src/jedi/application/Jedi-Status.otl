@@ -1,0 +1,3 @@
+(module jedi.application.Jedi-Status jazz
+  (import (jazz.ide))
+  (class Jedi-Status extends IDE-Status))

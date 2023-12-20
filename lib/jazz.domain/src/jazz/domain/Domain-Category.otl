@@ -1,0 +1,10 @@
+(module jazz.domain.Domain-Category jazz
+  (class Domain-Category extends Object
+    (slot name getter generate)
+    (slot rank getter generate)
+    (slot image getter generate)
+    (method override (initialize self name rank image))
+    (method override (print self output readably)))
+  (hub get-name)
+  (hub get-rank)
+  (hub get-image))

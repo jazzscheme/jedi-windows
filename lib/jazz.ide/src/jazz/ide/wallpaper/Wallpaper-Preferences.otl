@@ -1,0 +1,12 @@
+(module jazz.ide.wallpaper.Wallpaper-Preferences jazz
+  (import (jazz.markup))
+  (import (jazz.preferences))
+  (class Wallpaper-Preferences extends Preferences
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method meta override (get-class-descriptor self (context: context (unspecified))))
+    (property active accessors generate))
+  (hub get-active)
+  (hub set-active))

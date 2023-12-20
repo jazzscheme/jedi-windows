@@ -1,0 +1,2 @@
+(module jazz.debugger.debugger.Debugger-Event jazz
+  (class Debugger-Event extends Object))

@@ -1,0 +1,8 @@
+(module jazz.ide.code.Code-Tree jazz
+  (import (jazz.catalog.browse))
+  (import (jazz.tree))
+  (class Code-Tree extends Tree-View
+    (property sort? accessors generate)
+    (method override (update-row self row)))
+  (hub get-sort?)
+  (hub set-sort?))

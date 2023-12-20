@@ -1,0 +1,6 @@
+(module jazz.designer.ui.entry.Editor-Entry jazz
+  (import (jazz.component))
+  (class Editor-Entry extends Component
+    (property entry-class accessors generate))
+  (hub get-entry-class)
+  (hub set-entry-class))

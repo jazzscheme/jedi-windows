@@ -1,0 +1,5 @@
+(module jazz.sample.c4.run jazz
+  (import (jazz.process))
+  (import (jazz.sample.c4))
+  (import (jazz.sample.game.minimax))
+  (definition (run-c4 descriptor)))

@@ -1,0 +1,14 @@
+(module jazz.text.View-Style jazz
+  (import (jazz.text))
+  (class View-Style extends Style
+    (slot protected view getter generate)
+    (method override (initialize self . rest))
+    (method override (compare-object self target))
+    (method override (print self output readably))
+    (method override (get-width self))
+    (method override (get-height self))
+    (method override (run-width self run))
+    (method override (propagate? self))
+    (method override (place-update self h v))
+    (method override (height-update self height)))
+  (hub get-view))

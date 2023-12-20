@@ -1,0 +1,11 @@
+(module jazz.debugger.debugged.Debugged-Thread jazz
+  (import (jazz.debugger))
+  (class Debugged-Thread extends Debugged
+    (method override (same? self debugged))
+    (method virtual public (get-name self))
+    (method virtual public (get-state self))
+    (method virtual public (get-priority self))
+    (method virtual public (get-id self))
+    (method virtual public (get-stops self))
+    (method virtual public (get-active-stop self))
+    (method virtual public (set-repl-frame self frame))))

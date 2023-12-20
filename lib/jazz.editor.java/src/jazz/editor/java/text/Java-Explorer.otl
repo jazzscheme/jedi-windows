@@ -1,0 +1,3 @@
+(module jazz.editor.java.text.Java-Explorer jazz
+  (import (jazz.editor.c))
+  (class Java-Explorer extends C-Explorer))

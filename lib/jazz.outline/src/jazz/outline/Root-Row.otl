@@ -1,0 +1,4 @@
+(module jazz.outline.Root-Row jazz
+  (import (jazz.outline))
+  (class Root-Row extends Outline-Row
+    (method override (root? self))))

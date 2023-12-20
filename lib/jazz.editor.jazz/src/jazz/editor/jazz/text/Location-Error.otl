@@ -1,0 +1,8 @@
+(module jazz.editor.jazz.text.Location-Error jazz
+  (class Location-Error extends Error
+    (slot kind getter generate)
+    (slot location getter generate)
+    (method override (initialize self . rest))
+    (method override (get-message self)))
+  (hub get-kind)
+  (hub get-location))

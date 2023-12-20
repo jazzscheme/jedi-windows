@@ -1,0 +1,5 @@
+(module jazz.ide.ui jazz
+  (import (jazz.ide))
+  (import (jazz.ide.ui.stub))
+  (import (jazz.presence))
+  (definition public (make-ui-debugger)))

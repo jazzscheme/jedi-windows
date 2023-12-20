@@ -1,0 +1,39 @@
+(module jazz.project.workbench.Synchronize-Tree jazz
+  (import (jazz.application))
+  (import (jazz.graphic))
+  (import (jazz.handler))
+  (import (jazz.markup))
+  (import (jazz.resource))
+  (import (jazz.tree))
+  (import (jazz.ui))
+  (class Synchronize-Border extends Border-View
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Synchronize-Tree extends Tree-View
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method (on-double-click self evt))
+    (method (toggle-action self))
+    (method (set-actions self action))
+    (method package (copy-right self))
+    (method package (no-action self))
+    (method package (copy-left self)))
+  (hub copy-right)
+  (hub no-action)
+  (hub copy-left)
+  (class Synchronize-Item-Column extends Tree-Column
+    (method override (draw-data self surface context row data width height))
+    (method abstract protected virtual (present? self data))
+    (method abstract protected virtual (present-image self data)))
+  (class Synchronize-Left-Column extends Synchronize-Item-Column
+    (method override (present? self data))
+    (method override (present-image self data)))
+  (class Synchronize-Action-Column extends Tree-Column
+    (method override (draw-data self surface context row data width height)))
+  (class Synchronize-Right-Column extends Synchronize-Item-Column
+    (method override (present? self data))
+    (method override (present-image self data))))

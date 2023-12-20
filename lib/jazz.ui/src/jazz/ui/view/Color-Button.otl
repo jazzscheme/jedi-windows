@@ -1,0 +1,12 @@
+(module jazz.ui.view.Color-Button jazz
+  (import (jazz.geometry))
+  (import (jazz.graphic))
+  (import (jazz.ui))
+  (class Color-Button extends Push-Icon
+    (property color accessors explicit)
+    (method public (get-color self))
+    (method public (set-color self value))
+    (method override (action-properties self))
+    (method override (draw-tool self surface context)))
+  (hub get-color)
+  (hub set-color))

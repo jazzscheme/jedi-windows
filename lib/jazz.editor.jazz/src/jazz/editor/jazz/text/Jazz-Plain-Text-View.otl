@@ -1,0 +1,6 @@
+(module jazz.editor.jazz.text.Jazz-Plain-Text-View jazz
+  (import (jazz.editor.jazz))
+  (import (jazz.text))
+  (class Jazz-Plain-Text-View extends Plain-Text-View
+    (method override (new-syntax self))
+    (method override (install self rest))))

@@ -1,0 +1,15 @@
+(package jazz.zlib
+  
+  (title "zlib")
+  (description "Interface to the zlib data compression library")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.zlib (alias zlib)
+                       (test jazz.zlib.test)
+                       (product jazz.zlib.product)
+                       (update jazz.zlib
+                               jazz.zlib.product)
+                       (dependencies jazz
+                                     jazz.foreign)))
+  (project ".project"))

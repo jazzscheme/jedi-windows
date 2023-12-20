@@ -1,0 +1,53 @@
+(module jazz.text.descriptors jazz
+  (import (jazz.designer))
+  (import (jazz.designer.ui))
+  (import (jazz.descriptor))
+  (import (jazz.document.descriptors))
+  (import (jazz.domain))
+  (import (jazz.exemplar.descriptors))
+  (import (jazz.markup))
+  (import (jazz.outline.descriptors))
+  (import (jazz.preferences.descriptors))
+  (import (jazz.resource))
+  (class Text-Preferences-Descriptor extends Document-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Plain-Text-Preferences-Descriptor extends Document-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Style-Preferences-Descriptor extends Exemplar-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Styles-Preferences-Descriptor extends Exemplars-Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Text-Style-Preferences-Descriptor extends Preferences-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Text-View-Descriptor extends Outline-View-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))
+    (method override (component-surrogate-class self component))
+    (method override (component-save-properties self component designer)))
+  (class Entry-Text-View-Descriptor extends Text-View-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self)))
+  (class Text-Model-Descriptor extends Outline-View-Descriptor
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

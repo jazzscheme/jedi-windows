@@ -1,0 +1,5 @@
+(module jazz.search.Directories-Search jazz
+  (import (jazz.resource))
+  (import (jazz.search))
+  (class Directories-Search extends Search
+    (method override (get-icon self))))

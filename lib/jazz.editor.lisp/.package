@@ -1,0 +1,22 @@
+(package jazz.editor.lisp
+  
+  (title "Lisp")
+  (description "Lisp languages editor")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (install jazz.editor.lisp.install)
+  (products (jazz.editor.lisp (update jazz.editor.lisp
+                                      jazz.editor.lisp.install
+                                      jazz.editor.lisp.literals)
+                              (dependencies jazz
+                                            jazz.automata
+                                            jazz.editor))
+            (jazz.editor.lisp.desc (alias editor.lisp.desc)
+                                   (description "Lisp editor descriptors")
+                                   (update jazz.editor.lisp.descriptors)
+                                   (dependencies jazz
+                                                 jazz.descriptor
+                                                 jazz.domain
+                                                 jazz.markup)))
+  (project ".project"))

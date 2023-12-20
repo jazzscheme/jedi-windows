@@ -1,0 +1,8 @@
+(module jazz.layout.Fit-Layout jazz
+  (import (jazz.geometry))
+  (import (jazz.layout))
+  (class Fit-Layout extends Layout
+    (property insets <Rect> accessors generate)
+    (method override (layout self view)))
+  (hub get-insets)
+  (hub set-insets))

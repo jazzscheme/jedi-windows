@@ -1,0 +1,3 @@
+(module jazz.domain.Foreign-Domain jazz
+  (import (jazz.domain))
+  (class Foreign-Domain extends Domain))

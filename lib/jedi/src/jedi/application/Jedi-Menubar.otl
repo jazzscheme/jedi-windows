@@ -1,0 +1,15 @@
+(module jedi.application.Jedi-Menubar jazz
+  (import (jazz.action))
+  (import (jazz.ide.menu))
+  (import (jazz.markup))
+  (import (jazz.menu))
+  (import (jazz.resource))
+  (class Jedi-Menubar extends Menubar
+    (method meta override (host-icon self))
+    (method meta override (host-title self))
+    (method override (install self rest)))
+  (class Help-Menu extends Menu
+    (definition class-form)
+    (method meta override (set-class-form self form))
+    (method meta override (get-class-form self))
+    (method meta override (get-class-forms self))))

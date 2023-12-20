@@ -1,0 +1,6 @@
+(module jazz.stream.setup jazz
+  (import (jazz.io))
+  (import (jazz.stream.directories))
+  (definition registry-version)
+  (definition (maybe-refresh-registry-cache registry-path version-path))
+  (definition public (setup-gstreamer)))

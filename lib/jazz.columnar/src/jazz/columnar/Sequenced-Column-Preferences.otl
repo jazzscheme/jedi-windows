@@ -1,0 +1,5 @@
+(module jazz.columnar.Sequenced-Column-Preferences jazz
+  (import (jazz.columnar))
+  (class Sequenced-Column-Preferences extends Column-Preferences
+    (method override (column-class self))
+    (method override (new-column self display))))

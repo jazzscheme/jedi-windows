@@ -1,0 +1,11 @@
+(package jazz.syntax
+  
+  (title "Syntax")
+  (description "Jazz syntax")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.syntax (alias syntax)
+                         (update jazz.syntax)
+                         (dependencies jazz)))
+  (project ".project"))

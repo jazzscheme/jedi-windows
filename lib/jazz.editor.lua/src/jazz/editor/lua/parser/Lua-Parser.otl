@@ -1,0 +1,10 @@
+(module jazz.editor.lua.parser.Lua-Parser jazz
+  (import (jazz.catalog))
+  (import (jazz.editor.c))
+  (import (jazz.editor.clike))
+  (import (jazz.editor.java))
+  (import (jazz.editor.lua))
+  (import (jazz.io))
+  (class Lua-Parser extends File-Parser
+    (method meta override (get-constituent-test self))
+    (method override (parse self file digest dialect))))

@@ -1,0 +1,11 @@
+(package jazz.template
+  
+  (title "Template")
+  (description "File and directory templating")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.template (alias template)
+                           (update jazz.template)
+                           (dependencies jazz)))
+  (project ".project"))

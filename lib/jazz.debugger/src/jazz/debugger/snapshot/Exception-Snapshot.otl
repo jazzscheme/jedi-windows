@@ -1,0 +1,13 @@
+(module jazz.debugger.snapshot.Exception-Snapshot jazz
+  (import (jazz.component))
+  (class Exception-Snapshot extends Component
+    (property address accessors generate)
+    (property code accessors generate)
+    (property description accessors generate)
+    (method override (print self output readably)))
+  (hub get-address)
+  (hub set-address)
+  (hub get-code)
+  (hub set-code)
+  (hub get-description)
+  (hub set-description))

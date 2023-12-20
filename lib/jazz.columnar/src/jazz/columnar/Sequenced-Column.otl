@@ -1,0 +1,6 @@
+(module jazz.columnar.Sequenced-Column jazz
+  (import (jazz.columnar))
+  (class Sequenced-Column extends Display-Column
+    (method override (put-data self data rest))
+    (method override (increase-line self))
+    (method override (print-to self fact previous-column previous-data output))))

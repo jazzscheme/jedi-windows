@@ -1,0 +1,3 @@
+(module jazz.platform.syntax jazz
+  (definition tracable?)
+  (macro public (platform-external signature . rest)))

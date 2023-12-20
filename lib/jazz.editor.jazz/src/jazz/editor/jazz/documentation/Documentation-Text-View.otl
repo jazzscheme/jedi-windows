@@ -1,0 +1,7 @@
+(module jazz.editor.jazz.documentation.Documentation-Text-View jazz
+  (import (jazz.graphic))
+  (import (jazz.text))
+  (class Documentation-Text-View extends Formatted-Text-View
+    (method override (new-model self))
+    (method override (install self rest))
+    (method override (get-context-menu self))))

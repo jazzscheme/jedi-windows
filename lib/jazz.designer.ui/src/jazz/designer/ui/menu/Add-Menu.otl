@@ -1,0 +1,3 @@
+(module jazz.designer.ui.menu.Add-Menu jazz
+  (import (jazz.menu))
+  (class Add-Menu extends Context-Menu))

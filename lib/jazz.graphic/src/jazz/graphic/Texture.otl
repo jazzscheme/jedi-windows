@@ -1,0 +1,17 @@
+(module jazz.graphic.Texture jazz
+  (import (jazz.graphic))
+  (class Texture extends Object
+    (slot mode getter generate)
+    (slot attributes getter generate)
+    (slot parts getter generate)
+    (method override (initialize self mode attributes parts))
+    (method override (copy-object self deep?))
+    (method override (compare-object self target))
+    (method override (print self output readably))
+    (method public (get-attribute self name (not-found: not-found (unspecified))))
+    (method public (get-content self)))
+  (hub get-mode)
+  (hub get-attributes)
+  (hub get-parts)
+  (hub get-attribute)
+  (hub get-content))

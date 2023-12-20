@@ -1,0 +1,16 @@
+(module jazz.debugger.snapshot.Frame-Snapshot jazz
+  (import (jazz.debugger))
+  (class Frame-Snapshot extends Object
+    (slot thread getter generate)
+    (slot parameters)
+    (method override (initialize self thread parameters))
+    (method override (compare-object self target))
+    (method public virtual (get-parameters self))
+    (method public virtual (present self))
+    (method public virtual (get-image self))
+    (method public virtual (edit self)))
+  (hub get-thread)
+  (hub get-parameters)
+  (hub present)
+  (hub get-image)
+  (hub edit))

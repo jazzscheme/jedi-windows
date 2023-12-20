@@ -1,0 +1,19 @@
+(package jazz.debugger
+  
+  (title "Debugger")
+  (description "Debugger")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.debugger (alias debugger)
+                           (update jazz.debugger)
+                           (dependencies jazz
+                                         jazz.platform))
+            (jazz.debugger.desc (alias debugger.desc)
+                                (description "Debugger descriptors")
+                                (update jazz.debugger.descriptors)
+                                (dependencies jazz
+                                              jazz.descriptor
+                                              jazz.domain
+                                              jazz.markup)))
+  (project ".project"))

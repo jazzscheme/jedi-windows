@@ -1,0 +1,8 @@
+(module jazz.editor.java.catalog.Java-File-Entry jazz
+  (import (jazz.catalog))
+  (import (jazz.editor.java))
+  (class Java-File-Entry extends File-Entry
+    (slot imports getter generate)
+    (method override (initialize self catalog file digest dialect definitions))
+    (method override (get-title self)))
+  (hub get-imports))

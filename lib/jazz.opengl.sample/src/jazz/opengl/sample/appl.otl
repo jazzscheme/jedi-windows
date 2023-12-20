@@ -1,0 +1,6 @@
+(module jazz.opengl.sample.appl jazz
+  (import (jazz.application))
+  (import (jazz.opengl.window))
+  (import (jazz.opengl.sample.window))
+  (class Shader-Sample extends Application
+    (method override (new-toplevel self))))

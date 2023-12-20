@@ -1,0 +1,23 @@
+(module jazz.process.stub jazz
+  (import (jazz.presence.syntax (phase syntax)))
+  (import (jazz.presence))
+  (class Process-Stub-Interface extends Stub-Interface
+    (method override (local-class self))
+    (method override (remote-class self)))
+  (interface Process-Stub metaclass Process-Stub-Interface extends Remotable-Stub
+    (method public virtual abstract (get-name self))
+    (method public virtual abstract (get-icon self))
+    (method public virtual abstract (get-register self)))
+  (hub get-name)
+  (hub get-icon)
+  (hub get-register)
+  (class Process-Local-Proxy extends Local-Proxy implements Process-Stub
+    (method override (stub-reference self))
+    (method override (get-name self))
+    (method override (get-icon self))
+    (method override (get-register self)))
+  (class Process-Remote-Proxy extends Remote-Proxy implements Process-Stub
+    (method override (stub-reference self))
+    (method override (get-name self))
+    (method override (get-icon self))
+    (method override (get-register self))))

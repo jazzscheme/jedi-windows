@@ -1,0 +1,17 @@
+(module jazz.layout.Border-Layout jazz
+  (import (jazz.figure))
+  (import (jazz.layout))
+  (class Border-Layout extends Layout
+    (property insets <Rect> accessors generate)
+    (property padding <fx> accessors generate)
+    (property fit accessors generate)
+    (property justification accessors generate)
+    (method override (layout self figures width height)))
+  (hub get-insets)
+  (hub set-insets)
+  (hub get-padding)
+  (hub set-padding)
+  (hub get-fit)
+  (hub set-fit)
+  (hub get-justification)
+  (hub set-justification))

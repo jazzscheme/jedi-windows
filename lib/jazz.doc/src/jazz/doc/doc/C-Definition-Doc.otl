@@ -1,0 +1,3 @@
+(module jazz.doc.doc.C-Definition-Doc jazz
+  (import (jazz.doc))
+  (class C-Definition-Doc extends Element-Doc))
